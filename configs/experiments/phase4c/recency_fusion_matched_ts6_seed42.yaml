@@ -1,0 +1,40 @@
+# RecencyFusionUNet3D on matched TS=6 (seed 42)
+# Stub config; actual launches historically used the CLI train script.
+
+inherits:
+  - ../../../paths.yaml
+  - ../../../default.yaml
+
+experiment_id: recency_fusion_matched_ts6_seed42
+population: matched
+seed: 42
+ts_length: 6
+
+model:
+  name: recency_fusion
+  in_channels: 27
+  spatial_size: 256
+  max_t: 6
+  init_recency_scale: 0.0
+  # Spatial encoder/decoder: enc (64,128,256,512), bneck 1024
+
+train:
+  enabled: false
+  epochs: 60
+  batch_size: 8
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  amp: true
+
+eval:
+  protocol: ba_labelled
+  test_sets: [ba24, ba18, ba16]
+  threshold_source: validation_only
+  tune_on_test: false
+  compare_to:
+    - matched_mean_pool_ts2
+    - matched_mean_pool_ts6
+
+notes: >
+  Replace final mean(dim=2) with learnable recency-aware temporal fusion.
+  Compare on matched BA-labelled populations only.

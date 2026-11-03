@@ -1,0 +1,31 @@
+# Default research config skeleton. Not a launch-ready training recipe.
+
+inherits:
+  - paths.yaml
+
+task: fire_progression_next_day
+population: matched  # matched | published_protocol
+seed: 42
+ts_length: 2
+
+model:
+  name: placeholder  # replace with proposed architecture id
+  in_channels: 27
+  spatial_size: 256
+
+train:
+  enabled: false  # hard gate until Phase 4C launch approval
+  epochs: 60
+  batch_size: 8
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  amp: true
+
+eval:
+  protocol: ba_labelled
+  test_sets: [ba24, ba18, ba16]
+  threshold_source: validation_only
+  tune_on_test: false
+
+tracking:
+  backend: local_json  # local run cards under runs/; no remote tracker required

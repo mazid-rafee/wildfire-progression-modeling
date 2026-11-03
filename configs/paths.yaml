@@ -1,0 +1,45 @@
+# Absolute external paths. Treat all referenced trees as read-only.
+# Do not point these at writable copies of the dataset or frozen baselines.
+
+project:
+  name: Wildfire-Temporal-Prediction
+  root: "/aul/homes/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction"
+
+data:
+  # Verified Phase 1/2/3A DATA_ROOT (realpath identical via /aul/homes/.../Desktop/datasets/ts-satfire)
+  root: "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/datasets/ts-satfire"
+  read_only: true
+  # Convenience symlink inside the TS-SatFire clone (same inode tree; do not write)
+  ts_satfire_raw_symlink: "/aul/homes/mmazi007/Desktop/Source Code (Research)/TS-SatFire/raw_data"
+
+external_repos:
+  ts_satfire: "/aul/homes/mmazi007/Desktop/Source Code (Research)/TS-SatFire"
+  deepfire_forecaster: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster"
+  phase1_audit: "/aul/homes/mmazi007/Desktop/Source Code (Research)/TS-SatFire-Phase1-EventAudit"
+  phase2_readiness: "/aul/homes/mmazi007/Desktop/Source Code (Research)/TS-SatFire-Phase2-SpaSE-Readiness"
+
+phase3a:
+  root: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase3a_spase_fp_reproduction"
+  freeze_report: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase3a_spase_fp_reproduction/outputs/PHASE3A_SPASE_FP_BASELINE_FREEZE_20261101.md"
+  run_dir: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase3a_spase_fp_reproduction/runs/spase_fp_seed42_20261031_191636"
+  checkpoint: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase3a_spase_fp_reproduction/runs/spase_fp_seed42_20261031_191636/checkpoints/best_fp_v6.pth"
+  corrected_eval_dir: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase3a_spase_fp_reproduction/runs/spase_fp_seed42_20261031_191636/evaluations_ba_labelled_corrected_20261031_233842"
+
+phase4a:
+  audit_dir: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4a_temporal_coverage_audit/outputs/phase4a_audit_20261101_064329"
+  matched_windows: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4a_temporal_coverage_audit/outputs/phase4a_audit_20261101_064329/matched_ts2_ts6_windows.csv"
+  temporal_window_manifest: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4a_temporal_coverage_audit/outputs/phase4a_audit_20261101_064329/temporal_window_manifest.csv"
+  split_coverage_summary: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4a_temporal_coverage_audit/outputs/phase4a_audit_20261101_064329/split_coverage_summary.json"
+  coverage_report: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4a_temporal_coverage_audit/outputs/phase4a_audit_20261101_064329/PHASE4A_TEMPORAL_COVERAGE_REPORT.md"
+
+phase4b:
+  run_dir: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4b_matched_ts_experiment/runs/matched_seed42_parallel_preload_20261101_200211"
+  comparison: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4b_matched_ts_experiment/runs/matched_seed42_parallel_preload_20261101_200211/PHASE4B_MATCHED_COMPARISON.md"
+  checkpoint_ts2: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4b_matched_ts_experiment/runs/matched_seed42_parallel_preload_20261101_200211/ts2/checkpoints/best_matched.pth"
+  checkpoint_ts6: "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4b_matched_ts_experiment/runs/matched_seed42_parallel_preload_20261101_200211/ts6/checkpoints/best_matched.pth"
+
+local:
+  runs: "runs"
+  checkpoints: "checkpoints"
+  logs: "logs"
+  outputs: "outputs"

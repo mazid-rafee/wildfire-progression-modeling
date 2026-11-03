@@ -1,0 +1,130 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+ENV/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+credentials*.json
+
+# --- Datasets (never vendor TS-SatFire here) ---
+# Anchor to repo root so src/wtp/data/ (Python package) is NOT ignored.
+/data/
+/datasets/
+/raw_data/
+**/ts-satfire/
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.hdf
+*.h5
+*.nc
+*.npz
+*.npy
+*.npz.part
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# --- Caches ---
+.cache/
+**/__cache__/
+**/.cache/
+torch_cache/
+huggingface/
+*.pkl
+*.pickle
+*.joblib
+
+# --- Checkpoints & weights ---
+checkpoints/**
+!checkpoints/.gitkeep
+**/*.pth
+**/*.pt
+**/*.ckpt
+**/*.onnx
+**/*.safetensors
+**/best_*.pth
+**/last_*.pth
+
+# --- Logs ---
+logs/**
+!logs/.gitkeep
+*.log
+*.out
+*.err
+nohup.out
+
+# --- Experiment runs & large outputs ---
+runs/**
+!runs/.gitkeep
+outputs/**
+!outputs/.gitkeep
+results/**
+experiments/**/artifacts/
+experiments/**/runs/
+wandb/
+mlruns/
+lightning_logs/
+tb_logs/
+tensorboard/
+
+# --- Notebooks: keep sources, drop large dumps ---
+notebooks/**/outputs/
+notebooks/**/*.png
+notebooks/**/*.jpg
+notebooks/**/*.pdf
+notebooks/**/*.csv
+notebooks/**/*.json
+!notebooks/.gitkeep
+
+# --- Local path overrides ---
+configs/local*.yaml
+configs/local*.yml
+configs/secrets*.yaml
+
+# --- Temporary ---
+tmp/
+temp/
+*.tmp
+*.bak
+*.pid

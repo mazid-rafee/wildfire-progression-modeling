@@ -1,0 +1,3 @@
+# Minimal scaffold dependencies. Prefer the existing `ts-satfire` conda env for GPU work.
+numpy
+pyyaml

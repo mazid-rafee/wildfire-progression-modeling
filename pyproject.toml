@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wildfire-temporal-prediction"
+version = "0.0.1"
+description = "Wildfire progression modeling with SpaSE temporal-fusion variants."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "mazid-rafee" }]
+dependencies = [
+  "numpy",
+  "pyyaml",
+]
+
+[project.optional-dependencies]
+# Align with the existing ts-satfire conda env when activating GPU work.
+train = [
+  "torch",
+  "rasterio",
+  "tqdm",
+  "scikit-learn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+wtp = ["py.typed"]

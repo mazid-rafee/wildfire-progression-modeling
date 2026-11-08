@@ -1,0 +1,13 @@
+arm_id: V2-MEANPOOL-TS6-CTRL
+priority: P0
+protocol: v2_corrected
+model:
+  name: mean_pool
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+ts_length: 6
+harness: e1_matched  # same E1 train/eval harness, mean-pool temporal op
+description: >
+  Mean-pool TS=6 control on the E1 matched harness (isolates temporal operator
+  vs V2-E1 under identical V2 preprocessing).

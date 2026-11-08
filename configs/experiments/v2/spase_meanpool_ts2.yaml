@@ -1,0 +1,10 @@
+arm_id: V2-P4B-TS2
+priority: P0
+protocol: v2_corrected
+model:
+  name: mean_pool  # MeanPoolUNet3D / SEUNet3DPred-equivalent
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+ts_length: 2
+description: Corrected matched SpaSE mean-pool TS=2 baseline

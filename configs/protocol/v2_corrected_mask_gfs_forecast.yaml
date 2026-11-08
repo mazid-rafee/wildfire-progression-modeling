@@ -1,0 +1,18 @@
+# Conservative V2 variant: same as v2_corrected but zeros GFS forecast channels
+# 22–25 after normalization (architecture stays 27-ch). Use when observational
+# cutoff availability for GFS cannot be established and forecast inputs must
+# not influence training.
+
+inherits_protocol: v2_corrected.yaml
+
+protocol_id: V2.0-corrected-protocol-mask-gfs
+protocol_version: "2.0-mask-gfs"
+status: conservative_alternative
+description: >
+  V2 corrected preprocessing with forecast_policy=mask_zero on model channels
+  22–25 (forecast wind speed/dir, temp, humidity).
+
+forecast_policy: mask_zero
+forecast_model_channels: [22, 23, 24, 25]
+forecast_availability_established: false
+forecast_mask_fill: 0.0

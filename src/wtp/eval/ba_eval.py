@@ -118,3 +118,71 @@ def threshold_sweep(model, val_dl, criterion, device, use_amp: bool) -> dict:
         if f1 > best_f1:
             best_f1, best_thr = f1, float(thr)
     return {"best_thr": best_thr, "best_f1": best_f1, "rows": rows}
+
+
+@torch.no_grad()
+def collect_val_logits(
+    model, dl, device, use_amp: bool
+) -> tuple["torch.Tensor", "torch.Tensor"]:
+    """Concatenate validation logits and labels for offline threshold analysis."""
+    model.eval()
+    logits_list = []
+    labels_list = []
+    for xb, yb in dl:
+        xb = xb.to(device, non_blocking=True)
+        with autocast(enabled=use_amp and device.type == "cuda"):
+            pred = model(xb)
+        logits_list.append(pred.detach().float().cpu())
+        labels_list.append(yb.float().cpu())
+    return torch.cat(logits_list, 0), torch.cat(labels_list, 0)
+
+
+def threshold_sweep_from_logits(
+    logits: "torch.Tensor",
+    labels: "torch.Tensor",
+    thr_min: float = 0.01,
+    thr_max: float = 0.99,
+    thr_step: float = 0.01,
+) -> dict:
+    """Val-only extended sweep on cached logits. Does not alter historical headlines."""
+    import numpy as np
+
+    probs = torch.sigmoid(logits)
+    y = labels
+    best_thr, best_f1 = 0.5, -1.0
+    rows = []
+    thr_values = np.arange(thr_min, thr_max + 1e-12, thr_step)
+    for thr in thr_values:
+        pb = (probs > float(thr)).float()
+        tp = (pb * y).sum().item()
+        fp = (pb * (1 - y)).sum().item()
+        fn = ((1 - pb) * y).sum().item()
+        f1 = 2 * tp / (2 * tp + fp + fn + 1e-8)
+        iou = tp / (tp + fp + fn + 1e-8)
+        prec = tp / (tp + fp + 1e-8)
+        rec = tp / (tp + fn + 1e-8)
+        rows.append(
+            {
+                "thr": float(thr),
+                "f1": float(f1),
+                "iou": float(iou),
+                "precision": float(prec),
+                "recall": float(rec),
+                "tp": float(tp),
+                "fp": float(fp),
+                "fn": float(fn),
+            }
+        )
+        if f1 > best_f1:
+            best_f1, best_thr = f1, float(thr)
+    selected_is_ceiling = abs(best_thr - thr_max) < 1e-9
+    return {
+        "best_thr": best_thr,
+        "best_f1": best_f1,
+        "thr_min": thr_min,
+        "thr_max": thr_max,
+        "thr_step": thr_step,
+        "selected_is_grid_ceiling": selected_is_ceiling,
+        "n_thresholds": len(rows),
+        "rows": rows,
+    }

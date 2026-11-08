@@ -1,0 +1,13 @@
+arm_id: V2-E1
+priority: P0
+protocol: v2_corrected
+model:
+  name: recency_fusion
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+  max_t: 6
+  init_recency_scale: 0.0
+ts_length: 6
+paired_init_group: e1_vs_uniform_ts6
+description: Corrected matched RecencyFusion TS=6 (E1)

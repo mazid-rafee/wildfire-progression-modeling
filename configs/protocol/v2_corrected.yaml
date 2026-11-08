@@ -1,0 +1,47 @@
+# Corrected V2 matched protocol. Explicit selection required — never default-silent.
+
+protocol_id: V2.0-corrected-protocol
+protocol_version: "2.0"
+status: integration_candidate
+description: >
+  Geo-aligned FP→VIIRS resample, directional aug remap, matched-train FP stats,
+  extended val threshold grid 0.01–0.99. Same matched population keys as V1.
+
+data:
+  loader: v2_corrected
+  population: matched
+  expected_counts: {train: 983, val: 135, test24: 561, test18: 553, test16: 531}
+  fp_stats: outputs/v2_protocol/fp_stats_matched_v2.npz
+  geo_align: reproject_fp_to_viirs_shared_crop
+  directional_aug_correct: true
+  crop_size: 256
+  n_channels: 27
+  categorical_resampling: nearest  # land-cover FP slot
+  continuous_resampling: bilinear
+
+# Forecast GFS bands (model ch 22–25): availability at observational cutoff NOT
+# demonstrated. Default keeps them as declared forecast features; launch must
+# choose policy explicitly. Conservative alternative: mask_zero (see sibling cfg).
+forecast_policy: include_as_forecast
+forecast_model_channels: [22, 23, 24, 25]
+forecast_availability_established: false
+
+train:
+  seed: 42
+  epochs: 60
+  batch_size: 8
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  amp: true
+  drop_last: true
+  grad_clip: 1.0
+  pos_weight: 112.87821151853076
+  loss: {dice: 0.5, focal: 0.3, bce: 0.2, focal_gamma: 3.0, focal_alpha: 0.85}
+  checkpoint_metric: val_f1_at_0.5
+  checkpoint_split: validation_only
+  one_cycle: {pct_start: 0.1, anneal_strategy: cos}
+
+eval:
+  threshold_source: validation_only
+  threshold_grid: {min: 0.01, max: 0.99, step: 0.01}
+  tune_on_test: false

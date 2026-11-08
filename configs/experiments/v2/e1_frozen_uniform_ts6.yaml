@@ -1,0 +1,20 @@
+arm_id: V2-E1-UNIFORM-TS6
+priority: P0
+protocol: v2_corrected
+model:
+  name: recency_fusion
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+  max_t: 6
+  init_recency_scale: 0.0
+  # Freeze RecencyAwareTemporalFusion at uniform 1/T for the entire run.
+  # Same E1 backbone/harness; only learnable temporal weights are disabled.
+  freeze_temporal_fusion: true
+  freeze_temporal_mode: uniform
+ts_length: 6
+paired_init_group: e1_vs_uniform_ts6
+description: >
+  RecencyFusion TS=6 with temporal-fusion parameters frozen to uniform 1/T
+  averaging (mean-pool-equivalent temporal operator) under the E1 harness.
+  Paired with V2-E1 under identical backbone initialization per seed.

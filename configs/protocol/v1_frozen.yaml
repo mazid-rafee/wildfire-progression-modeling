@@ -1,0 +1,41 @@
+# Frozen V1 matched protocol (historical reproduction only).
+# Never mutated by V2 work. Selected explicitly via --protocol v1.
+
+protocol_id: V1.0-frozen-matched
+protocol_version: "1.0"
+status: frozen_immutable
+description: >
+  Original Phase 4B / E1 / ENV matched preprocessing: independent VIIRS/FP
+  center-crops, directional aug without angle remap, subsample FP stats.
+
+data:
+  loader: v1_phase4b
+  population: matched
+  expected_counts: {train: 983, val: 135, test24: 561, test18: 553, test16: 531}
+  fp_stats: phase4b_shared_populations  # fp_stats_matched.npz
+  geo_align: independent_center_crop
+  directional_aug_correct: false
+  crop_size: 256
+  n_channels: 27
+
+forecast_policy: include_as_forecast  # historical behaviour; not re-audited here
+
+train:
+  # Shared locks (must match V2 controlled arms for fair comparison of protocol only)
+  seed: 42
+  epochs: 60
+  batch_size: 8
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  amp: true
+  drop_last: true
+  grad_clip: 1.0
+  pos_weight: 112.87821151853076
+  loss: {dice: 0.5, focal: 0.3, bce: 0.2, focal_gamma: 3.0, focal_alpha: 0.85}
+  checkpoint_metric: val_f1_at_0.5
+  checkpoint_split: validation_only
+
+eval:
+  threshold_source: validation_only
+  threshold_grid: {min: 0.05, max: 0.75, step: 0.05}  # historical
+  tune_on_test: false

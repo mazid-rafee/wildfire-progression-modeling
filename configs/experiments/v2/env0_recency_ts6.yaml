@@ -1,0 +1,16 @@
+arm_id: V2-ENV0-TS6
+priority: P0
+protocol: v2_corrected
+model:
+  name: recency_fusion
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+  max_t: 6
+  init_recency_scale: 0.0
+ts_length: 6
+channel_ablation: ENV-0
+mask_channels: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+description: >
+  Corrected matched RecencyFusion TS=6 with all FirePred channels 8–25 masked
+  (VIIRS 0–7 + BA 26 retained). GFS 22–25 included in the ENV-0 mask.

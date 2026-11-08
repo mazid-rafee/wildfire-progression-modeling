@@ -1,0 +1,10 @@
+arm_id: V2-P4B-TS6
+priority: P0
+protocol: v2_corrected
+model:
+  name: mean_pool
+  in_channels: 27
+  enc: [64, 128, 256, 512]
+  bneck: 1024
+ts_length: 6
+description: Corrected matched SpaSE mean-pool TS=6 baseline

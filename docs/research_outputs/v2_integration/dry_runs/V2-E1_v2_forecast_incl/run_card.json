@@ -1,0 +1,8 @@
+{
+  "config_sha256": "4bc60ecb946c8607e1d339076971d8edfc7c1435e1df6f7d479c78305ffcd34a",
+  "created_utc": "2026-11-03T10:02:03.666101+00:00",
+  "experiment_id": "V2-E1",
+  "mode": "dry_run",
+  "preprocessing_version": "2.0",
+  "smoke_ok": true
+}

@@ -1,0 +1,8 @@
+{
+  "config_sha256": "663a2ad27eead229a5091f84c237908705580015a1ca7a77d5702a3bc00811aa",
+  "created_utc": "2026-11-03T09:00:22.969039+00:00",
+  "experiment_id": "V2-MEANPOOL-TS6-CTRL",
+  "mode": "dry_run",
+  "preprocessing_version": "2.0",
+  "smoke_ok": true
+}

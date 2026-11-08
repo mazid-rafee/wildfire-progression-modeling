@@ -1,0 +1,14 @@
+........................F.F.............                                 [100%]
+=================================== FAILURES ===================================
+__________________________ test_aug_channel_locks_cpu __________________________
+tests/v2_integration/test_integrity_smoke.py:18: in test_aug_channel_locks_cpu
+    assert check_augmentation_numeric()["ok"]
+E   assert False
+___________________ test_data_backed_integrity_if_available ____________________
+tests/v2_integration/test_integrity_smoke.py:43: in test_data_backed_integrity_if_available
+    assert report["essential_ok"] is True
+E   assert False is True
+=========================== short test summary info ============================
+FAILED tests/v2_integration/test_integrity_smoke.py::test_aug_channel_locks_cpu
+FAILED tests/v2_integration/test_integrity_smoke.py::test_data_backed_integrity_if_available
+2 failed, 38 passed in 54.03s

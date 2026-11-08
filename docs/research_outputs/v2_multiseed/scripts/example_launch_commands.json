@@ -1,0 +1,87 @@
+[
+  {
+    "cell": "UNIFORM_seed42",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-UNIFORM-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 42 --run-dir runs/v2_ms_uniform_seed42_PENDING --min-free-vram-gib 14",
+    "est_min": 250.0
+  },
+  {
+    "cell": "E1_seed7",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 7 --run-dir runs/v2_ms_e1_seed7_PENDING --min-free-vram-gib 14 --export-init-backbone outputs/v2_multiseed/inits/backbone_init_seed7.pt",
+    "est_min": 257.0
+  },
+  {
+    "cell": "TS2_seed7",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-P4B-TS2 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 7 --run-dir runs/v2_ms_ts2_seed7_PENDING --min-free-vram-gib 14",
+    "est_min": 86.5
+  },
+  {
+    "cell": "UNIFORM_seed7",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-UNIFORM-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 7 --run-dir runs/v2_ms_uniform_seed7_PENDING --min-free-vram-gib 14 --load-init-backbone outputs/v2_multiseed/inits/backbone_init_seed7.pt",
+    "est_min": 250.0
+  },
+  {
+    "cell": "ENV0_seed7",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-ENV0-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 7 --run-dir runs/v2_ms_env0_seed7_PENDING --min-free-vram-gib 14",
+    "est_min": 224.3
+  },
+  {
+    "cell": "E1_seed17",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 17 --run-dir runs/v2_ms_e1_seed17_PENDING --min-free-vram-gib 14 --export-init-backbone outputs/v2_multiseed/inits/backbone_init_seed17.pt",
+    "est_min": 257.0
+  },
+  {
+    "cell": "TS2_seed17",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-P4B-TS2 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 17 --run-dir runs/v2_ms_ts2_seed17_PENDING --min-free-vram-gib 14",
+    "est_min": 86.5
+  },
+  {
+    "cell": "UNIFORM_seed17",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-UNIFORM-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 17 --run-dir runs/v2_ms_uniform_seed17_PENDING --min-free-vram-gib 14 --load-init-backbone outputs/v2_multiseed/inits/backbone_init_seed17.pt",
+    "est_min": 250.0
+  },
+  {
+    "cell": "ENV0_seed17",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-ENV0-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 17 --run-dir runs/v2_ms_env0_seed17_PENDING --min-free-vram-gib 14",
+    "est_min": 224.3
+  },
+  {
+    "cell": "E1_seed29",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 29 --run-dir runs/v2_ms_e1_seed29_PENDING --min-free-vram-gib 14 --export-init-backbone outputs/v2_multiseed/inits/backbone_init_seed29.pt",
+    "est_min": 257.0
+  },
+  {
+    "cell": "TS2_seed29",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-P4B-TS2 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 29 --run-dir runs/v2_ms_ts2_seed29_PENDING --min-free-vram-gib 14",
+    "est_min": 86.5
+  },
+  {
+    "cell": "UNIFORM_seed29",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-UNIFORM-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 29 --run-dir runs/v2_ms_uniform_seed29_PENDING --min-free-vram-gib 14 --load-init-backbone outputs/v2_multiseed/inits/backbone_init_seed29.pt",
+    "est_min": 250.0
+  },
+  {
+    "cell": "ENV0_seed29",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-ENV0-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 29 --run-dir runs/v2_ms_env0_seed29_PENDING --min-free-vram-gib 14",
+    "est_min": 224.3
+  },
+  {
+    "cell": "E1_seed101",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 101 --run-dir runs/v2_ms_e1_seed101_PENDING --min-free-vram-gib 14 --export-init-backbone outputs/v2_multiseed/inits/backbone_init_seed101.pt",
+    "est_min": 257.0
+  },
+  {
+    "cell": "TS2_seed101",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-P4B-TS2 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 101 --run-dir runs/v2_ms_ts2_seed101_PENDING --min-free-vram-gib 14",
+    "est_min": 86.5
+  },
+  {
+    "cell": "UNIFORM_seed101",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-E1-UNIFORM-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 101 --run-dir runs/v2_ms_uniform_seed101_PENDING --min-free-vram-gib 14 --load-init-backbone outputs/v2_multiseed/inits/backbone_init_seed101.pt",
+    "est_min": 250.0
+  },
+  {
+    "cell": "ENV0_seed101",
+    "command": "CUDA_VISIBLE_DEVICES=<GPU> python -u scripts/v2_train_eval.py --arm V2-ENV0-TS6 --forecast-policy mask_zero --no-dry-run --i-understand-full-train --seed 101 --run-dir runs/v2_ms_env0_seed101_PENDING --min-free-vram-gib 14",
+    "est_min": 224.3
+  }
+]

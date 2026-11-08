@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "probes": {
+    "train": [
+      {
+        "target_key": "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+        "x_shape": [
+          27,
+          2,
+          256,
+          256
+        ],
+        "y_shape": [
+          256,
+          256
+        ],
+        "y_sum": 0.0,
+        "viirs_hw": [
+          596,
+          595
+        ],
+        "fp_hw": [
+          447,
+          447
+        ],
+        "grids_match": false,
+        "fire_id": "20778186",
+        "in_geo_mismatch_list": true
+      }
+    ],
+    "val": [
+      {
+        "target_key": "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+        "x_shape": [
+          27,
+          2,
+          256,
+          256
+        ],
+        "y_shape": [
+          256,
+          256
+        ],
+        "y_sum": 21.0,
+        "viirs_hw": [
+          596,
+          595
+        ],
+        "fp_hw": [
+          596,
+          595
+        ],
+        "grids_match": true,
+        "fire_id": "21751303",
+        "in_geo_mismatch_list": false
+      }
+    ],
+    "test24": [
+      {
+        "target_key": "test|US_2021_AZ3345510938920210616|L6|2021-06-22_VIIRS_Day.tif",
+        "x_shape": [
+          27,
+          2,
+          256,
+          256
+        ],
+        "y_shape": [
+          256,
+          256
+        ],
+        "y_sum": 1.0,
+        "viirs_hw": [
+          596,
+          595
+        ],
+        "fp_hw": [
+          596,
+          595
+        ],
+        "grids_match": true,
+        "fire_id": "US_2021_AZ3345510938920210616",
+        "in_geo_mismatch_list": false
+      }
+    ]
+  }
+}

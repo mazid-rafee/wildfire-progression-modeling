@@ -1,0 +1,186 @@
+{
+  "fire_mean_f1_bootstrap": {
+    "E1": {
+      "point_mean": 0.40475372567889356,
+      "bootstrap_mean": 0.40440503914210446,
+      "ci95": [
+        0.28990317622344325,
+        0.5159257973457247
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "TS2": {
+      "point_mean": 0.26926307588078174,
+      "bootstrap_mean": 0.2689956874709899,
+      "ci95": [
+        0.1925112808488878,
+        0.3418145583192712
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "ENV0": {
+      "point_mean": 0.353486381667705,
+      "bootstrap_mean": 0.35249223145024217,
+      "ci95": [
+        0.24625541580369795,
+        0.45762235540423024
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "UNIFORM": {
+      "point_mean": 0.200647744452534,
+      "bootstrap_mean": 0.2004753885730047,
+      "ci95": [
+        0.14353381825883335,
+        0.2595570453094386
+      ],
+      "B": 5000,
+      "n_fires": 21
+    }
+  },
+  "fire_mean_delta_bootstrap": {
+    "E1_minus_TS2": {
+      "point_mean": 0.1354906497981118,
+      "bootstrap_mean": 0.13578289837440125,
+      "ci95": [
+        0.09335046362564602,
+        0.17637228287731715
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "E1_minus_ENV0": {
+      "point_mean": 0.051267344011188536,
+      "bootstrap_mean": 0.051027159675997406,
+      "ci95": [
+        0.020905360262643186,
+        0.08303168217150383
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "E1_minus_UNIFORM": {
+      "point_mean": 0.2041059812263596,
+      "bootstrap_mean": 0.2036562846713536,
+      "ci95": [
+        0.11131809881140835,
+        0.2972491208525472
+      ],
+      "B": 5000,
+      "n_fires": 21
+    },
+    "E1_minus_UNIFORM_paired_excl42": {
+      "point_mean": 0.20469450061113867,
+      "bootstrap_mean": 0.20369225607348768,
+      "ci95": [
+        0.1047461481452297,
+        0.3039703600134201
+      ],
+      "B": 5000,
+      "n_fires": 21
+    }
+  },
+  "nested_seed_micro_bootstrap": {
+    "E1": {
+      "point_mean_seed_micro": 0.6117657955724802,
+      "ci95": [
+        0.5000039163887989,
+        0.6805833966343193
+      ],
+      "B": 2000
+    },
+    "TS2": {
+      "point_mean_seed_micro": 0.4040686070888869,
+      "ci95": [
+        0.3345079246304476,
+        0.44798628224884013
+      ],
+      "B": 2000
+    },
+    "ENV0": {
+      "point_mean_seed_micro": 0.5405395925115608,
+      "ci95": [
+        0.4675619942944592,
+        0.5869833824873744
+      ],
+      "B": 2000
+    },
+    "UNIFORM": {
+      "point_mean_seed_micro": 0.23543392127742152,
+      "ci95": [
+        0.18706219154401046,
+        0.28512861288833685
+      ],
+      "B": 2000
+    }
+  },
+  "nested_paired_micro_bootstrap": {
+    "E1_minus_TS2": {
+      "point_mean_seed_delta_micro": 0.20769718848359334,
+      "ci95": [
+        0.16369794591985215,
+        0.24107036913116214
+      ],
+      "B": 2000,
+      "seeds": [
+        7,
+        17,
+        29,
+        42,
+        101
+      ]
+    },
+    "E1_minus_ENV0": {
+      "point_mean_seed_delta_micro": 0.07122620306091935,
+      "ci95": [
+        0.006971583836541385,
+        0.11581158306103162
+      ],
+      "B": 2000,
+      "seeds": [
+        7,
+        17,
+        29,
+        42,
+        101
+      ]
+    },
+    "E1_minus_UNIFORM_all5": {
+      "point_mean_seed_delta_micro": 0.37633187429505865,
+      "ci95": [
+        0.25248043543781284,
+        0.45902327952635374
+      ],
+      "B": 2000,
+      "seeds": [
+        7,
+        17,
+        29,
+        42,
+        101
+      ]
+    },
+    "E1_minus_UNIFORM_paired_excl42": {
+      "point_mean_seed_delta_micro": 0.38571100626789717,
+      "ci95": [
+        0.2540271129864398,
+        0.46686095128032046
+      ],
+      "B": 2000,
+      "seeds": [
+        7,
+        17,
+        29,
+        101
+      ]
+    }
+  },
+  "method": {
+    "fire_mean": "Per fire, average metric across 5 seeds; then resample fires with replacement (B=5000).",
+    "nested_micro": "Resample fires; for each seed recompute micro F1 from pooled TP/FP/FN of sampled fires; average over seeds (B=2000). Accounts for repeated seeds on same fires.",
+    "paired_nested": "Same as nested_micro but seed-wise delta then average (B=2000)."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "n_expected_cells": 20,
+  "n_loaded_cells": 20,
+  "missing_cells": [],
+  "incomplete_metric_cells": [],
+  "all_complete": true,
+  "issues": [],
+  "fp_stats_sha_unique": [
+    "6de1198c1e769a608356e972a1dd158f71b84e5880ef34d7c43d6ee94c72d883"
+  ],
+  "note_seed42_E1_UNIFORM": "UNPAIRED init; historical E1 seed42 init was never exported. Report separately from paired seeds 7/17/29/101."
+}

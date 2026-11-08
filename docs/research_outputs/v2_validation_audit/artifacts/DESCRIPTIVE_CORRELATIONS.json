@@ -1,0 +1,8 @@
+{
+  "f1_vs_hist_ba_px_mean": 0.6654407904939655,
+  "f1_vs_new_ba_px_sum": 0.7270660525939261,
+  "recall_vs_progression_rate_mean": 0.3382389957781526,
+  "fp_mean_vs_prevalence": 0.42102675008058504,
+  "e1_minus_env0_vs_progression": 0.156660383072029,
+  "e1_minus_uniform_vs_hist_size": 0.5849787292637053
+}

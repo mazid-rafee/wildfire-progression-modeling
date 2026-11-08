@@ -1,0 +1,8 @@
+{
+  "config_sha256": "f0bf16972c1c3fc205fffa2b5007faa46316f0211b6e5f317d90fd5faa09e389",
+  "created_utc": "2026-11-03T08:58:42.132023+00:00",
+  "experiment_id": "V2-P4B-TS2",
+  "mode": "dry_run",
+  "preprocessing_version": "2.0",
+  "smoke_ok": true
+}

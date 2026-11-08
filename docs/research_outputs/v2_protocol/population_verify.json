@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "counts": {
+    "train": 983,
+    "val": 135,
+    "test24": 561,
+    "test18": 553,
+    "test16": 531
+  },
+  "expected": {
+    "train": 983,
+    "val": 135,
+    "test24": 561,
+    "test18": 553,
+    "test16": 531
+  },
+  "key_report": {
+    "ok": true,
+    "mismatches": {}
+  },
+  "fire_id_disjoint": true,
+  "n_train_fires": 82,
+  "n_val_fires": 8,
+  "n_test24_fires": 21,
+  "geo_mismatch_train_fires_still_in_train": [
+    "20778186",
+    "20899673",
+    "20899813",
+    "21038333"
+  ],
+  "note": "V2 keeps the same matched target keys; geo alignment changes pixel content for mismatched fires but not membership.",
+  "ctx_counts_detail": {
+    "train_keys_head": [
+      "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+      "train|20778186|L8|2017-07-25_VIIRS_Day.tif",
+      "train|20778186|L9|2017-07-26_VIIRS_Day.tif"
+    ],
+    "val_keys_head": [
+      "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+      "val|21751303|L7|2018-06-06_VIIRS_Day.tif",
+      "val|21751303|L8|2018-06-07_VIIRS_Day.tif"
+    ],
+    "test24_keys_head": [
+      "test|US_2021_AZ3345510938920210616|L6|2021-06-22_VIIRS_Day.tif",
+      "test|US_2021_AZ3345510938920210616|L7|2021-06-23_VIIRS_Day.tif",
+      "test|US_2021_AZ3345510938920210616|L8|2021-06-24_VIIRS_Day.tif"
+    ]
+  }
+}

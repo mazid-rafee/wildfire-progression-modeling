@@ -1,0 +1,5 @@
+arm,macro_f1_full21_primary,macro_f1_positive_target_only_n19,n_empty_target_fires,empty_target_mean_fp_sum,empty_target_mean_pred_positive_sum,zero_division_convention,note
+E1,0.4048 ± 0.0069,0.4474 ± 0.0076,2,2.40,2.40,F1 = 2TP/(2TP+FP+FN+1e-8); TP=FP=FN=0 yields F1≈0,Supplementary only; does not replace full-21 headline macro
+ENV0,0.3535 ± 0.0173,0.3907 ± 0.0191,2,1.20,1.20,F1 = 2TP/(2TP+FP+FN+1e-8); TP=FP=FN=0 yields F1≈0,Supplementary only; does not replace full-21 headline macro
+TS2,0.2693 ± 0.0218,0.2976 ± 0.0241,2,1.60,1.60,F1 = 2TP/(2TP+FP+FN+1e-8); TP=FP=FN=0 yields F1≈0,Supplementary only; does not replace full-21 headline macro
+UNIFORM,0.2006 ± 0.0207,0.2218 ± 0.0229,2,88.60,88.60,F1 = 2TP/(2TP+FP+FN+1e-8); TP=FP=FN=0 yields F1≈0,Supplementary only; does not replace full-21 headline macro

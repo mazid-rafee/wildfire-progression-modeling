@@ -1,0 +1,229 @@
+{
+  "arm_id": "V2-P4B-TS2",
+  "arm": {
+    "arm_id": "V2-P4B-TS2",
+    "priority": "P0",
+    "protocol": "v2_corrected",
+    "model": {
+      "name": "mean_pool",
+      "in_channels": 27,
+      "enc": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "bneck": 1024
+    },
+    "ts_length": 2,
+    "description": "Corrected matched SpaSE mean-pool TS=2 baseline",
+    "_arm_yaml": "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/configs/experiments/v2/spase_meanpool_ts2.yaml"
+  },
+  "protocol": {
+    "protocol_id": "V2.0-corrected-protocol",
+    "protocol_version": "2.0",
+    "status": "integration_candidate",
+    "description": "Geo-aligned FP\u2192VIIRS resample, directional aug remap, matched-train FP stats, extended val threshold grid 0.01\u20130.99. Same matched population keys as V1.\n",
+    "data": {
+      "loader": "v2_corrected",
+      "population": "matched",
+      "expected_counts": {
+        "train": 983,
+        "val": 135,
+        "test24": 561,
+        "test18": 553,
+        "test16": 531
+      },
+      "fp_stats": "outputs/v2_protocol/fp_stats_matched_v2.npz",
+      "geo_align": "reproject_fp_to_viirs_shared_crop",
+      "directional_aug_correct": true,
+      "crop_size": 256,
+      "n_channels": 27,
+      "categorical_resampling": "nearest",
+      "continuous_resampling": "bilinear"
+    },
+    "forecast_policy": "include_as_forecast",
+    "forecast_model_channels": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "forecast_availability_established": false,
+    "train": {
+      "seed": 42,
+      "epochs": 60,
+      "batch_size": 8,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "amp": true,
+      "drop_last": true,
+      "grad_clip": 1.0,
+      "pos_weight": 112.87821151853076,
+      "loss": {
+        "dice": 0.5,
+        "focal": 0.3,
+        "bce": 0.2,
+        "focal_gamma": 3.0,
+        "focal_alpha": 0.85
+      },
+      "checkpoint_metric": "val_f1_at_0.5",
+      "checkpoint_split": "validation_only",
+      "one_cycle": {
+        "pct_start": 0.1,
+        "anneal_strategy": "cos"
+      }
+    },
+    "eval": {
+      "threshold_source": "validation_only",
+      "threshold_grid": {
+        "min": 0.01,
+        "max": 0.99,
+        "step": 0.01
+      },
+      "tune_on_test": false
+    },
+    "_protocol_yaml": "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/configs/protocol/v2_corrected.yaml",
+    "_protocol_key": "v2"
+  },
+  "shared_train": {
+    "shared_train_lock_id": "v2_p0_shared_20261103",
+    "seed": 42,
+    "epochs": 60,
+    "batch_size": 8,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "amp": true,
+    "drop_last": true,
+    "grad_clip": 1.0,
+    "pos_weight": 112.87821151853076,
+    "optimizer": "adamw",
+    "scheduler": "onecycle",
+    "one_cycle": {
+      "pct_start": 0.1,
+      "anneal_strategy": "cos"
+    },
+    "loss": {
+      "dice_weight": 0.5,
+      "focal_weight": 0.3,
+      "bce_weight": 0.2,
+      "focal_gamma": 3.0,
+      "focal_alpha": 0.85
+    },
+    "checkpoint": {
+      "metric": "val_f1_at_0.5",
+      "split": "validation_only"
+    },
+    "threshold": {
+      "source": "validation_only",
+      "min": 0.01,
+      "max": 0.99,
+      "step": 0.01,
+      "tune_on_test": false
+    },
+    "population": "matched",
+    "expected_counts": {
+      "train": 983,
+      "val": 135,
+      "test24": 561,
+      "test18": 553,
+      "test16": 531
+    }
+  },
+  "protocol_key": "v2",
+  "protocol_id": "V2.0-corrected-protocol",
+  "protocol_version": "2.0",
+  "preprocessing_version": "2.0",
+  "ts_length": 2,
+  "model": {
+    "name": "mean_pool",
+    "in_channels": 27,
+    "enc": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "bneck": 1024
+  },
+  "forecast_policy": "include_as_forecast",
+  "forecast_model_channels": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "forecast_availability_established": false,
+  "train": {
+    "seed": 42,
+    "epochs": 60,
+    "batch_size": 8,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "amp": true,
+    "drop_last": true,
+    "grad_clip": 1.0,
+    "pos_weight": 112.87821151853076,
+    "optimizer": "adamw",
+    "scheduler": "onecycle",
+    "loss": {
+      "dice_weight": 0.5,
+      "focal_weight": 0.3,
+      "bce_weight": 0.2,
+      "focal_gamma": 3.0,
+      "focal_alpha": 0.85
+    },
+    "checkpoint": {
+      "metric": "val_f1_at_0.5",
+      "split": "validation_only"
+    },
+    "threshold": {
+      "source": "validation_only",
+      "min": 0.01,
+      "max": 0.99,
+      "step": 0.01,
+      "tune_on_test": false
+    },
+    "population": "matched",
+    "expected_counts": {
+      "train": 983,
+      "val": 135,
+      "test24": 561,
+      "test18": 553,
+      "test16": 531
+    },
+    "enabled": false
+  },
+  "data": {
+    "loader": "v2_corrected",
+    "population": "matched",
+    "expected_counts": {
+      "train": 983,
+      "val": 135,
+      "test24": 561,
+      "test18": 553,
+      "test16": 531
+    },
+    "fp_stats": "outputs/v2_protocol/fp_stats_matched_v2.npz",
+    "geo_align": "reproject_fp_to_viirs_shared_crop",
+    "directional_aug_correct": true,
+    "crop_size": 256,
+    "n_channels": 27,
+    "categorical_resampling": "nearest",
+    "continuous_resampling": "bilinear"
+  },
+  "eval": {
+    "threshold_source": "validation_only",
+    "threshold_grid": {
+      "min": 0.01,
+      "max": 0.99,
+      "step": 0.01
+    },
+    "tune_on_test": false,
+    "threshold_min": 0.01,
+    "threshold_max": 0.99,
+    "threshold_step": 0.01
+  },
+  "config_sha256": "f0bf16972c1c3fc205fffa2b5007faa46316f0211b6e5f317d90fd5faa09e389",
+  "shared_train_lock_id": "v2_p0_shared_20261103"
+}

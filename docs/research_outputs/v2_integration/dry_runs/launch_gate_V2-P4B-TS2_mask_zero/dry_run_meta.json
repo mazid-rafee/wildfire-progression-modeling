@@ -1,0 +1,76 @@
+{
+  "mode": "dry_run",
+  "arm_id": "V2-P4B-TS2",
+  "protocol_key": "v2",
+  "protocol_id": "V2.0-corrected-protocol",
+  "preprocessing_version": "2.0",
+  "config_sha256": "6bd099c47b231dad60ec4b20f9ac80e0c71bf8aee1b49a9f00b39cdc3bd54963",
+  "shared_train_lock_id": "v2_p0_shared_20261103",
+  "forecast_policy": "mask_zero",
+  "mask_channels": null,
+  "applied_masks": [
+    "gfs:[22, 23, 24, 25]"
+  ],
+  "ts_length": 2,
+  "model": {
+    "name": "mean_pool",
+    "in_channels": 27,
+    "enc": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "bneck": 1024
+  },
+  "n_params": 24279561,
+  "population_counts": {
+    "train": 983,
+    "val": 135,
+    "test24": 561,
+    "test18": 553,
+    "test16": 531
+  },
+  "smoke": {
+    "device": "cpu",
+    "batch_x_shape": [
+      2,
+      27,
+      2,
+      256,
+      256
+    ],
+    "logits_shape": [
+      2,
+      1,
+      256,
+      256
+    ],
+    "loss": 0.8129562139511108,
+    "finite_loss": true,
+    "finite_inputs": true,
+    "f1_at_0.5": 0.0,
+    "backward": true,
+    "grad_norm_l2_sum": 4.854713679771521,
+    "mask_channels_zero_ok": true,
+    "elapsed_sec": 1.7071526050567627,
+    "optimizer_step_executed": false
+  },
+  "threshold_grid": {
+    "min": 0.01,
+    "max": 0.99,
+    "step": 0.01,
+    "n_thresholds": 99,
+    "tune_on_test": false
+  },
+  "train_locks_ok": true,
+  "optimizer_updates_executed": false,
+  "gpu_used": false,
+  "cuda_visible_devices": "",
+  "started_utc": "2026-11-03T16:24:10.118814+00:00",
+  "git": {
+    "git_head": "e1ded1c8fa2fe2b47b93ed3b789820822fd8bd67",
+    "git_status_short": "M src/wtp/eval/ba_eval.py\n?? configs/experiments/v2/\n?? configs/protocol/\n?? docs/V1_VS_V2_PROTOCOL.md\n?? scripts/env_ablation_channel_audit.py\n?? scripts/env_ablation_smoke.py\n?? scripts/env_ablation_train_eval.py\n?? scripts/prepare_v2_protocol.py\n?? scripts/v2_extended_threshold_sweep.py\n?? scripts/v2_integrity_gate.py\n?? scripts/v2_train_eval.py\n?? src/wtp/data/channel_map.py\n?? src/wtp/data/channel_mask.py\n?? src/wtp/data/protocol_loader.py\n?? src/wtp/data/v2/\n?? src/wtp/protocol/\n?? tests/v2/\n?? tests/v2_integration/",
+    "git_diff_stat": "src/wtp/eval/ba_eval.py | 68 +++++++++++++++++++++++++++++++++++++++++++++++++\n 1 file changed, 68 insertions(+)"
+  }
+}

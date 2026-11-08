@@ -1,0 +1,881 @@
+{
+  "essential_ok": true,
+  "all_checks_ran_ok": true,
+  "forecast_availability_established": false,
+  "checks": {
+    "population_label_parity": {
+      "id": "population_label_parity",
+      "ok": true,
+      "counts": {
+        "train": 983,
+        "val": 135,
+        "test24": 561,
+        "test18": 553,
+        "test16": 531
+      },
+      "expected": {
+        "train": 983,
+        "val": 135,
+        "test24": 561,
+        "test18": 553,
+        "test16": 531
+      },
+      "key_report_ok": true,
+      "label_samples": [
+        {
+          "target_key": "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+          "y_sum": 0.0,
+          "n_burn_px": 0.0,
+          "match": true
+        },
+        {
+          "target_key": "train|20778186|L8|2017-07-25_VIIRS_Day.tif",
+          "y_sum": 0.0,
+          "n_burn_px": 0.0,
+          "match": true
+        },
+        {
+          "target_key": "train|20778186|L9|2017-07-26_VIIRS_Day.tif",
+          "y_sum": 0.0,
+          "n_burn_px": 0.0,
+          "match": true
+        },
+        {
+          "target_key": "train|20778186|L13|2017-07-30_VIIRS_Day.tif",
+          "y_sum": 0.0,
+          "n_burn_px": 0.0,
+          "match": true
+        },
+        {
+          "target_key": "train|20778186|L15|2017-08-01_VIIRS_Day.tif",
+          "y_sum": 0.0,
+          "n_burn_px": 0.0,
+          "match": true
+        },
+        {
+          "target_key": "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+          "y_sum": 21.0,
+          "n_burn_px": 21.0,
+          "match": true
+        },
+        {
+          "target_key": "val|21751303|L7|2018-06-06_VIIRS_Day.tif",
+          "y_sum": 46.0,
+          "n_burn_px": 46.0,
+          "match": true
+        },
+        {
+          "target_key": "val|21751303|L8|2018-06-07_VIIRS_Day.tif",
+          "y_sum": 53.0,
+          "n_burn_px": 53.0,
+          "match": true
+        },
+        {
+          "target_key": "test|US_2021_AZ3345510938920210616|L6|2021-06-22_VIIRS_Day.tif",
+          "y_sum": 1.0,
+          "n_burn_px": 1.0,
+          "match": true
+        },
+        {
+          "target_key": "test|US_2021_AZ3345510938920210616|L7|2021-06-23_VIIRS_Day.tif",
+          "y_sum": 1.0,
+          "n_burn_px": 1.0,
+          "match": true
+        },
+        {
+          "target_key": "test|US_2021_AZ3345510938920210616|L8|2021-06-24_VIIRS_Day.tif",
+          "y_sum": 1.0,
+          "n_burn_px": 1.0,
+          "match": true
+        }
+      ]
+    },
+    "ts6_construction": {
+      "id": "ts6_construction",
+      "ok": true,
+      "n": 6,
+      "contracts": [
+        {
+          "target_key": "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": true,
+          "input_dates": [
+            "2017-07-18",
+            "2017-07-19",
+            "2017-07-20",
+            "2017-07-21",
+            "2017-07-22",
+            "2017-07-23"
+          ],
+          "label_date": "2017-07-24"
+        },
+        {
+          "target_key": "train|20778186|L8|2017-07-25_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": true,
+          "input_dates": [
+            "2017-07-19",
+            "2017-07-20",
+            "2017-07-21",
+            "2017-07-22",
+            "2017-07-23",
+            "2017-07-24"
+          ],
+          "label_date": "2017-07-25"
+        },
+        {
+          "target_key": "train|20778186|L9|2017-07-26_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": true,
+          "input_dates": [
+            "2017-07-20",
+            "2017-07-21",
+            "2017-07-22",
+            "2017-07-23",
+            "2017-07-24",
+            "2017-07-25"
+          ],
+          "label_date": "2017-07-26"
+        },
+        {
+          "target_key": "train|20778186|L13|2017-07-30_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": true,
+          "input_dates": [
+            "2017-07-24",
+            "2017-07-25",
+            "2017-07-26",
+            "2017-07-27",
+            "2017-07-28",
+            "2017-07-29"
+          ],
+          "label_date": "2017-07-30"
+        },
+        {
+          "target_key": "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": false,
+          "input_dates": [
+            "2018-05-30",
+            "2018-05-31",
+            "2018-06-01",
+            "2018-06-02",
+            "2018-06-03",
+            "2018-06-04"
+          ],
+          "label_date": "2018-06-05"
+        },
+        {
+          "target_key": "val|21751303|L7|2018-06-06_VIIRS_Day.tif",
+          "contract_ok": true,
+          "label_excluded": true,
+          "newest_to_label_horizon_days": 1,
+          "x_shape": [
+            27,
+            6,
+            256,
+            256
+          ],
+          "shape_ok": true,
+          "y_identical_to_newest_ba": false,
+          "input_dates": [
+            "2018-05-31",
+            "2018-06-01",
+            "2018-06-02",
+            "2018-06-03",
+            "2018-06-04",
+            "2018-06-05"
+          ],
+          "label_date": "2018-06-06"
+        }
+      ],
+      "note": "Day L excluded; X shape (27,6,256,256); newest BA uses L-1"
+    },
+    "channel_mapping": {
+      "id": "channel_mapping",
+      "ok": true,
+      "n_channels": 27,
+      "directional_channels": [
+        11,
+        17,
+        23
+      ],
+      "directional_meta": {
+        "11": {
+          "name": "wind_direction_gridmet",
+          "fp_slot": 3,
+          "convention": "meteorological_from_deg",
+          "observed_range": [
+            0.0,
+            360.0
+          ],
+          "wrap": 360.0
+        },
+        "17": {
+          "name": "aspect",
+          "fp_slot": 9,
+          "convention": "aspect_facing_deg",
+          "observed_range": [
+            0.0,
+            360.0
+          ],
+          "wrap": 360.0
+        },
+        "23": {
+          "name": "forecast_wind_direction_gfs",
+          "fp_slot": 15,
+          "convention": "meteorological_from_deg_gfs_signed",
+          "observed_range": [
+            -90.0,
+            90.0
+          ],
+          "wrap": 360.0,
+          "notes": "GFS forecast dir rasters observed \u2248[-90, 90], not GRIDMET [0,360]. Geometric remapping still applied via unit-vector transform then atan2."
+        }
+      },
+      "gfs_forecast_channels": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "fp_band_idx": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "details": [
+        {
+          "channel": 11,
+          "name": "Wind direction",
+          "expected_substr": "Wind direction",
+          "ok": true
+        },
+        {
+          "channel": 17,
+          "name": "Aspect",
+          "expected_substr": "Aspect",
+          "ok": true
+        },
+        {
+          "channel": 23,
+          "name": "Forecast wind direction",
+          "expected_substr": "Forecast wind direction",
+          "ok": true
+        }
+      ]
+    },
+    "geo_reprojection": {
+      "id": "geo_reprojection",
+      "ok": true,
+      "categorical_nearest_slots": [
+        12
+      ],
+      "categorical_policy_ok": true,
+      "n_mismatch_probes": 4,
+      "n_aligned_probes": 2,
+      "probes": [
+        {
+          "same_grid": false,
+          "viirs": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 447,
+            "height": 447,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": -85.73118379174129,
+            "dy_m": 248.24942876606784,
+            "hypot_m": 262.6358976930083
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "20778186",
+          "split": "train"
+        },
+        {
+          "same_grid": false,
+          "viirs": {
+            "width": 594,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 446,
+            "height": 447,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": -93.26772782535514,
+            "dy_m": 372.37414314949444,
+            "hypot_m": 383.8767660851913
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "20899673",
+          "split": "train"
+        },
+        {
+          "same_grid": false,
+          "viirs": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 446,
+            "height": 447,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": 302.8679324034497,
+            "dy_m": 248.24942876606784,
+            "hypot_m": 391.60792045235695
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "20899813",
+          "split": "train"
+        },
+        {
+          "same_grid": false,
+          "viirs": {
+            "width": 594,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 446,
+            "height": 447,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": 0.0,
+            "dy_m": 124.1247143826412,
+            "hypot_m": 124.1247143826412
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "21038333",
+          "split": "train"
+        },
+        {
+          "same_grid": true,
+          "viirs": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": 0.0,
+            "dy_m": 0.0,
+            "hypot_m": 0.0
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "21751303",
+          "split": "val"
+        },
+        {
+          "same_grid": true,
+          "viirs": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "firepred": {
+            "width": 595,
+            "height": 596,
+            "crs": "EPSG:4326"
+          },
+          "v1_independent_crop_center_offset_m": {
+            "dx_m": 0.0,
+            "dy_m": 0.0,
+            "hypot_m": 0.0
+          },
+          "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+          "resampling": {
+            "continuous": "bilinear",
+            "categorical_slots": [
+              12
+            ],
+            "categorical": "nearest"
+          },
+          "fire_id": "US_2021_AZ3345510938920210616",
+          "split": "test24"
+        }
+      ]
+    },
+    "augmentation_numeric": {
+      "id": "augmentation_numeric",
+      "ok": true,
+      "cases": [
+        {
+          "name": "hflip_east_to_west",
+          "ok": true
+        },
+        {
+          "name": "vflip_north_to_south",
+          "ok": true
+        },
+        {
+          "name": "rot90_east_to_north",
+          "ok": true
+        },
+        {
+          "name": "hflip_aspect_west_to_east",
+          "ok": true
+        },
+        {
+          "name": "tensor_hflip_ch11_with_norm",
+          "ok": true,
+          "ops": {
+            "hflip": true,
+            "vflip": false,
+            "rot90_k": 0,
+            "correct_directional": true
+          },
+          "expected_z": 1.0,
+          "got_mean": 1.0
+        }
+      ]
+    },
+    "normalization_stats": {
+      "id": "normalization_stats",
+      "ok": true,
+      "path": "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/outputs/v2_protocol/fp_stats_matched_v2.npz",
+      "finite": true,
+      "near_zero_variance_slots": [],
+      "extreme_mean_slots": [],
+      "extreme_std_slots": [],
+      "train_only": true,
+      "geo_aligned": true,
+      "mean_min_max": [
+        -1.045060634613037,
+        4767.97900390625
+      ],
+      "std_min_max": [
+        0.0017423132667317986,
+        2345.5048828125
+      ],
+      "provenance_keys": [
+        "counts_per_channel",
+        "geo_aligned",
+        "n_day_crops",
+        "n_missing_fp_days",
+        "n_train_fires",
+        "n_train_rows_total",
+        "n_train_rows_used",
+        "n_windows_ref",
+        "protocol",
+        "train_fire_ids",
+        "ts_for_day_union",
+        "unique_days",
+        "val_test_excluded"
+      ]
+    },
+    "forecast_time_availability": {
+      "id": "forecast_time_availability",
+      "ok": true,
+      "forecast_availability_established": false,
+      "affected_channels": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "channel_details": [
+        {
+          "model_channel": 22,
+          "name": "Forecast wind speed",
+          "kind": "forecast",
+          "availability": "declared_forecast_lookahead",
+          "demonstrably_available_at_cutoff": false,
+          "forecast_cutoff": "end_of_day_L-1",
+          "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+          "stream": "FirePred"
+        },
+        {
+          "model_channel": 23,
+          "name": "Forecast wind direction",
+          "kind": "forecast",
+          "availability": "declared_forecast_lookahead",
+          "demonstrably_available_at_cutoff": false,
+          "forecast_cutoff": "end_of_day_L-1",
+          "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+          "stream": "FirePred"
+        },
+        {
+          "model_channel": 24,
+          "name": "Forecast temperature",
+          "kind": "forecast",
+          "availability": "declared_forecast_lookahead",
+          "demonstrably_available_at_cutoff": false,
+          "forecast_cutoff": "end_of_day_L-1",
+          "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+          "stream": "FirePred"
+        },
+        {
+          "model_channel": 25,
+          "name": "Forecast specific humidity",
+          "kind": "forecast",
+          "availability": "declared_forecast_lookahead",
+          "demonstrably_available_at_cutoff": false,
+          "forecast_cutoff": "end_of_day_L-1",
+          "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+          "stream": "FirePred"
+        }
+      ],
+      "conservative_alternative": {
+        "protocol": "v2_mask_gfs",
+        "forecast_policy": "mask_zero",
+        "config": "configs/protocol/v2_corrected_mask_gfs_forecast.yaml",
+        "effect": "Zero model channels 22\u201325 after norm; keep 27-ch architecture"
+      },
+      "policy": "Keep GFS bands as declared forecast features for V2 training; do not describe them as past observations. Omitted precip remains out of model.",
+      "blocker": "GFS forecast channels 22\u201325 cannot be demonstrated available as past observations at end-of-day L-1 cutoff. Choose include_as_forecast (declared forecast) or mask_zero before launch."
+    },
+    "shared_train_locks": {
+      "ok": true,
+      "shared_train_lock_id": "v2_p0_shared_20261103",
+      "n_arms": 6,
+      "mismatches": [],
+      "snapshots": {
+        "V2-P4B-TS2": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        },
+        "V2-P4B-TS6": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        },
+        "V2-E1": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        },
+        "V2-E1-TS6": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        },
+        "V2-ENV0-TS6": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        },
+        "V2-MEANPOOL-TS6-CTRL": {
+          "seed": 42,
+          "epochs": 60,
+          "batch_size": 8,
+          "lr": 0.0005,
+          "weight_decay": 0.0001,
+          "amp": true,
+          "drop_last": true,
+          "grad_clip": 1.0,
+          "pos_weight": 112.87821151853076,
+          "optimizer": "adamw",
+          "scheduler": "onecycle",
+          "loss": {
+            "dice_weight": 0.5,
+            "focal_weight": 0.3,
+            "bce_weight": 0.2,
+            "focal_gamma": 3.0,
+            "focal_alpha": 0.85
+          },
+          "checkpoint": {
+            "metric": "val_f1_at_0.5",
+            "split": "validation_only"
+          },
+          "threshold": {
+            "source": "validation_only",
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01,
+            "tune_on_test": false
+          },
+          "population": "matched",
+          "expected_counts": {
+            "train": 983,
+            "val": 135,
+            "test24": 561,
+            "test18": 553,
+            "test16": 531
+          }
+        }
+      },
+      "id": "shared_train_locks"
+    }
+  }
+}

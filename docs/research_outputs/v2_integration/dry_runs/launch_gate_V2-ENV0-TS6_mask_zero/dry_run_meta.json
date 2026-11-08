@@ -1,0 +1,98 @@
+{
+  "mode": "dry_run",
+  "arm_id": "V2-ENV0-TS6",
+  "protocol_key": "v2",
+  "protocol_id": "V2.0-corrected-protocol",
+  "preprocessing_version": "2.0",
+  "config_sha256": "fb6fb416a1afc93d83c21ee19125ff275cf0772d8d8af1df8362b7064704b00f",
+  "shared_train_lock_id": "v2_p0_shared_20261103",
+  "forecast_policy": "mask_zero",
+  "mask_channels": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "applied_masks": [
+    "channels:[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]",
+    "gfs:covered_by_channel_mask"
+  ],
+  "ts_length": 6,
+  "model": {
+    "name": "recency_fusion",
+    "in_channels": 27,
+    "enc": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "bneck": 1024,
+    "max_t": 6,
+    "init_recency_scale": 0.0
+  },
+  "n_params": 24279568,
+  "population_counts": {
+    "train": 983,
+    "val": 135,
+    "test24": 561,
+    "test18": 553,
+    "test16": 531
+  },
+  "smoke": {
+    "device": "cpu",
+    "batch_x_shape": [
+      2,
+      27,
+      6,
+      256,
+      256
+    ],
+    "logits_shape": [
+      2,
+      1,
+      256,
+      256
+    ],
+    "loss": 0.7968106269836426,
+    "finite_loss": true,
+    "finite_inputs": true,
+    "f1_at_0.5": 0.0,
+    "backward": true,
+    "grad_norm_l2_sum": 7.024498077693352,
+    "mask_channels_zero_ok": true,
+    "elapsed_sec": 4.327657461166382,
+    "optimizer_step_executed": false
+  },
+  "threshold_grid": {
+    "min": 0.01,
+    "max": 0.99,
+    "step": 0.01,
+    "n_thresholds": 99,
+    "tune_on_test": false
+  },
+  "train_locks_ok": true,
+  "optimizer_updates_executed": false,
+  "gpu_used": false,
+  "cuda_visible_devices": "",
+  "started_utc": "2026-11-03T16:25:31.168492+00:00",
+  "git": {
+    "git_head": "e1ded1c8fa2fe2b47b93ed3b789820822fd8bd67",
+    "git_status_short": "M src/wtp/eval/ba_eval.py\n?? configs/experiments/v2/\n?? configs/protocol/\n?? docs/V1_VS_V2_PROTOCOL.md\n?? scripts/env_ablation_channel_audit.py\n?? scripts/env_ablation_smoke.py\n?? scripts/env_ablation_train_eval.py\n?? scripts/prepare_v2_protocol.py\n?? scripts/v2_extended_threshold_sweep.py\n?? scripts/v2_integrity_gate.py\n?? scripts/v2_train_eval.py\n?? src/wtp/data/channel_map.py\n?? src/wtp/data/channel_mask.py\n?? src/wtp/data/protocol_loader.py\n?? src/wtp/data/v2/\n?? src/wtp/protocol/\n?? tests/v2/\n?? tests/v2_integration/",
+    "git_diff_stat": "src/wtp/eval/ba_eval.py | 68 +++++++++++++++++++++++++++++++++++++++++++++++++\n 1 file changed, 68 insertions(+)"
+  }
+}

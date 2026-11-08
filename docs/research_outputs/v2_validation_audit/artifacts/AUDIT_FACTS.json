@@ -1,0 +1,70 @@
+{
+  "n_cells": 20,
+  "seed42_ckpt_match": true,
+  "noncontributing_3": [
+    "US_2021_FL2521008104520210308",
+    "US_2021_NM3340210587120210426",
+    "US_2021_NM3676810505920211120"
+  ],
+  "extra5": [
+    "US_2021_AZ3345510938920210616",
+    "US_2021_AZ3368910927620210616",
+    "US_2021_MT4714310953420211004",
+    "US_2021_NM3323810847220210520",
+    "US_2021_NM3344410803520210514"
+  ],
+  "seed42_e1_m16": 0.5392904205149263,
+  "seed42_e1_m21": 0.4166289613780046,
+  "seed42_e1_m5": 0.02411229213985566,
+  "correlations": {
+    "f1_vs_hist_ba_px_mean": 0.6654407904939655,
+    "f1_vs_new_ba_px_sum": 0.7270660525939261,
+    "recall_vs_progression_rate_mean": 0.3382389957781526,
+    "fp_mean_vs_prevalence": 0.42102675008058504,
+    "e1_minus_env0_vs_progression": 0.156660383072029,
+    "e1_minus_uniform_vs_hist_size": 0.5849787292637053
+  },
+  "n_fires_with_any_gap": 7,
+  "n_fires_no_gap": 14,
+  "gap_fires_mean_f1": 0.5690633060551488,
+  "nogap_fires_mean_f1": 0.32259893549076607,
+  "pixel_resolution_unique": [
+    {
+      "pixel_size_x": 0.0033686823154482,
+      "pixel_size_y": 0.0033686823154482,
+      "crs": "EPSG:4326",
+      "crop_size": 256
+    }
+  ],
+  "paired_delta_excl42": 0.3857110062678972,
+  "all5_delta_uniform": 0.3763318742950587,
+  "n_qualitative_windows": 16,
+  "e1_micro_mean": 0.6117657955724802,
+  "e1_macro_mean": 0.4047537256788935,
+  "size_bin_summary": [
+    {
+      "size_bin": "large",
+      "n": 7,
+      "f1_mean": 0.6265061994896582,
+      "f1_std": 0.1117308881359273,
+      "hist_mean": 1737.2051696293163,
+      "new_sum": 18320.42857142857
+    },
+    {
+      "size_bin": "medium",
+      "n": 7,
+      "f1_mean": 0.4286624022019679,
+      "f1_std": 0.2315905085911671,
+      "hist_mean": 554.7092397893105,
+      "new_sum": 6534.428571428572
+    },
+    {
+      "size_bin": "small",
+      "n": 7,
+      "f1_mean": 0.1590925753450545,
+      "f1_std": 0.209856483645661,
+      "hist_mean": 75.10647840531563,
+      "new_sum": 965.7142857142856
+    }
+  ]
+}

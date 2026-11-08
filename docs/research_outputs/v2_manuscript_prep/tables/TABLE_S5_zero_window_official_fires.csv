@@ -1,0 +1,4 @@
+fire_id,state,in_official_24,in_full21_ba_valid,in_rule_a_18,in_manuscript_16,is_extra5_vs_manuscript,is_noncontributing_official,n_windows_test24,n_positive_windows,sum_n_burn_px_manifest,mean_ts6_n_calendar_gaps_gt1,max_ts6_max_calendar_gap_days,n_day_files
+US_2021_FL2521008104520210308,FL,True,False,False,False,False,True,0,0,0.0,,,
+US_2021_NM3340210587120210426,NM,True,False,False,False,False,True,0,0,0.0,,,
+US_2021_NM3676810505920211120,NM,True,False,False,False,False,True,0,0,0.0,,,

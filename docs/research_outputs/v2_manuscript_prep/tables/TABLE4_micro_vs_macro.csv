@@ -1,0 +1,5 @@
+arm,micro_f1_mean_sd,macro_f1_mean_sd,micro_minus_macro,weighting_note
+E1,0.6118 ± 0.0234,0.4048 ± 0.0069,0.2070,micro=pixel-pooled; macro=unweighted mean of 21 per-fire F1
+ENV0,0.5405 ± 0.0189,0.3535 ± 0.0173,0.1871,micro=pixel-pooled; macro=unweighted mean of 21 per-fire F1
+TS2,0.4041 ± 0.0251,0.2693 ± 0.0218,0.1348,micro=pixel-pooled; macro=unweighted mean of 21 per-fire F1
+UNIFORM,0.2354 ± 0.0501,0.2006 ± 0.0207,0.0348,micro=pixel-pooled; macro=unweighted mean of 21 per-fire F1

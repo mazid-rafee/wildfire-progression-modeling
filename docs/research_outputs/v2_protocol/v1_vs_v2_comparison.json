@@ -1,0 +1,170 @@
+{
+  "protocol_version_v2": "V2.0-corrected-protocol",
+  "immutable_v1_artifacts": [
+    "Phase 3A checkpoints/evals",
+    "Phase 4B TS2/TS6 checkpoints/evals/shared_populations",
+    "E1 run dir + headline metrics",
+    "ENV ablation artifacts; ENV-0 continues under V1 protocol",
+    "fp_stats_matched.npz (V1 subsample stats)",
+    "selected_threshold.json historical sweeps"
+  ],
+  "changes_affecting_model_training": [
+    {
+      "id": "GEO-MISREG",
+      "v1": "Independent center-crops on VIIRS vs FirePred when grids differ",
+      "v2": "Reproject FirePred onto VIIRS grid (bilinear/nearest) then shared crop",
+      "affects_training": true
+    },
+    {
+      "id": "AUG-DIRECTIONAL",
+      "v1": "Flip/rot90 pixels; wind dir + aspect angles unchanged",
+      "v2": "Unit-vector remap of channels 11/17/23 after geometric ops",
+      "affects_training": true
+    },
+    {
+      "id": "STATS-SUBSAMPLE",
+      "v1": "FP mean/std from \u226420-fire subsample helper",
+      "v2": "FP mean/std refit on matched train unique day-crops (geo-aligned)",
+      "affects_training": true,
+      "stats_delta_vs_v1": {
+        "l2_mean": 246.87749947468686,
+        "l2_std": 190.59818381640326,
+        "max_abs_mean": 172.45166015625,
+        "max_abs_std": 172.832275390625,
+        "per_slot_mean_delta": [
+          172.45166015625,
+          -102.46337890625,
+          -0.05245161056518555,
+          -5.9920806884765625,
+          -2.465972900390625,
+          -4.104705810546875,
+          0.7905807495117188,
+          -0.0005827285349369049,
+          1.8602333068847656,
+          6.8994598388671875,
+          142.7880859375,
+          0.3061954975128174,
+          -0.6915760040283203,
+          -9.756706237792969,
+          -0.501030683517456,
+          10.524560928344727,
+          -2.1059303283691406,
+          -0.0006206966936588287
+        ],
+        "per_slot_std_delta": [
+          -76.703857421875,
+          -172.832275390625,
+          0.06782150268554688,
+          7.942527770996094,
+          5.915290832519531,
+          6.046924591064453,
+          3.0787734985351562,
+          0.00023604813031852245,
+          0.30097103118896484,
+          -1.9011764526367188,
+          1.96136474609375,
+          -0.1857466697692871,
+          -0.012912750244140625,
+          -20.51039695739746,
+          -0.334861159324646,
+          0.14923858642578125,
+          0.8184709548950195,
+          9.285192936658859e-05
+        ],
+        "v1_stats_path": "/aul/homes/mmazi007/Desktop/Source Code (Research)/DeepFire-Forecaster/phase4b_matched_ts_experiment/runs/matched_seed42_parallel_preload_20261101_200211/shared_populations/fp_stats_matched.npz",
+        "v2_stats_path": "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/outputs/v2_protocol/fp_stats_matched_v2.npz"
+      }
+    },
+    {
+      "id": "TEMP-FORECAST",
+      "v1": "GFS bands present; sometimes described ambiguously",
+      "v2": "Explicit forecast availability flags; same channels retained as declared forecast",
+      "affects_training": false,
+      "affects_documentation": true
+    }
+  ],
+  "changes_affecting_evaluation_only": [
+    {
+      "id": "THR-CEILING / THR-EXT",
+      "v1": "Val sweep 0.05\u20130.75; selected 0.75 ceiling",
+      "v2": "Extended val-only 0.01\u20130.99 via re-inference; headline metrics frozen",
+      "affects_training": false,
+      "affects_evaluation_diagnostics": true
+    },
+    {
+      "id": "POPULATION",
+      "v1": "983/135/561 matched",
+      "v2": "Same keys preserved",
+      "population_verify_ok": true,
+      "affects_training": false
+    }
+  ],
+  "unchanged_by_design": [
+    "27-channel layout / FP_BAND_IDX (still skips source precip idx 2)",
+    "Label construction clip(BA_L - BA_{L-1})",
+    "Day-L exclusion from inputs",
+    "pos_weight formula (recomputed from train n_burn_px when retraining)",
+    "Model architectures (MeanPool / RecencyFusion)",
+    "No test-based threshold tuning"
+  ],
+  "feature_availability_summary": {
+    "forecast_channels": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "n_flagged": 5,
+    "policy": "Keep GFS bands as declared forecast features for V2 training; do not describe them as past observations. Omitted precip remains out of model."
+  },
+  "directional_channels": {
+    "11": {
+      "name": "wind_direction_gridmet",
+      "fp_slot": 3,
+      "convention": "meteorological_from_deg",
+      "observed_range": [
+        0.0,
+        360.0
+      ],
+      "wrap": 360.0
+    },
+    "17": {
+      "name": "aspect",
+      "fp_slot": 9,
+      "convention": "aspect_facing_deg",
+      "observed_range": [
+        0.0,
+        360.0
+      ],
+      "wrap": 360.0
+    },
+    "23": {
+      "name": "forecast_wind_direction_gfs",
+      "fp_slot": 15,
+      "convention": "meteorological_from_deg_gfs_signed",
+      "observed_range": [
+        -90.0,
+        90.0
+      ],
+      "wrap": 360.0,
+      "notes": "GFS forecast dir rasters observed \u2248[-90, 90], not GRIDMET [0,360]. Geometric remapping still applied via unit-vector transform then atan2."
+    }
+  },
+  "env0_safety": {
+    "env0_left_running": true,
+    "queued_ablations_cancelled": false,
+    "queued_ablations_found": false,
+    "limitation": "No additional environmental ablations are queued. Only ENV-0 is active. Nothing to prevent from starting without affecting ENV-0.",
+    "env0_meta": {
+      "pid": 2762429,
+      "ablation": "ENV-0",
+      "gpu": 1,
+      "run_dir": "runs/env_ablation_ENV-0_recency_matched_ts6_seed42_20261103_054410",
+      "log": "/aul/homes/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/logs/env_ablation_ENV-0_gpu1_20261103_054410.log",
+      "note": "relaunched after killing gpu6 job"
+    },
+    "env0_pid": 2762429,
+    "env0_alive": true,
+    "queue_files": []
+  }
+}

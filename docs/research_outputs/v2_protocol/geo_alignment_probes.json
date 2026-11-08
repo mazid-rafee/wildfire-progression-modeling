@@ -1,0 +1,152 @@
+{
+  "n_probes": 5,
+  "n_confirmed_mismatches": 4,
+  "v2_fix": "reproject FirePred\u2192VIIRS (bilinear continuous / nearest landcover) then shared crop",
+  "probes": [
+    {
+      "same_grid": false,
+      "viirs": {
+        "width": 595,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "firepred": {
+        "width": 447,
+        "height": 447,
+        "crs": "EPSG:4326"
+      },
+      "v1_independent_crop_center_offset_m": {
+        "dx_m": -85.73118379174129,
+        "dy_m": 248.24942876606784,
+        "hypot_m": 262.6358976930083
+      },
+      "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+      "resampling": {
+        "continuous": "bilinear",
+        "categorical_slots": [
+          12
+        ],
+        "categorical": "nearest"
+      },
+      "fire_id": "20778186",
+      "split": "train",
+      "expected_mismatch": true
+    },
+    {
+      "same_grid": false,
+      "viirs": {
+        "width": 594,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "firepred": {
+        "width": 446,
+        "height": 447,
+        "crs": "EPSG:4326"
+      },
+      "v1_independent_crop_center_offset_m": {
+        "dx_m": -93.26772782535514,
+        "dy_m": 372.37414314949444,
+        "hypot_m": 383.8767660851913
+      },
+      "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+      "resampling": {
+        "continuous": "bilinear",
+        "categorical_slots": [
+          12
+        ],
+        "categorical": "nearest"
+      },
+      "fire_id": "20899673",
+      "split": "train",
+      "expected_mismatch": true
+    },
+    {
+      "same_grid": false,
+      "viirs": {
+        "width": 595,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "firepred": {
+        "width": 446,
+        "height": 447,
+        "crs": "EPSG:4326"
+      },
+      "v1_independent_crop_center_offset_m": {
+        "dx_m": 302.8679324034497,
+        "dy_m": 248.24942876606784,
+        "hypot_m": 391.60792045235695
+      },
+      "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+      "resampling": {
+        "continuous": "bilinear",
+        "categorical_slots": [
+          12
+        ],
+        "categorical": "nearest"
+      },
+      "fire_id": "20899813",
+      "split": "train",
+      "expected_mismatch": true
+    },
+    {
+      "same_grid": false,
+      "viirs": {
+        "width": 594,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "firepred": {
+        "width": 446,
+        "height": 447,
+        "crs": "EPSG:4326"
+      },
+      "v1_independent_crop_center_offset_m": {
+        "dx_m": 0.0,
+        "dy_m": 124.1247143826412,
+        "hypot_m": 124.1247143826412
+      },
+      "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+      "resampling": {
+        "continuous": "bilinear",
+        "categorical_slots": [
+          12
+        ],
+        "categorical": "nearest"
+      },
+      "fire_id": "21038333",
+      "split": "train",
+      "expected_mismatch": true
+    },
+    {
+      "same_grid": true,
+      "viirs": {
+        "width": 595,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "firepred": {
+        "width": 595,
+        "height": 596,
+        "crs": "EPSG:4326"
+      },
+      "v1_independent_crop_center_offset_m": {
+        "dx_m": 0.0,
+        "dy_m": 0.0,
+        "hypot_m": 0.0
+      },
+      "v2_strategy": "reproject_FP_to_VIIRS_then_shared_center_crop",
+      "resampling": {
+        "continuous": "bilinear",
+        "categorical_slots": [
+          12
+        ],
+        "categorical": "nearest"
+      },
+      "fire_id": "21751303",
+      "split": "val",
+      "expected_mismatch": false
+    }
+  ]
+}

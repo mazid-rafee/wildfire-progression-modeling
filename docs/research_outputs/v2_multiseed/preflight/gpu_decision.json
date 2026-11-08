@@ -1,0 +1,95 @@
+{
+  "utc": "2026-11-04T04:52:53.662767+00:00",
+  "decisions": {
+    "0": {
+      "safe_to_launch_now": false,
+      "util_samples": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "util_avg": 0.0,
+      "free_mib": 75794.0,
+      "foreign_mem_mib": 5318.0,
+      "foreign_users": [
+        "ashir018",
+        "tvo013"
+      ],
+      "reasons": [
+        "foreign_mem=5318"
+      ]
+    },
+    "1": {
+      "safe_to_launch_now": false,
+      "util_samples": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "util_avg": 0.0,
+      "free_mib": 53343.0,
+      "foreign_mem_mib": 27818.0,
+      "foreign_users": [
+        "ashir018",
+        "bdas004"
+      ],
+      "reasons": [
+        "foreign_mem=27818",
+        "qwen_or_bdas004"
+      ]
+    },
+    "4": {
+      "safe_to_launch_now": false,
+      "util_samples": [
+        99.0,
+        100.0,
+        71.0
+      ],
+      "util_avg": 90.0,
+      "free_mib": 15877.0,
+      "foreign_mem_mib": 65268.0,
+      "foreign_users": [
+        "ashir018",
+        "hjin008"
+      ],
+      "reasons": [
+        "busy_sustained_util=90",
+        "free<22000",
+        "foreign_mem=65268"
+      ]
+    },
+    "7": {
+      "safe_to_launch_now": false,
+      "util_samples": [
+        100.0,
+        98.0,
+        100.0
+      ],
+      "util_avg": 99.33333333333333,
+      "free_mib": 9825.0,
+      "foreign_mem_mib": 71320.0,
+      "foreign_users": [
+        "ashir018",
+        "hjin008"
+      ],
+      "reasons": [
+        "busy_sustained_util=99",
+        "free<22000",
+        "foreign_mem=71320"
+      ]
+    }
+  },
+  "any_safe_now": false,
+  "policy": {
+    "allowed": [
+      0,
+      1,
+      4,
+      7
+    ],
+    "min_free_mib": 22000,
+    "max_sustained_util": 10,
+    "max_foreign_mem_mib_for_share": 2000,
+    "block_qwen_on_gpu1": true
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "preferred_gpus": [
+    0,
+    1,
+    4,
+    7
+  ],
+  "min_free_vram_gib": 14.0,
+  "stagger_preload_sec": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "waves": [
+    {
+      "wave": 1,
+      "name": "seed42_uniform_only",
+      "parallel": [
+        {
+          "gpu": 0,
+          "cell": "UNIFORM_seed42",
+          "est_min": 250
+        }
+      ],
+      "note": "Only missing seed-42 cell; E1/TS2/ENV0 reused."
+    },
+    {
+      "wave": 2,
+      "name": "seed7_pair_plus_baselines",
+      "parallel": [
+        {
+          "gpu": 0,
+          "cell": "E1_seed7",
+          "est_min": 257,
+          "export_init": true
+        },
+        {
+          "gpu": 1,
+          "cell": "TS2_seed7",
+          "est_min": 86.5
+        },
+        {
+          "gpu": 4,
+          "cell": "ENV0_seed7",
+          "est_min": 224.3
+        }
+      ],
+      "then_serial_on_gpu0_or_free": [
+        {
+          "cell": "UNIFORM_seed7",
+          "est_min": 250,
+          "requires_init_from": "E1_seed7"
+        }
+      ]
+    },
+    {
+      "wave": 3,
+      "name": "seed17_same_pattern",
+      "parallel": [
+        {
+          "gpu": 0,
+          "cell": "E1_seed17",
+          "export_init": true
+        },
+        {
+          "gpu": 1,
+          "cell": "TS2_seed17"
+        },
+        {
+          "gpu": 4,
+          "cell": "ENV0_seed17"
+        }
+      ],
+      "then": [
+        "UNIFORM_seed17"
+      ]
+    },
+    {
+      "wave": 4,
+      "name": "seed29_same_pattern",
+      "parallel": [
+        {
+          "gpu": 0,
+          "cell": "E1_seed29",
+          "export_init": true
+        },
+        {
+          "gpu": 1,
+          "cell": "TS2_seed29"
+        },
+        {
+          "gpu": 4,
+          "cell": "ENV0_seed29"
+        }
+      ],
+      "then": [
+        "UNIFORM_seed29"
+      ]
+    },
+    {
+      "wave": 5,
+      "name": "seed101_same_pattern",
+      "parallel": [
+        {
+          "gpu": 0,
+          "cell": "E1_seed101",
+          "export_init": true
+        },
+        {
+          "gpu": 1,
+          "cell": "TS2_seed101"
+        },
+        {
+          "gpu": 4,
+          "cell": "ENV0_seed101"
+        }
+      ],
+      "then": [
+        "UNIFORM_seed101"
+      ]
+    }
+  ],
+  "est_wall_hours_4gpu": {
+    "optimistic_packed": 14.7,
+    "with_pair_serial_and_preload": 18.3,
+    "conservative": 23.5
+  },
+  "peak_ram_note": "Each T=6 job preloads ~12\u201315 GiB float16 windows (train+val); avoid >2 heavy T=6 preloads on same node simultaneously if RAM constrained."
+}

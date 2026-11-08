@@ -1,0 +1,10 @@
+{
+  "freeze_uniform_stable_across_5_adam_steps": true,
+  "meanpool_equiv_max_abs_diff_after_train_steps": 2.6702880859375e-05,
+  "meanpool_equiv_ok_atol_1e4": true,
+  "unit_tests_passed": true,
+  "seed42_init_reconstruct_deterministic": true,
+  "seed42_reconstructed_init_sha256": "fe8a3281952e12e1599ce2c3853a3f499737e4c9e2139f826a1d1ce8db481d3b",
+  "seed42_e1_uniform_pairing": "UNPAIRED",
+  "note": "Historical E1 seed-42 init was never exported; UNIFORM_seed42 uses reconstructed init and must be labeled unpaired."
+}

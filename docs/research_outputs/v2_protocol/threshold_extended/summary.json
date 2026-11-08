@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-11-03T08:14:44.473863+00:00",
+  "headline_metrics_unchanged": true,
+  "arms": {
+    "E1": {
+      "historical_thr": 0.7500000000000001,
+      "historical_val_f1": 0.6461488163349745,
+      "extended_best_thr": 0.92,
+      "extended_best_f1": 0.6537490146871408,
+      "extended_f1_at_0.75": 0.6461511029220082,
+      "selected_is_grid_ceiling": false
+    },
+    "Phase4B_TS6": {
+      "historical_thr": 0.7500000000000001,
+      "historical_val_f1": 0.35139306710708273,
+      "extended_best_thr": 0.89,
+      "extended_best_f1": 0.36022307392190345,
+      "extended_f1_at_0.75": 0.3513374055854877,
+      "selected_is_grid_ceiling": false
+    },
+    "Phase4B_TS2": {
+      "historical_thr": 0.7500000000000001,
+      "historical_val_f1": 0.458201565589334,
+      "extended_best_thr": 0.78,
+      "extended_best_f1": 0.4588725042123906,
+      "extended_f1_at_0.75": 0.45820833625065527,
+      "selected_is_grid_ceiling": false
+    }
+  }
+}

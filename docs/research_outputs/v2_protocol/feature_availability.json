@@ -1,0 +1,350 @@
+{
+  "rows": [
+    {
+      "model_channel": 0,
+      "name": "I1",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 1,
+      "name": "I2",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 2,
+      "name": "I3",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 3,
+      "name": "I4",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 4,
+      "name": "I5",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 5,
+      "name": "M11",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day"
+    },
+    {
+      "model_channel": 6,
+      "name": "I4_Night",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Night"
+    },
+    {
+      "model_channel": 7,
+      "name": "I5_Night",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Night"
+    },
+    {
+      "model_channel": 8,
+      "name": "NDVI",
+      "kind": "observation_derived",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 9,
+      "name": "EVI",
+      "kind": "observation_derived",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 10,
+      "name": "Wind speed",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 11,
+      "name": "Wind direction",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 12,
+      "name": "Minimum temperature",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 13,
+      "name": "Maximum temperature",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 14,
+      "name": "Energy Release Component (ERC)",
+      "kind": "observation_derived",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 15,
+      "name": "Specific humidity",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 16,
+      "name": "Slope",
+      "kind": "static_or_slow",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Static/slow terrain or land-cover; treated as known at cutoff.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 17,
+      "name": "Aspect",
+      "kind": "static_or_slow",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Static/slow terrain or land-cover; treated as known at cutoff.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 18,
+      "name": "Elevation",
+      "kind": "static_or_slow",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Static/slow terrain or land-cover; treated as known at cutoff.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 19,
+      "name": "Palmer Drought Severity Index (PDSI)",
+      "kind": "observation_derived",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 20,
+      "name": "Land cover",
+      "kind": "categorical_as_float",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Land-cover class id; static map assumed known at cutoff.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 21,
+      "name": "Total precipitation, surface",
+      "kind": "observation",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 22,
+      "name": "Forecast wind speed",
+      "kind": "forecast",
+      "availability": "declared_forecast_lookahead",
+      "demonstrably_available_at_cutoff": false,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 23,
+      "name": "Forecast wind direction",
+      "kind": "forecast",
+      "availability": "declared_forecast_lookahead",
+      "demonstrably_available_at_cutoff": false,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 24,
+      "name": "Forecast temperature",
+      "kind": "forecast",
+      "availability": "declared_forecast_lookahead",
+      "demonstrably_available_at_cutoff": false,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 25,
+      "name": "Forecast specific humidity",
+      "kind": "forecast",
+      "availability": "declared_forecast_lookahead",
+      "demonstrably_available_at_cutoff": false,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+      "stream": "FirePred"
+    },
+    {
+      "model_channel": 26,
+      "name": "Burned area cumulative mask",
+      "kind": "observation_label_derived",
+      "availability": "available_at_or_before_cutoff",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Tied to VIIRS/GRIDMET observation day \u2264 L-1 for inputs.",
+      "stream": "VIIRS_Day_BA"
+    },
+    {
+      "model_channel": null,
+      "source_band_index_0based": 2,
+      "name": "Total precipitation (GRIDMET)",
+      "kind": "observation",
+      "availability": "available_in_source_but_omitted_from_model",
+      "demonstrably_available_at_cutoff": true,
+      "forecast_cutoff": "end_of_day_L-1",
+      "note": "Excluded by CFG.FP_BAND_IDX. Code comment says 'all-zeros probe band'; publication names it Total Precipitation. Probe: often but not always zero across fires \u2014 treated as skipped precip observation, not a true probe.",
+      "in_model": false
+    }
+  ],
+  "summary": {
+    "forecast_cutoff": "end_of_day_L-1",
+    "n_model_channels": 27,
+    "n_flagged": 5,
+    "flagged": [
+      {
+        "model_channel": 22,
+        "name": "Forecast wind speed",
+        "kind": "forecast",
+        "availability": "declared_forecast_lookahead",
+        "demonstrably_available_at_cutoff": false,
+        "forecast_cutoff": "end_of_day_L-1",
+        "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+        "stream": "FirePred"
+      },
+      {
+        "model_channel": 23,
+        "name": "Forecast wind direction",
+        "kind": "forecast",
+        "availability": "declared_forecast_lookahead",
+        "demonstrably_available_at_cutoff": false,
+        "forecast_cutoff": "end_of_day_L-1",
+        "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+        "stream": "FirePred"
+      },
+      {
+        "model_channel": 24,
+        "name": "Forecast temperature",
+        "kind": "forecast",
+        "availability": "declared_forecast_lookahead",
+        "demonstrably_available_at_cutoff": false,
+        "forecast_cutoff": "end_of_day_L-1",
+        "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+        "stream": "FirePred"
+      },
+      {
+        "model_channel": 25,
+        "name": "Forecast specific humidity",
+        "kind": "forecast",
+        "availability": "declared_forecast_lookahead",
+        "demonstrably_available_at_cutoff": false,
+        "forecast_cutoff": "end_of_day_L-1",
+        "note": "GFS forecast feature: valid after issue at end_of_day_L-1; must be labelled as forecast, not past observation.",
+        "stream": "FirePred"
+      },
+      {
+        "model_channel": null,
+        "source_band_index_0based": 2,
+        "name": "Total precipitation (GRIDMET)",
+        "kind": "observation",
+        "availability": "available_in_source_but_omitted_from_model",
+        "demonstrably_available_at_cutoff": true,
+        "forecast_cutoff": "end_of_day_L-1",
+        "note": "Excluded by CFG.FP_BAND_IDX. Code comment says 'all-zeros probe band'; publication names it Total Precipitation. Probe: often but not always zero across fires \u2014 treated as skipped precip observation, not a true probe.",
+        "in_model": false
+      }
+    ],
+    "forecast_model_channels": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "policy": "Keep GFS bands as declared forecast features for V2 training; do not describe them as past observations. Omitted precip remains out of model."
+  }
+}

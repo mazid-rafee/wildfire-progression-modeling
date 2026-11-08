@@ -1,0 +1,630 @@
+{
+  "n": 24,
+  "all_ok": true,
+  "contracts": [
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-22",
+        "2017-07-23"
+      ],
+      "label_date": "2017-07-24",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-23",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-24"
+      },
+      "target_key": "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-18",
+        "2017-07-19",
+        "2017-07-20",
+        "2017-07-21",
+        "2017-07-22",
+        "2017-07-23"
+      ],
+      "label_date": "2017-07-24",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-23",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-24"
+      },
+      "target_key": "train|20778186|L7|2017-07-24_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-23",
+        "2017-07-24"
+      ],
+      "label_date": "2017-07-25",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-24",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-25"
+      },
+      "target_key": "train|20778186|L8|2017-07-25_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-19",
+        "2017-07-20",
+        "2017-07-21",
+        "2017-07-22",
+        "2017-07-23",
+        "2017-07-24"
+      ],
+      "label_date": "2017-07-25",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-24",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-25"
+      },
+      "target_key": "train|20778186|L8|2017-07-25_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-24",
+        "2017-07-25"
+      ],
+      "label_date": "2017-07-26",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-25",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-26"
+      },
+      "target_key": "train|20778186|L9|2017-07-26_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-20",
+        "2017-07-21",
+        "2017-07-22",
+        "2017-07-23",
+        "2017-07-24",
+        "2017-07-25"
+      ],
+      "label_date": "2017-07-26",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-25",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-26"
+      },
+      "target_key": "train|20778186|L9|2017-07-26_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-28",
+        "2017-07-29"
+      ],
+      "label_date": "2017-07-30",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-29",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-30"
+      },
+      "target_key": "train|20778186|L13|2017-07-30_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-24",
+        "2017-07-25",
+        "2017-07-26",
+        "2017-07-27",
+        "2017-07-28",
+        "2017-07-29"
+      ],
+      "label_date": "2017-07-30",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-29",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-07-30"
+      },
+      "target_key": "train|20778186|L13|2017-07-30_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-30",
+        "2017-07-31"
+      ],
+      "label_date": "2017-08-01",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-31",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-01"
+      },
+      "target_key": "train|20778186|L15|2017-08-01_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-26",
+        "2017-07-27",
+        "2017-07-28",
+        "2017-07-29",
+        "2017-07-30",
+        "2017-07-31"
+      ],
+      "label_date": "2017-08-01",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-07-31",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-01"
+      },
+      "target_key": "train|20778186|L15|2017-08-01_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-31",
+        "2017-08-01"
+      ],
+      "label_date": "2017-08-02",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-01",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-02"
+      },
+      "target_key": "train|20778186|L16|2017-08-02_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-27",
+        "2017-07-28",
+        "2017-07-29",
+        "2017-07-30",
+        "2017-07-31",
+        "2017-08-01"
+      ],
+      "label_date": "2017-08-02",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-01",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-02"
+      },
+      "target_key": "train|20778186|L16|2017-08-02_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-08-02",
+        "2017-08-03"
+      ],
+      "label_date": "2017-08-04",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-03",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-04"
+      },
+      "target_key": "train|20778186|L18|2017-08-04_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-29",
+        "2017-07-30",
+        "2017-07-31",
+        "2017-08-01",
+        "2017-08-02",
+        "2017-08-03"
+      ],
+      "label_date": "2017-08-04",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-03",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-04"
+      },
+      "target_key": "train|20778186|L18|2017-08-04_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-08-03",
+        "2017-08-04"
+      ],
+      "label_date": "2017-08-05",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-04",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-05"
+      },
+      "target_key": "train|20778186|L19|2017-08-05_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2017-07-30",
+        "2017-07-31",
+        "2017-08-01",
+        "2017-08-02",
+        "2017-08-03",
+        "2017-08-04"
+      ],
+      "label_date": "2017-08-05",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2017-08-04",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2017-08-05"
+      },
+      "target_key": "train|20778186|L19|2017-08-05_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2018-06-03",
+        "2018-06-04"
+      ],
+      "label_date": "2018-06-05",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2018-06-04",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2018-06-05"
+      },
+      "target_key": "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2018-05-30",
+        "2018-05-31",
+        "2018-06-01",
+        "2018-06-02",
+        "2018-06-03",
+        "2018-06-04"
+      ],
+      "label_date": "2018-06-05",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2018-06-04",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2018-06-05"
+      },
+      "target_key": "val|21751303|L6|2018-06-05_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2018-06-04",
+        "2018-06-05"
+      ],
+      "label_date": "2018-06-06",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2018-06-05",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2018-06-06"
+      },
+      "target_key": "val|21751303|L7|2018-06-06_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2018-05-31",
+        "2018-06-01",
+        "2018-06-02",
+        "2018-06-03",
+        "2018-06-04",
+        "2018-06-05"
+      ],
+      "label_date": "2018-06-06",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2018-06-05",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2018-06-06"
+      },
+      "target_key": "val|21751303|L7|2018-06-06_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2021-06-20",
+        "2021-06-21"
+      ],
+      "label_date": "2021-06-22",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2021-06-21",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2021-06-22"
+      },
+      "target_key": "test|US_2021_AZ3345510938920210616|L6|2021-06-22_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2021-06-16",
+        "2021-06-17",
+        "2021-06-18",
+        "2021-06-19",
+        "2021-06-20",
+        "2021-06-21"
+      ],
+      "label_date": "2021-06-22",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2021-06-21",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2021-06-22"
+      },
+      "target_key": "test|US_2021_AZ3345510938920210616|L6|2021-06-22_VIIRS_Day.tif",
+      "ts": 6
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2021-06-21",
+        "2021-06-22"
+      ],
+      "label_date": "2021-06-23",
+      "calendar_gaps_between_inputs": [
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2021-06-22",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2021-06-23"
+      },
+      "target_key": "test|US_2021_AZ3345510938920210616|L7|2021-06-23_VIIRS_Day.tif",
+      "ts": 2
+    },
+    {
+      "ok": true,
+      "label_excluded_from_inputs": true,
+      "input_dates": [
+        "2021-06-17",
+        "2021-06-18",
+        "2021-06-19",
+        "2021-06-20",
+        "2021-06-21",
+        "2021-06-22"
+      ],
+      "label_date": "2021-06-23",
+      "calendar_gaps_between_inputs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_input_gap_days": 1,
+      "newest_to_label_horizon_days": 1,
+      "ba_channel_newest_uses": "L-1 (newest input day)",
+      "forecast_issue_time_newest_frame": {
+        "issue_date": "2021-06-22",
+        "issue_note": "GFS bands on frame t are treated as forecast issued end of that calendar day (dataset contract / channel_map).",
+        "valid_date_approx": "2021-06-23"
+      },
+      "target_key": "test|US_2021_AZ3345510938920210616|L7|2021-06-23_VIIRS_Day.tif",
+      "ts": 6
+    }
+  ]
+}

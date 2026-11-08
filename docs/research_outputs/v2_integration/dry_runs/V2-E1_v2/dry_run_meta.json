@@ -1,0 +1,171 @@
+{
+  "mode": "dry_run",
+  "arm_id": "V2-E1",
+  "protocol_key": "v2",
+  "protocol_id": "V2.0-corrected-protocol-mask-gfs",
+  "preprocessing_version": "2.0-mask-gfs",
+  "config_sha256": "7a8d95b1851d2c6ae0782069b3d445b05db3353fe88bf361fd3688722409e72f",
+  "shared_train_lock_id": "v2_p0_shared_20261103",
+  "forecast_policy": "mask_zero",
+  "forecast_availability_established": false,
+  "forecast_model_channels": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "ts_length": 6,
+  "model": {
+    "name": "recency_fusion",
+    "in_channels": 27,
+    "enc": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "bneck": 1024,
+    "max_t": 6,
+    "init_recency_scale": 0.0
+  },
+  "n_params": 24279568,
+  "population_counts": {
+    "train": 983,
+    "val": 135,
+    "test24": 561,
+    "test18": 553,
+    "test16": 531
+  },
+  "smoke": {
+    "device": "cpu",
+    "batch_x_shape": [
+      2,
+      27,
+      6,
+      256,
+      256
+    ],
+    "logits_shape": [
+      2,
+      1,
+      256,
+      256
+    ],
+    "loss": 0.8091968297958374,
+    "finite_loss": true,
+    "f1_at_0.5": 0.0,
+    "backward": true,
+    "grad_norm_l2_sum": 5.472199520019785,
+    "elapsed_sec": 7.831409692764282,
+    "optimizer_step_executed": false
+  },
+  "threshold_grid": {
+    "min": 0.01,
+    "max": 0.99,
+    "step": 0.01,
+    "n_thresholds": 99,
+    "tune_on_test": false,
+    "checkpoint_split": "validation_only"
+  },
+  "train_locks_ok": true,
+  "optimizer_updates_executed": false,
+  "gpu_used": false,
+  "cuda_visible_devices": "",
+  "started_utc": "2026-11-03T09:00:55.023235+00:00",
+  "resolved_config": {
+    "arm": {
+      "arm_id": "V2-E1",
+      "priority": "P0",
+      "protocol": "v2_corrected",
+      "model": {
+        "name": "recency_fusion",
+        "in_channels": 27,
+        "enc": [
+          64,
+          128,
+          256,
+          512
+        ],
+        "bneck": 1024,
+        "max_t": 6,
+        "init_recency_scale": 0.0
+      },
+      "ts_length": 6,
+      "description": "Corrected matched RecencyFusion TS=6 (E1)",
+      "_arm_yaml": "/a/bear.cs.fiu.edu./disk/bear-b/users/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/configs/experiments/v2/e1_recency_ts6.yaml"
+    },
+    "protocol_id": "V2.0-corrected-protocol-mask-gfs",
+    "train": {
+      "seed": 42,
+      "epochs": 60,
+      "batch_size": 8,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "amp": true,
+      "drop_last": true,
+      "grad_clip": 1.0,
+      "pos_weight": 112.87821151853076,
+      "optimizer": "adamw",
+      "scheduler": "onecycle",
+      "loss": {
+        "dice_weight": 0.5,
+        "focal_weight": 0.3,
+        "bce_weight": 0.2,
+        "focal_gamma": 3.0,
+        "focal_alpha": 0.85
+      },
+      "checkpoint": {
+        "metric": "val_f1_at_0.5",
+        "split": "validation_only"
+      },
+      "threshold": {
+        "source": "validation_only",
+        "min": 0.01,
+        "max": 0.99,
+        "step": 0.01,
+        "tune_on_test": false
+      },
+      "population": "matched",
+      "expected_counts": {
+        "train": 983,
+        "val": 135,
+        "test24": 561,
+        "test18": 553,
+        "test16": 531
+      },
+      "enabled": false
+    },
+    "data": {
+      "loader": "v2_corrected",
+      "population": "matched",
+      "expected_counts": {
+        "train": 983,
+        "val": 135,
+        "test24": 561,
+        "test18": 553,
+        "test16": 531
+      },
+      "fp_stats": "outputs/v2_protocol/fp_stats_matched_v2.npz",
+      "geo_align": "reproject_fp_to_viirs_shared_crop",
+      "directional_aug_correct": true,
+      "crop_size": 256,
+      "n_channels": 27,
+      "categorical_resampling": "nearest",
+      "continuous_resampling": "bilinear"
+    },
+    "eval": {
+      "threshold_source": "validation_only",
+      "threshold_grid": {
+        "min": 0.01,
+        "max": 0.99,
+        "step": 0.01
+      },
+      "tune_on_test": false,
+      "threshold_min": 0.01,
+      "threshold_max": 0.99,
+      "threshold_step": 0.01
+    },
+    "config_sha256": "7a8d95b1851d2c6ae0782069b3d445b05db3353fe88bf361fd3688722409e72f"
+  },
+  "env0_note": "Dry-run does not touch ENV-0 process or GPU 1"
+}

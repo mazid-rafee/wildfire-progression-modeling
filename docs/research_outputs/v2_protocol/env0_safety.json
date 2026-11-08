@@ -1,0 +1,17 @@
+{
+  "env0_left_running": true,
+  "queued_ablations_cancelled": false,
+  "queued_ablations_found": false,
+  "limitation": "No additional environmental ablations are queued. Only ENV-0 is active. Nothing to prevent from starting without affecting ENV-0.",
+  "env0_meta": {
+    "pid": 2762429,
+    "ablation": "ENV-0",
+    "gpu": 1,
+    "run_dir": "runs/env_ablation_ENV-0_recency_matched_ts6_seed42_20261103_054410",
+    "log": "/aul/homes/mmazi007/Desktop/Source Code (Research)/Wildfire-Temporal-Prediction/logs/env_ablation_ENV-0_gpu1_20261103_054410.log",
+    "note": "relaunched after killing gpu6 job"
+  },
+  "env0_pid": 2762429,
+  "env0_alive": true,
+  "queue_files": []
+}

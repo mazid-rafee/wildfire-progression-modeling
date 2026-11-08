@@ -1,0 +1,47 @@
+{
+  "McKinney": {
+    "irwin": "{4630026A-7802-477E-9133-E094C32E8D8C}",
+    "name": "MCKINNEY",
+    "ufid": "2022-CAKNF-006177",
+    "state": "US-CA",
+    "discovery": 1659129394000,
+    "out": 1688061900000,
+    "acres": 60108.84
+  },
+  "BoltCreek": {
+    "irwin": "{67F475B6-B2B7-460A-B4DF-601B8E614F3A}",
+    "name": "BOLT CREEK",
+    "ufid": "2022-WANWS-000150",
+    "state": "US-WA",
+    "discovery": 1662820500000,
+    "out": 1695250020000,
+    "acres": 14820.54
+  },
+  "CedarCreek": {
+    "irwin": "{21BB61C1-C479-4721-8295-9120974092D2}",
+    "name": "Cedar Creek",
+    "ufid": "2022-ORWIF-220180",
+    "state": "US-OR",
+    "discovery": 1659371940000,
+    "out": 1722409200000,
+    "acres": 127311
+  },
+  "Moose": {
+    "irwin": "{7420DAD6-11D5-42CD-9779-41489600A63D}",
+    "name": "Moose ",
+    "ufid": "2022-IDSCF-022105",
+    "state": "US-ID",
+    "discovery": 1658095440000,
+    "out": 1670438100000,
+    "acres": 130197.7
+  },
+  "Pipeline": {
+    "irwin": "{F93BE77A-5DA1-43D1-B39C-86D6DDCC0440}",
+    "name": "Pipeline",
+    "ufid": "2022-AZCOF-000529",
+    "state": "US-AZ",
+    "discovery": 1655050500000,
+    "out": 1664222400000,
+    "acres": 26532.47
+  }
+}

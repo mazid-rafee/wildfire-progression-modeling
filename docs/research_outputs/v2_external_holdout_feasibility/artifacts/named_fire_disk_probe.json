@@ -1,0 +1,1917 @@
+{
+  "protocol_exclusion_n": 111,
+  "protocol_train_n": 82,
+  "protocol_val_n": 8,
+  "protocol_test24_n": 21,
+  "missing13_train_roster": [
+    "20777452",
+    "20777459",
+    "20777482",
+    "20777508",
+    "20778225",
+    "20900040",
+    "21998287",
+    "23036806",
+    "24332700",
+    "24332783",
+    "24333277",
+    "24461421",
+    "24463187"
+  ],
+  "named_catalog": [
+    {
+      "fire_id": "blue_ridge_fire",
+      "n_day": 10,
+      "date_start": "2020-10-26",
+      "date_end": "2020-11-04",
+      "years": [
+        "2020"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -117.67986366670989,
+      "center_lat": 33.88220672877805,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2020-11-01",
+          "input_dates": [
+            "2020-10-26",
+            "2020-10-27",
+            "2020-10-28",
+            "2020-10-29",
+            "2020-10-30",
+            "2020-10-31"
+          ],
+          "hist_ba_px": 3080,
+          "label_ba_px": 1104,
+          "new_ba_px": 9,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2020-11-02",
+          "input_dates": [
+            "2020-10-27",
+            "2020-10-28",
+            "2020-10-29",
+            "2020-10-30",
+            "2020-10-31",
+            "2020-11-01"
+          ],
+          "hist_ba_px": 1104,
+          "label_ba_px": 1104,
+          "new_ba_px": 6,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2020-11-03",
+          "input_dates": [
+            "2020-10-28",
+            "2020-10-29",
+            "2020-10-30",
+            "2020-10-31",
+            "2020-11-01",
+            "2020-11-02"
+          ],
+          "hist_ba_px": 1104,
+          "label_ba_px": 4,
+          "new_ba_px": 4,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2020-11-04",
+          "input_dates": [
+            "2020-10-29",
+            "2020-10-30",
+            "2020-10-31",
+            "2020-11-01",
+            "2020-11-02",
+            "2020-11-03"
+          ],
+          "hist_ba_px": 4,
+          "label_ba_px": 6,
+          "new_ba_px": 6,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 217.5,
+      "nearest_US2021_id": "US_2021_CA3568711855020210818"
+    },
+    {
+      "fire_id": "calfcanyon_fire",
+      "n_day": 10,
+      "date_start": "2022-04-05",
+      "date_end": "2022-04-14",
+      "years": [
+        "2022"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -105.5003927552069,
+      "center_lat": 35.76193146079815,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2022-04-11",
+          "input_dates": [
+            "2022-04-05",
+            "2022-04-06",
+            "2022-04-07",
+            "2022-04-08",
+            "2022-04-09",
+            "2022-04-10"
+          ],
+          "hist_ba_px": 39,
+          "label_ba_px": 76,
+          "new_ba_px": 37,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2022-04-12",
+          "input_dates": [
+            "2022-04-06",
+            "2022-04-07",
+            "2022-04-08",
+            "2022-04-09",
+            "2022-04-10",
+            "2022-04-11"
+          ],
+          "hist_ba_px": 76,
+          "label_ba_px": 347,
+          "new_ba_px": 275,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2022-04-13",
+          "input_dates": [
+            "2022-04-07",
+            "2022-04-08",
+            "2022-04-09",
+            "2022-04-10",
+            "2022-04-11",
+            "2022-04-12"
+          ],
+          "hist_ba_px": 347,
+          "label_ba_px": 294,
+          "new_ba_px": 50,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2022-04-14",
+          "input_dates": [
+            "2022-04-08",
+            "2022-04-09",
+            "2022-04-10",
+            "2022-04-11",
+            "2022-04-12",
+            "2022-04-13"
+          ],
+          "hist_ba_px": 294,
+          "label_ba_px": 322,
+          "new_ba_px": 28,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "2022+",
+      "nearest_US2021_km": 118.93,
+      "nearest_US2021_id": "US_2021_NM3676810505920211120"
+    },
+    {
+      "fire_id": "camp_fire",
+      "n_day": 10,
+      "date_start": "2018-11-08",
+      "date_end": "2018-11-17",
+      "years": [
+        "2018"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -121.42920708380375,
+      "center_lat": 39.8110876039669,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2018-11-14",
+          "input_dates": [
+            "2018-11-08",
+            "2018-11-09",
+            "2018-11-10",
+            "2018-11-11",
+            "2018-11-12",
+            "2018-11-13"
+          ],
+          "hist_ba_px": 5220,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2018-11-15",
+          "input_dates": [
+            "2018-11-09",
+            "2018-11-10",
+            "2018-11-11",
+            "2018-11-12",
+            "2018-11-13",
+            "2018-11-14"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 5836,
+          "new_ba_px": 5836,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2018-11-16",
+          "input_dates": [
+            "2018-11-10",
+            "2018-11-11",
+            "2018-11-12",
+            "2018-11-13",
+            "2018-11-14",
+            "2018-11-15"
+          ],
+          "hist_ba_px": 5836,
+          "label_ba_px": 5999,
+          "new_ba_px": 169,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2018-11-17",
+          "input_dates": [
+            "2018-11-11",
+            "2018-11-12",
+            "2018-11-13",
+            "2018-11-14",
+            "2018-11-15",
+            "2018-11-16"
+          ],
+          "hist_ba_px": 5999,
+          "label_ba_px": 6099,
+          "new_ba_px": 100,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 2,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 3,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 145.55,
+      "nearest_US2021_id": "US_2021_CA4086312235520210630"
+    },
+    {
+      "fire_id": "carr_fire",
+      "n_day": 10,
+      "date_start": "2018-07-23",
+      "date_end": "2018-08-01",
+      "years": [
+        "2018"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -122.62003628231469,
+      "center_lat": 40.65325818282895,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2018-07-29",
+          "input_dates": [
+            "2018-07-23",
+            "2018-07-24",
+            "2018-07-25",
+            "2018-07-26",
+            "2018-07-27",
+            "2018-07-28"
+          ],
+          "hist_ba_px": 2866,
+          "label_ba_px": 3729,
+          "new_ba_px": 996,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2018-07-30",
+          "input_dates": [
+            "2018-07-24",
+            "2018-07-25",
+            "2018-07-26",
+            "2018-07-27",
+            "2018-07-28",
+            "2018-07-29"
+          ],
+          "hist_ba_px": 3729,
+          "label_ba_px": 4097,
+          "new_ba_px": 395,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2018-07-31",
+          "input_dates": [
+            "2018-07-25",
+            "2018-07-26",
+            "2018-07-27",
+            "2018-07-28",
+            "2018-07-29",
+            "2018-07-30"
+          ],
+          "hist_ba_px": 4097,
+          "label_ba_px": 4737,
+          "new_ba_px": 640,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2018-08-01",
+          "input_dates": [
+            "2018-07-26",
+            "2018-07-27",
+            "2018-07-28",
+            "2018-07-29",
+            "2018-07-30",
+            "2018-07-31"
+          ],
+          "hist_ba_px": 4737,
+          "label_ba_px": 4831,
+          "new_ba_px": 145,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 35.71,
+      "nearest_US2021_id": "US_2021_CA4086312235520210630"
+    },
+    {
+      "fire_id": "chuckegg_creek_fire",
+      "n_day": 10,
+      "date_start": "2019-05-15",
+      "date_end": "2019-05-24",
+      "years": [
+        "2019"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -117.42047512842038,
+      "center_lat": 58.38263320903285,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2019-05-21",
+          "input_dates": [
+            "2019-05-15",
+            "2019-05-16",
+            "2019-05-17",
+            "2019-05-18",
+            "2019-05-19",
+            "2019-05-20"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2019-05-22",
+          "input_dates": [
+            "2019-05-16",
+            "2019-05-17",
+            "2019-05-18",
+            "2019-05-19",
+            "2019-05-20",
+            "2019-05-21"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2019-05-23",
+          "input_dates": [
+            "2019-05-17",
+            "2019-05-18",
+            "2019-05-19",
+            "2019-05-20",
+            "2019-05-21",
+            "2019-05-22"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2019-05-24",
+          "input_dates": [
+            "2019-05-18",
+            "2019-05-19",
+            "2019-05-20",
+            "2019-05-21",
+            "2019-05-22",
+            "2019-05-23"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 1068.66,
+      "nearest_US2021_id": "US_2021_WA4879111827120210805"
+    },
+    {
+      "fire_id": "creek_fire",
+      "n_day": 10,
+      "date_start": "2020-09-05",
+      "date_end": "2020-09-14",
+      "years": [
+        "2020"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -119.30019986044047,
+      "center_lat": 37.203727491809985,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2020-09-11",
+          "input_dates": [
+            "2020-09-05",
+            "2020-09-06",
+            "2020-09-07",
+            "2020-09-08",
+            "2020-09-09",
+            "2020-09-10"
+          ],
+          "hist_ba_px": 6981,
+          "label_ba_px": 6999,
+          "new_ba_px": 64,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2020-09-12",
+          "input_dates": [
+            "2020-09-06",
+            "2020-09-07",
+            "2020-09-08",
+            "2020-09-09",
+            "2020-09-10",
+            "2020-09-11"
+          ],
+          "hist_ba_px": 6999,
+          "label_ba_px": 7541,
+          "new_ba_px": 589,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2020-09-13",
+          "input_dates": [
+            "2020-09-07",
+            "2020-09-08",
+            "2020-09-09",
+            "2020-09-10",
+            "2020-09-11",
+            "2020-09-12"
+          ],
+          "hist_ba_px": 7541,
+          "label_ba_px": 7885,
+          "new_ba_px": 385,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2020-09-14",
+          "input_dates": [
+            "2020-09-08",
+            "2020-09-09",
+            "2020-09-10",
+            "2020-09-11",
+            "2020-09-12",
+            "2020-09-13"
+          ],
+          "hist_ba_px": 7885,
+          "label_ba_px": 8443,
+          "new_ba_px": 579,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 82.27,
+      "nearest_US2021_id": "US_2021_CA3658211879520210912"
+    },
+    {
+      "fire_id": "dixie_fire",
+      "n_day": 10,
+      "date_start": "2021-07-14",
+      "date_end": "2021-07-23",
+      "years": [
+        "2021"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -121.4191010368574,
+      "center_lat": 39.8110876039669,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2021-07-20",
+          "input_dates": [
+            "2021-07-14",
+            "2021-07-15",
+            "2021-07-16",
+            "2021-07-17",
+            "2021-07-18",
+            "2021-07-19"
+          ],
+          "hist_ba_px": 1504,
+          "label_ba_px": 2530,
+          "new_ba_px": 1026,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2021-07-21",
+          "input_dates": [
+            "2021-07-15",
+            "2021-07-16",
+            "2021-07-17",
+            "2021-07-18",
+            "2021-07-19",
+            "2021-07-20"
+          ],
+          "hist_ba_px": 2530,
+          "label_ba_px": 3376,
+          "new_ba_px": 849,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2021-07-22",
+          "input_dates": [
+            "2021-07-16",
+            "2021-07-17",
+            "2021-07-18",
+            "2021-07-19",
+            "2021-07-20",
+            "2021-07-21"
+          ],
+          "hist_ba_px": 3376,
+          "label_ba_px": 4603,
+          "new_ba_px": 1230,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2021-07-23",
+          "input_dates": [
+            "2021-07-17",
+            "2021-07-18",
+            "2021-07-19",
+            "2021-07-20",
+            "2021-07-21",
+            "2021-07-22"
+          ],
+          "hist_ba_px": 4603,
+          "label_ba_px": 5463,
+          "new_ba_px": 862,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "2021",
+      "nearest_US2021_km": 146.02,
+      "nearest_US2021_id": "US_2021_CA4086312235520210630"
+    },
+    {
+      "fire_id": "double_creek_fire",
+      "n_day": 10,
+      "date_start": "2022-08-29",
+      "date_end": "2022-09-07",
+      "years": [
+        "2022"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -116.7298952537535,
+      "center_lat": 45.430049706134504,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2022-09-04",
+          "input_dates": [
+            "2022-08-29",
+            "2022-08-30",
+            "2022-08-31",
+            "2022-09-01",
+            "2022-09-02",
+            "2022-09-03"
+          ],
+          "hist_ba_px": 457,
+          "label_ba_px": 2374,
+          "new_ba_px": 1917,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2022-09-05",
+          "input_dates": [
+            "2022-08-30",
+            "2022-08-31",
+            "2022-09-01",
+            "2022-09-02",
+            "2022-09-03",
+            "2022-09-04"
+          ],
+          "hist_ba_px": 2374,
+          "label_ba_px": 2648,
+          "new_ba_px": 312,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2022-09-06",
+          "input_dates": [
+            "2022-08-31",
+            "2022-09-01",
+            "2022-09-02",
+            "2022-09-03",
+            "2022-09-04",
+            "2022-09-05"
+          ],
+          "hist_ba_px": 2648,
+          "label_ba_px": 3184,
+          "new_ba_px": 536,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2022-09-07",
+          "input_dates": [
+            "2022-09-01",
+            "2022-09-02",
+            "2022-09-03",
+            "2022-09-04",
+            "2022-09-05",
+            "2022-09-06"
+          ],
+          "hist_ba_px": 3184,
+          "label_ba_px": 3698,
+          "new_ba_px": 522,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "2022+",
+      "nearest_US2021_km": 105.47,
+      "nearest_US2021_id": "US_2021_ID4558511544420210705"
+    },
+    {
+      "fire_id": "eagle_bluff_fire",
+      "n_day": 10,
+      "date_start": "2019-08-05",
+      "date_end": "2019-08-14",
+      "years": [
+        "2019"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -119.49895211705193,
+      "center_lat": 49.421938249940624,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2019-08-11",
+          "input_dates": [
+            "2019-08-05",
+            "2019-08-06",
+            "2019-08-07",
+            "2019-08-08",
+            "2019-08-09",
+            "2019-08-10"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2019-08-12",
+          "input_dates": [
+            "2019-08-06",
+            "2019-08-07",
+            "2019-08-08",
+            "2019-08-09",
+            "2019-08-10",
+            "2019-08-11"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2019-08-13",
+          "input_dates": [
+            "2019-08-07",
+            "2019-08-08",
+            "2019-08-09",
+            "2019-08-10",
+            "2019-08-11",
+            "2019-08-12"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2019-08-14",
+          "input_dates": [
+            "2019-08-08",
+            "2019-08-09",
+            "2019-08-10",
+            "2019-08-11",
+            "2019-08-12",
+            "2019-08-13"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 76.8,
+      "nearest_US2021_id": "US_2021_WA4877811903420210803"
+    },
+    {
+      "fire_id": "elephant_hill_fire",
+      "n_day": 10,
+      "date_start": "2017-07-06",
+      "date_end": "2017-07-15",
+      "years": [
+        "2017"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -121.28098506192403,
+      "center_lat": 51.001850255885834,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2017-07-12",
+          "input_dates": [
+            "2017-07-06",
+            "2017-07-07",
+            "2017-07-08",
+            "2017-07-09",
+            "2017-07-10",
+            "2017-07-11"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2017-07-13",
+          "input_dates": [
+            "2017-07-07",
+            "2017-07-08",
+            "2017-07-09",
+            "2017-07-10",
+            "2017-07-11",
+            "2017-07-12"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2017-07-14",
+          "input_dates": [
+            "2017-07-08",
+            "2017-07-09",
+            "2017-07-10",
+            "2017-07-11",
+            "2017-07-12",
+            "2017-07-13"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2017-07-15",
+          "input_dates": [
+            "2017-07-09",
+            "2017-07-10",
+            "2017-07-11",
+            "2017-07-12",
+            "2017-07-13",
+            "2017-07-14"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 284.21,
+      "nearest_US2021_id": "US_2021_WA4856812048820210708"
+    },
+    {
+      "fire_id": "lytton_fire",
+      "n_day": 10,
+      "date_start": "2021-06-29",
+      "date_end": "2021-07-08",
+      "years": [
+        "2021"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -121.5656387175794,
+      "center_lat": 50.28095224037992,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2021-07-05",
+          "input_dates": [
+            "2021-06-29",
+            "2021-06-30",
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2021-07-06",
+          "input_dates": [
+            "2021-06-30",
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04",
+            "2021-07-05"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2021-07-07",
+          "input_dates": [
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04",
+            "2021-07-05",
+            "2021-07-06"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2021-07-08",
+          "input_dates": [
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04",
+            "2021-07-05",
+            "2021-07-06",
+            "2021-07-07"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "2021",
+      "nearest_US2021_km": 213.81,
+      "nearest_US2021_id": "US_2021_WA4856812048820210708"
+    },
+    {
+      "fire_id": "mosquito_fire",
+      "n_day": 10,
+      "date_start": "2022-09-03",
+      "date_end": "2022-09-12",
+      "years": [
+        "2022"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -120.74031155029459,
+      "center_lat": 39.00260384825933,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2022-09-09",
+          "input_dates": [
+            "2022-09-03",
+            "2022-09-04",
+            "2022-09-05",
+            "2022-09-06",
+            "2022-09-07",
+            "2022-09-08"
+          ],
+          "hist_ba_px": 305,
+          "label_ba_px": 1261,
+          "new_ba_px": 961,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2022-09-10",
+          "input_dates": [
+            "2022-09-04",
+            "2022-09-05",
+            "2022-09-06",
+            "2022-09-07",
+            "2022-09-08",
+            "2022-09-09"
+          ],
+          "hist_ba_px": 1261,
+          "label_ba_px": 1463,
+          "new_ba_px": 205,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2022-09-11",
+          "input_dates": [
+            "2022-09-05",
+            "2022-09-06",
+            "2022-09-07",
+            "2022-09-08",
+            "2022-09-09",
+            "2022-09-10"
+          ],
+          "hist_ba_px": 1463,
+          "label_ba_px": 1752,
+          "new_ba_px": 291,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2022-09-12",
+          "input_dates": [
+            "2022-09-06",
+            "2022-09-07",
+            "2022-09-08",
+            "2022-09-09",
+            "2022-09-10",
+            "2022-09-11"
+          ],
+          "hist_ba_px": 1752,
+          "label_ba_px": 2018,
+          "new_ba_px": 272,
+          "ba_labelled_both_center256": true,
+          "empty_target_progression": false,
+          "positive_progression_ge3": true
+        }
+      ],
+      "n_ba_labelled_both": 4,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 4,
+      "in_protocol_fire_ids": false,
+      "year_class": "2022+",
+      "nearest_US2021_km": 253.17,
+      "nearest_US2021_id": "US_2021_CA4086312235520210630"
+    },
+    {
+      "fire_id": "sparks_lake_fire",
+      "n_day": 10,
+      "date_start": "2021-06-28",
+      "date_end": "2021-07-07",
+      "years": [
+        "2021"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -120.78915744386859,
+      "center_lat": 50.92100188031508,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2021-07-04",
+          "input_dates": [
+            "2021-06-28",
+            "2021-06-29",
+            "2021-06-30",
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2021-07-05",
+          "input_dates": [
+            "2021-06-29",
+            "2021-06-30",
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2021-07-06",
+          "input_dates": [
+            "2021-06-30",
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04",
+            "2021-07-05"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2021-07-07",
+          "input_dates": [
+            "2021-07-01",
+            "2021-07-02",
+            "2021-07-03",
+            "2021-07-04",
+            "2021-07-05",
+            "2021-07-06"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "2021",
+      "nearest_US2021_km": 266.95,
+      "nearest_US2021_id": "US_2021_WA4877811903420210803"
+    },
+    {
+      "fire_id": "swedish_fire",
+      "n_day": 10,
+      "date_start": "2018-07-14",
+      "date_end": "2018-07-23",
+      "years": [
+        "2018"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": 14.515652097266319,
+      "center_lat": 61.798477076897335,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2018-07-20",
+          "input_dates": [
+            "2018-07-14",
+            "2018-07-15",
+            "2018-07-16",
+            "2018-07-17",
+            "2018-07-18",
+            "2018-07-19"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2018-07-21",
+          "input_dates": [
+            "2018-07-15",
+            "2018-07-16",
+            "2018-07-17",
+            "2018-07-18",
+            "2018-07-19",
+            "2018-07-20"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2018-07-22",
+          "input_dates": [
+            "2018-07-16",
+            "2018-07-17",
+            "2018-07-18",
+            "2018-07-19",
+            "2018-07-20",
+            "2018-07-21"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2018-07-23",
+          "input_dates": [
+            "2018-07-17",
+            "2018-07-18",
+            "2018-07-19",
+            "2018-07-20",
+            "2018-07-21",
+            "2018-07-22"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 6914.15,
+      "nearest_US2021_id": "US_2021_MT4714310953420211004"
+    },
+    {
+      "fire_id": "sydney_fire",
+      "n_day": 10,
+      "date_start": "2019-11-26",
+      "date_end": "2019-12-05",
+      "years": [
+        "2019"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": 150.11690568216068,
+      "center_lat": -35.50254292250864,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2019-12-02",
+          "input_dates": [
+            "2019-11-26",
+            "2019-11-27",
+            "2019-11-28",
+            "2019-11-29",
+            "2019-11-30",
+            "2019-12-01"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2019-12-03",
+          "input_dates": [
+            "2019-11-27",
+            "2019-11-28",
+            "2019-11-29",
+            "2019-11-30",
+            "2019-12-01",
+            "2019-12-02"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2019-12-04",
+          "input_dates": [
+            "2019-11-28",
+            "2019-11-29",
+            "2019-11-30",
+            "2019-12-01",
+            "2019-12-02",
+            "2019-12-03"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2019-12-05",
+          "input_dates": [
+            "2019-11-29",
+            "2019-11-30",
+            "2019-12-01",
+            "2019-12-02",
+            "2019-12-03",
+            "2019-12-04"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 12124.6,
+      "nearest_US2021_id": "US_2021_CA3451712013120211011"
+    },
+    {
+      "fire_id": "thomas_fire",
+      "n_day": 10,
+      "date_start": "2017-12-04",
+      "date_end": "2017-12-13",
+      "years": [
+        "2017"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 594,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -119.08965721572497,
+      "center_lat": 34.42119589924977,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2017-12-10",
+          "input_dates": [
+            "2017-12-04",
+            "2017-12-05",
+            "2017-12-06",
+            "2017-12-07",
+            "2017-12-08",
+            "2017-12-09"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2017-12-11",
+          "input_dates": [
+            "2017-12-05",
+            "2017-12-06",
+            "2017-12-07",
+            "2017-12-08",
+            "2017-12-09",
+            "2017-12-10"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2017-12-12",
+          "input_dates": [
+            "2017-12-06",
+            "2017-12-07",
+            "2017-12-08",
+            "2017-12-09",
+            "2017-12-10",
+            "2017-12-11"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2017-12-13",
+          "input_dates": [
+            "2017-12-07",
+            "2017-12-08",
+            "2017-12-09",
+            "2017-12-10",
+            "2017-12-11",
+            "2017-12-12"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 94.1,
+      "nearest_US2021_id": "US_2021_CA3451712013120211011"
+    },
+    {
+      "fire_id": "tubbs_fire",
+      "n_day": 10,
+      "date_start": "2017-10-08",
+      "date_end": "2017-10-17",
+      "years": [
+        "2017"
+      ],
+      "n_night": 10,
+      "n_firepred": 10,
+      "ts6_length_windows": 4,
+      "H": 596,
+      "W": 595,
+      "size_ok": true,
+      "crs": "EPSG:4326",
+      "center_lon": -122.6284579881033,
+      "center_lat": 38.611836699667336,
+      "bands": 8,
+      "windows": [
+        {
+          "label_idx": 6,
+          "label_date": "2017-10-14",
+          "input_dates": [
+            "2017-10-08",
+            "2017-10-09",
+            "2017-10-10",
+            "2017-10-11",
+            "2017-10-12",
+            "2017-10-13"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 7,
+          "label_date": "2017-10-15",
+          "input_dates": [
+            "2017-10-09",
+            "2017-10-10",
+            "2017-10-11",
+            "2017-10-12",
+            "2017-10-13",
+            "2017-10-14"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 8,
+          "label_date": "2017-10-16",
+          "input_dates": [
+            "2017-10-10",
+            "2017-10-11",
+            "2017-10-12",
+            "2017-10-13",
+            "2017-10-14",
+            "2017-10-15"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        },
+        {
+          "label_idx": 9,
+          "label_date": "2017-10-17",
+          "input_dates": [
+            "2017-10-11",
+            "2017-10-12",
+            "2017-10-13",
+            "2017-10-14",
+            "2017-10-15",
+            "2017-10-16"
+          ],
+          "hist_ba_px": 0,
+          "label_ba_px": 0,
+          "new_ba_px": 0,
+          "ba_labelled_both_center256": false,
+          "empty_target_progression": false,
+          "positive_progression_ge3": false
+        }
+      ],
+      "n_ba_labelled_both": 0,
+      "n_empty_progression": 0,
+      "n_positive_progression_ge3": 0,
+      "in_protocol_fire_ids": false,
+      "year_class": "pre-2021",
+      "nearest_US2021_km": 256.46,
+      "nearest_US2021_id": "US_2021_CA4086312235520210630"
+    }
+  ],
+  "us2021_centers": [
+    {
+      "fire_id": "US_2021_AZ3345510938920210616",
+      "center_lon": -109.37606175913007,
+      "center_lat": 33.48133353323972,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_AZ3368910927620210616",
+      "center_lon": -109.31205679513654,
+      "center_lat": 33.686823154482056,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA3451712013120211011",
+      "center_lon": -120.1120522984635,
+      "center_lat": 34.495306910189626,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA3568711855020210818",
+      "center_lon": -118.56582711567277,
+      "center_lat": 35.697926496804634,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA3604711863120210910",
+      "center_lon": -118.60625130345815,
+      "center_lat": 35.97415844667139,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA3627811855020210815",
+      "center_lon": -118.54561502178008,
+      "center_lat": 36.30765799590076,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA3658211879520210912",
+      "center_lon": -118.80163487775414,
+      "center_lat": 36.58052126345206,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_CA4086312235520210630",
+      "center_lon": -122.36401642634063,
+      "center_lat": 40.90927803880301,
+      "H": 596,
+      "W": 594,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_FL2521008104520210308",
+      "center_lon": -81.05386519199928,
+      "center_lat": 25.224693178076166,
+      "H": 596,
+      "W": 594,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_ID4453211532920210810",
+      "center_lon": -115.18198572980505,
+      "center_lat": 44.5979851742188,
+      "H": 596,
+      "W": 594,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_ID4558511544420210705",
+      "center_lon": -115.38579100988966,
+      "center_lat": 45.537847540228846,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_ID4663811466720210707",
+      "center_lon": -114.63794353586016,
+      "center_lat": 46.64951270432675,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_ID4762711608320210708",
+      "center_lon": -115.96520436814676,
+      "center_lat": 47.62979925812218,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_MT4568311385420210708",
+      "center_lon": -113.76545481615908,
+      "center_lat": 45.6254332804305,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_MT4579011310120210708",
+      "center_lon": -113.15067029358978,
+      "center_lat": 45.80060476083381,
+      "H": 596,
+      "W": 594,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_MT4714310953420211004",
+      "center_lon": -109.52428378100979,
+      "center_lat": 47.185133192483015,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_NM3323810847220210520",
+      "center_lon": -108.47325489858994,
+      "center_lat": 33.19162685411117,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_NM3340210587120210426",
+      "center_lon": -105.83220796327855,
+      "center_lat": 33.424065933877095,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_NM3344410803520210514",
+      "center_lon": -108.06901302073616,
+      "center_lat": 33.461121439347025,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_NM3676810505920211120",
+      "center_lon": -105.05404234841002,
+      "center_lat": 36.769167473117164,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_WA4828511853120210713",
+      "center_lon": -118.43107982305484,
+      "center_lat": 48.374278049836235,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_WA4856812048820210708",
+      "center_lon": -120.43039277727335,
+      "center_lat": 48.50565666013871,
+      "H": 596,
+      "W": 594,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_WA4877811903420210803",
+      "center_lon": -119.0778668276209,
+      "center_lat": 48.78862597463636,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    },
+    {
+      "fire_id": "US_2021_WA4879111827120210805",
+      "center_lon": -118.27948911885967,
+      "center_lat": 48.785257292320914,
+      "H": 596,
+      "W": 595,
+      "missing": false
+    }
+  ]
+}

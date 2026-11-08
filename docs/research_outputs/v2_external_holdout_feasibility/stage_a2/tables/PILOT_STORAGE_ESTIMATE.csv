@@ -1,0 +1,6 @@
+component,est_gb_low,est_gb_high,notes
+VIIRS Day/Night reflectance stacks (3–5 fires × ~14–40 days),5,20,Depends on ROI size and product
+FirePred rebuild (GRIDMET/DEM/LC/VNP13A1; GFS optional masked),2,8,Frozen fp_stats — do not refit
+VIIRS AF VNP14IMGML for fire months (filtered to ROIs),0.2,2,Download monthly then spatial filter
+WFIGS/NIFC vectors for pilots,0.01,0.1,Tiny; currently not time-resolved
+TOTAL pilot working set,7,30,Order-of-magnitude before A3 approval

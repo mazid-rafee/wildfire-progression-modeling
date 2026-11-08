@@ -1,0 +1,14 @@
+rule_id,rule
+E1,"Ignition/discovery year in {2022,2023,2024}; CONUS; final acres >=1000 for pilot"
+E2,Not in EXCLUSION_REGISTRY; not AF-named showcase (mosquito/calfcanyon/double_creek and spatial aliases)
+E3,Independence: centroid/IoU checks vs US_2021 test before lock (geometry extract approval needed)
+E4,TS=6: >=7 VIIRS_Day files; day L excluded from X; y=clip(BA_L-BA_{L-1})
+E5,BA-both on L-1 and L in 256 crop; size HxW>=256
+E6,AF detections entering BA_t must have acq_time <= end_of_day(t)
+E7,WFIGS polygon for day t only if capture/create provenance <= end_of_day(t); else AF-only day or drop window per locked recipe
+E8,Never backfill from final/late perimeter into earlier days
+E9,Zero-growth days retained; empty-target FA reported separately
+E10,Missing FirePred: exclude from full-channel primary; ENV-0 secondary only
+E11,Calendar gaps recorded; no filter unless pre-registered
+E12,Selection and eligibility independent of model scores
+E13,A3 blocked until L1 WFIGS time-validity OR approved L1-AF-only/L2

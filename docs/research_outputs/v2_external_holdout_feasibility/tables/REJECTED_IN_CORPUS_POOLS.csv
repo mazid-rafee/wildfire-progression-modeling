@@ -1,0 +1,17 @@
+fire_id,pool,reason,eligible_for_blind_external_holdout
+20777452,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+20777459,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+20777482,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+20777508,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+20778225,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+20900040,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+21998287,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+23036806,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+24332700,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+24332783,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+24333277,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+24461421,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+24463187,missing13_train_roster,train-roster identity; 0 TS=6 matched windows; influenced protocol docs,False
+US_2021_FL2521008104520210308,official_2021_test_zero_window,0 BA-valid windows under locked protocol; not an evaluation population,False
+US_2021_NM3340210587120210426,official_2021_test_zero_window,0 BA-valid windows under locked protocol; not an evaluation population,False
+US_2021_NM3676810505920211120,official_2021_test_zero_window,0 BA-valid windows under locked protocol; not an evaluation population,False

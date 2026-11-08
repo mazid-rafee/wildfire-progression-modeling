@@ -1,0 +1,8 @@
+field,meaning,observed_issue
+poly_PolygonDateTime,Documented as datetime polygon data was captured,For closed 2022 large fires often months–years after discovery (e.g. McKinney 2023-03-23; Bolt Creek 2026-09-28) — unsafe as fire-day truth time without validation
+poly_CreateDate,System date source polygon record created/edited path entered archive,Often equals late archive insert; sometimes null
+poly_DateCurrent,Last edit time of source polygon record (UTC),Edit time ≠ burn day
+attr_CreatedOnDateTime_dt / attr_ModifiedOnDateTime_dt,IRWIN incident create/modify,"Incident metadata, not perimeter geometry epoch"
+BurnPeriod,Sequential order of geometry changes in Daily Perimeters archive,For 2022 discoveries: only 8 features with BurnPeriod>=2; 0 with >=5 — mid-fire revision history effectively absent for large closed fires
+AcreageChange,Acreage delta vs prior BurnPeriod,Usually null when only BurnPeriod=1 retained
+attr_UniqueFireIdentifier / attr_IrwinID / poly_IRWINID,Incident identity keys,Use for independence/exclusion joins

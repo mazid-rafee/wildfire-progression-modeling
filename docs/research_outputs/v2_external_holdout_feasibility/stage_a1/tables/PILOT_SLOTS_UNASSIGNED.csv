@@ -1,0 +1,6 @@
+slot,role,state_prefer,year,status
+1,Western large multi-week fire,CA|OR|WA,2022,UNASSIGNED_pending_FEDS_catalog
+2,Southwest / Rockies fire,AZ|NM|CO|UT,2022,UNASSIGNED_pending_FEDS_catalog
+3,Northern Rockies / ID-MT fire,ID|MT,2022,UNASSIGNED_pending_FEDS_catalog
+4,Optional second CA or PNW for duration diversity,CA|OR|WA,2022,OPTIONAL
+5,Optional 2023 event if 2022 WFIGS sparse,any_CONUS,2023,OPTIONAL

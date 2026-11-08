@@ -1,0 +1,2151 @@
+{
+  "McKinney": {
+    "meta": {
+      "irwin": "{4630026A-7802-477E-9133-E094C32E8D8C}",
+      "name": "MCKINNEY",
+      "ufid": "2022-CAKNF-006177",
+      "state": "US-CA",
+      "discovery": 1659129394000,
+      "out": 1688061900000,
+      "acres": 60108.84
+    },
+    "count_daily_perimeter": 78,
+    "count_all_featurecats": 78,
+    "perimeter_line_count": 686,
+    "n_rows_fetched": 78,
+    "n_distinct_polygon_days": 3,
+    "n_missing_polygon_datetime": 10,
+    "n_growth_days_acre_increase": 2,
+    "growth_events": [
+      {
+        "day": "2022-08-03",
+        "acres_from": 0.01,
+        "acres_to": 59700.2147242054,
+        "delta": 59700.204724205396
+      },
+      {
+        "day": "2022-08-05",
+        "acres_from": 59700.2147242054,
+        "acres_to": 60392,
+        "delta": 691.7852757946021
+      }
+    ],
+    "n_days_with_multi_rows": 2,
+    "n_create_lag_gt_24h": 1,
+    "create_lag_gt_24h_sample": [
+      {
+        "OBJECTID": 50481,
+        "poly": "2022-08-05T21:00:00Z",
+        "create": "2022-08-19T18:08:35Z",
+        "lag_hours": 333.1
+      }
+    ],
+    "n_open_ended_gdb_to": 0,
+    "polygon_day_first": "2022-07-30",
+    "polygon_day_last": "2022-08-05",
+    "max_gap_days": 4,
+    "median_gap_days": 4,
+    "n_gap_gt1": 2,
+    "ts6_windows_upper_bound_from_distinct_days": 0,
+    "day_summary": [
+      {
+        "polygon_day": "2022-07-30",
+        "n_rows": 1,
+        "min_acres": 0.01,
+        "max_acres": 0.01,
+        "min_shape_area": 4.383764462545514e-09,
+        "max_shape_area": 4.383764462545514e-09,
+        "min_create": "2022-07-29T21:38:17Z",
+        "max_create": "2022-07-29T21:38:17Z",
+        "min_gdb_from": "2022-07-29T21:38:17Z",
+        "max_gdb_from": "2022-07-29T21:38:17Z"
+      },
+      {
+        "polygon_day": "2022-08-03",
+        "n_rows": 6,
+        "min_acres": 58620.5537005427,
+        "max_acres": 59700.2147242054,
+        "min_shape_area": 0.02572537189689683,
+        "max_shape_area": 0.02617826342020635,
+        "min_create": "2022-08-03T03:22:21Z",
+        "max_create": "2022-08-03T03:22:21Z",
+        "min_gdb_from": "2022-08-04T13:04:06Z",
+        "max_gdb_from": "2022-08-05T20:49:35Z"
+      },
+      {
+        "polygon_day": "2022-08-05",
+        "n_rows": 61,
+        "min_acres": 60108.7736429568,
+        "max_acres": 60392,
+        "min_shape_area": 7.681564966333099e-07,
+        "max_shape_area": 0.0264656012436717,
+        "min_create": "2022-08-03T03:22:21Z",
+        "max_create": "2022-08-19T18:08:35Z",
+        "min_gdb_from": "2022-08-06T12:05:31Z",
+        "max_gdb_from": "2022-08-25T01:24:31Z"
+      }
+    ],
+    "acres_first_last": [
+      0.01,
+      60392
+    ],
+    "sample_rows_first3": [
+      {
+        "OBJECTID": 40596,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 29677,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-07-31T02:41:19Z",
+        "DateCurrent": "2022-07-31T02:46:04Z",
+        "GDB_FROM_DATE": 1659235564000,
+        "GDB_TO_DATE": 1659264244982,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 40633,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 51468,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-07-31T10:40:28Z",
+        "DateCurrent": "2022-07-31T10:40:28Z",
+        "GDB_FROM_DATE": 1659264028000,
+        "GDB_TO_DATE": 1659313148409,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 40850,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 52498,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-07-31T23:15:05Z",
+        "DateCurrent": "2022-07-31T23:15:05Z",
+        "GDB_FROM_DATE": 1659309305000,
+        "GDB_TO_DATE": 1659348038810,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ],
+    "sample_rows_last3": [
+      {
+        "OBJECTID": 52048,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 60108.842186918,
+        "PolygonDateTime": "2022-08-05T21:00:00Z",
+        "CreateDate": "2022-08-03T03:22:21Z",
+        "DateCurrent": "2022-08-23T01:52:18Z",
+        "GDB_FROM_DATE": 1661219538000,
+        "GDB_TO_DATE": 1661311716000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 52533,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 60108.842186918,
+        "PolygonDateTime": "2022-08-05T21:00:00Z",
+        "CreateDate": "2022-08-03T03:22:21Z",
+        "DateCurrent": "2022-08-24T03:28:36Z",
+        "GDB_FROM_DATE": 1661311716000,
+        "GDB_TO_DATE": 1661390671000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 52929,
+        "IncidentName": "MCKINNEY",
+        "GISAcres": 60108.842186918,
+        "PolygonDateTime": "2022-08-05T21:00:00Z",
+        "CreateDate": "2022-08-03T03:22:21Z",
+        "DateCurrent": "2022-08-25T01:24:31Z",
+        "GDB_FROM_DATE": 1661390671000,
+        "GDB_TO_DATE": null,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ]
+  },
+  "BoltCreek": {
+    "meta": {
+      "irwin": "{67F475B6-B2B7-460A-B4DF-601B8E614F3A}",
+      "name": "BOLT CREEK",
+      "ufid": "2022-WANWS-000150",
+      "state": "US-WA",
+      "discovery": 1662820500000,
+      "out": 1695250020000,
+      "acres": 14820.54
+    },
+    "count_daily_perimeter": 37,
+    "count_all_featurecats": 37,
+    "perimeter_line_count": 349,
+    "n_rows_fetched": 37,
+    "n_distinct_polygon_days": 9,
+    "n_missing_polygon_datetime": 6,
+    "n_growth_days_acre_increase": 8,
+    "growth_events": [
+      {
+        "day": "2022-09-17",
+        "acres_from": 7660.25815591918,
+        "acres_to": 12921.1919989289,
+        "delta": 5260.93384300972
+      },
+      {
+        "day": "2022-10-10",
+        "acres_from": 12921.1919989289,
+        "acres_to": 13503.0710080563,
+        "delta": 581.8790091274004
+      },
+      {
+        "day": "2022-10-12",
+        "acres_from": 13503.0710080563,
+        "acres_to": 13748.0533601426,
+        "delta": 244.98235208629922
+      },
+      {
+        "day": "2022-10-13",
+        "acres_from": 13748.0533601426,
+        "acres_to": 13825.6545451556,
+        "delta": 77.60118501299985
+      },
+      {
+        "day": "2022-10-14",
+        "acres_from": 13825.6545451556,
+        "acres_to": 14067.8669726597,
+        "delta": 242.21242750410056
+      },
+      {
+        "day": "2022-10-16",
+        "acres_from": 14067.8669726597,
+        "acres_to": 14208.4873329007,
+        "delta": 140.62036024100053
+      },
+      {
+        "day": "2022-10-18",
+        "acres_from": 14208.4873329007,
+        "acres_to": 14765.6407448303,
+        "delta": 557.1534119295993
+      },
+      {
+        "day": "2022-10-20",
+        "acres_from": 14765.6407448303,
+        "acres_to": 14820.5442575484,
+        "delta": 54.90351271809959
+      }
+    ],
+    "n_days_with_multi_rows": 4,
+    "n_create_lag_gt_24h": 4,
+    "create_lag_gt_24h_sample": [
+      {
+        "OBJECTID": 61408,
+        "poly": "2022-09-10T00:00:00Z",
+        "create": "2022-09-11T13:26:38Z",
+        "lag_hours": 37.4
+      },
+      {
+        "OBJECTID": 61433,
+        "poly": "2022-09-10T00:00:00Z",
+        "create": "2022-09-11T13:26:38Z",
+        "lag_hours": 37.4
+      },
+      {
+        "OBJECTID": 71623,
+        "poly": "2022-10-10T03:47:00Z",
+        "create": "2022-10-12T02:21:27Z",
+        "lag_hours": 46.6
+      },
+      {
+        "OBJECTID": 73962,
+        "poly": "2022-10-18T02:35:00Z",
+        "create": "2022-10-20T15:42:09Z",
+        "lag_hours": 61.1
+      }
+    ],
+    "n_open_ended_gdb_to": 0,
+    "polygon_day_first": "2022-09-10",
+    "polygon_day_last": "2022-10-20",
+    "max_gap_days": 23,
+    "median_gap_days": 2,
+    "n_gap_gt1": 6,
+    "ts6_windows_upper_bound_from_distinct_days": 3,
+    "day_summary": [
+      {
+        "polygon_day": "2022-09-10",
+        "n_rows": 6,
+        "min_acres": 21,
+        "max_acres": 7660.25815591918,
+        "min_shape_area": 1.0195363302045735e-05,
+        "max_shape_area": 0.0037381447323241446,
+        "min_create": "2022-09-10T16:16:47Z",
+        "max_create": "2022-09-11T13:26:38Z",
+        "min_gdb_from": "2022-09-10T16:16:47Z",
+        "max_gdb_from": "2022-09-11T15:15:37Z"
+      },
+      {
+        "polygon_day": "2022-09-17",
+        "n_rows": 16,
+        "min_acres": 9767.20343922176,
+        "max_acres": 12921.1919989289,
+        "min_shape_area": 0.004741276930872118,
+        "max_shape_area": 0.00627247615102533,
+        "min_create": "2022-09-18T13:12:56Z",
+        "max_create": "2022-09-18T13:12:56Z",
+        "min_gdb_from": "2022-09-18T13:12:56Z",
+        "max_gdb_from": "2022-10-06T19:45:25Z"
+      },
+      {
+        "polygon_day": "2022-10-10",
+        "n_rows": 1,
+        "min_acres": 13503.0710080563,
+        "max_acres": 13503.0710080563,
+        "min_shape_area": 0.0065574861500863335,
+        "max_shape_area": 0.0065574861500863335,
+        "min_create": "2022-10-12T02:21:27Z",
+        "max_create": "2022-10-12T02:21:27Z",
+        "min_gdb_from": "2022-10-12T02:51:02Z",
+        "max_gdb_from": "2022-10-12T02:51:02Z"
+      },
+      {
+        "polygon_day": "2022-10-12",
+        "n_rows": 1,
+        "min_acres": 13748.0533601426,
+        "max_acres": 13748.0533601426,
+        "min_shape_area": 0.0066758269549609395,
+        "max_shape_area": 0.0066758269549609395,
+        "min_create": "2022-10-12T14:37:16Z",
+        "max_create": "2022-10-12T14:37:16Z",
+        "min_gdb_from": "2022-10-12T16:02:43Z",
+        "max_gdb_from": "2022-10-12T16:02:43Z"
+      },
+      {
+        "polygon_day": "2022-10-13",
+        "n_rows": 1,
+        "min_acres": 13825.6545451556,
+        "max_acres": 13825.6545451556,
+        "min_shape_area": 0.006711688475661504,
+        "max_shape_area": 0.006711688475661504,
+        "min_create": "2022-10-13T13:36:00Z",
+        "max_create": "2022-10-13T13:36:00Z",
+        "min_gdb_from": "2022-10-13T13:36:00Z",
+        "max_gdb_from": "2022-10-13T13:36:00Z"
+      },
+      {
+        "polygon_day": "2022-10-14",
+        "n_rows": 2,
+        "min_acres": 13958.0365485305,
+        "max_acres": 14067.8669726597,
+        "min_shape_area": 0.006775974539323215,
+        "max_shape_area": 0.006829343006756972,
+        "min_create": "2022-10-14T14:41:46Z",
+        "max_create": "2022-10-14T14:41:46Z",
+        "min_gdb_from": "2022-10-14T15:08:14Z",
+        "max_gdb_from": "2022-10-16T01:19:51Z"
+      },
+      {
+        "polygon_day": "2022-10-16",
+        "n_rows": 1,
+        "min_acres": 14208.4873329007,
+        "max_acres": 14208.4873329007,
+        "min_shape_area": 0.006897636388657702,
+        "max_shape_area": 0.006897636388657702,
+        "min_create": "2022-10-16T15:28:03Z",
+        "max_create": "2022-10-16T15:28:03Z",
+        "min_gdb_from": "2022-10-16T15:28:03Z",
+        "max_gdb_from": "2022-10-16T15:28:03Z"
+      },
+      {
+        "polygon_day": "2022-10-18",
+        "n_rows": 2,
+        "min_acres": 14713.7524205532,
+        "max_acres": 14765.6407448303,
+        "min_shape_area": 0.00714306575628143,
+        "max_shape_area": 0.007168266454755212,
+        "min_create": "2022-10-18T23:02:16Z",
+        "max_create": "2022-10-20T15:42:09Z",
+        "min_gdb_from": "2022-10-18T23:04:14Z",
+        "max_gdb_from": "2022-10-20T15:42:09Z"
+      },
+      {
+        "polygon_day": "2022-10-20",
+        "n_rows": 1,
+        "min_acres": 14820.5442575484,
+        "max_acres": 14820.5442575484,
+        "min_shape_area": 0.00719493427868656,
+        "max_shape_area": 0.00719493427868656,
+        "min_create": "2022-10-20T17:05:38Z",
+        "max_create": "2022-10-20T17:05:38Z",
+        "min_gdb_from": "2022-10-20T18:07:32Z",
+        "max_gdb_from": "2022-10-20T18:07:32Z"
+      }
+    ],
+    "acres_first_last": [
+      7660.25815591918,
+      14820.5442575484
+    ],
+    "sample_rows_first3": [
+      {
+        "OBJECTID": 62392,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 9463.04178415316,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-09-13T12:47:14Z",
+        "DateCurrent": "2022-09-13T14:20:44Z",
+        "GDB_FROM_DATE": 1663078844000,
+        "GDB_TO_DATE": 1663282015000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 63510,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 9463.04178415316,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-09-13T12:47:14Z",
+        "DateCurrent": "2022-09-15T22:46:55Z",
+        "GDB_FROM_DATE": 1663282015000,
+        "GDB_TO_DATE": 1663433827000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 64002,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 9463.04178415316,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-09-13T12:47:14Z",
+        "DateCurrent": "2022-09-17T16:57:07Z",
+        "GDB_FROM_DATE": 1663433827000,
+        "GDB_TO_DATE": 1663476562000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ],
+    "sample_rows_last3": [
+      {
+        "OBJECTID": 73452,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 14713.7524205532,
+        "PolygonDateTime": "2022-10-18T02:17:00Z",
+        "CreateDate": "2022-10-18T23:02:16Z",
+        "DateCurrent": "2022-10-18T23:04:14Z",
+        "GDB_FROM_DATE": 1666134254000,
+        "GDB_TO_DATE": 1666201445310,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 73962,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 14765.6407448303,
+        "PolygonDateTime": "2022-10-18T02:35:00Z",
+        "CreateDate": "2022-10-20T15:42:09Z",
+        "DateCurrent": "2022-10-20T15:42:09Z",
+        "GDB_FROM_DATE": 1666280529193,
+        "GDB_TO_DATE": 1666289650443,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 74029,
+        "IncidentName": "Bolt Creek",
+        "GISAcres": 14820.5442575484,
+        "PolygonDateTime": "2022-10-20T01:37:00Z",
+        "CreateDate": "2022-10-20T17:05:38Z",
+        "DateCurrent": "2022-10-20T18:07:32Z",
+        "GDB_FROM_DATE": 1666289252000,
+        "GDB_TO_DATE": null,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      }
+    ]
+  },
+  "CedarCreek": {
+    "meta": {
+      "irwin": "{21BB61C1-C479-4721-8295-9120974092D2}",
+      "name": "Cedar Creek",
+      "ufid": "2022-ORWIF-220180",
+      "state": "US-OR",
+      "discovery": 1659371940000,
+      "out": 1722409200000,
+      "acres": 127311
+    },
+    "count_daily_perimeter": 130,
+    "count_all_featurecats": 130,
+    "perimeter_line_count": 1477,
+    "n_rows_fetched": 130,
+    "n_distinct_polygon_days": 35,
+    "n_missing_polygon_datetime": 1,
+    "n_growth_days_acre_increase": 26,
+    "growth_events": [
+      {
+        "day": "2022-08-04",
+        "acres_from": 2,
+        "acres_to": 1054.03930195411,
+        "delta": 1052.03930195411
+      },
+      {
+        "day": "2022-08-05",
+        "acres_from": 1054.03930195411,
+        "acres_to": 1438.23539174695,
+        "delta": 384.19608979284
+      },
+      {
+        "day": "2022-08-07",
+        "acres_from": 1438.23539174695,
+        "acres_to": 1822.2914018317,
+        "delta": 384.0560100847499
+      },
+      {
+        "day": "2022-08-08",
+        "acres_from": 1822.2914018317,
+        "acres_to": 3536.22518061653,
+        "delta": 1713.93377878483
+      },
+      {
+        "day": "2022-08-10",
+        "acres_from": 3536.22518061653,
+        "acres_to": 3861.22187936164,
+        "delta": 324.9966987451098
+      },
+      {
+        "day": "2022-08-12",
+        "acres_from": 3861.22187936164,
+        "acres_to": 4046.9279176192,
+        "delta": 185.70603825756007
+      },
+      {
+        "day": "2022-08-13",
+        "acres_from": 4046.9279176192,
+        "acres_to": 4421.99525033927,
+        "delta": 375.06733272006977
+      },
+      {
+        "day": "2022-08-16",
+        "acres_from": 4421.99525033927,
+        "acres_to": 4658.24592386051,
+        "delta": 236.25067352124006
+      },
+      {
+        "day": "2022-08-17",
+        "acres_from": 4658.24592386051,
+        "acres_to": 5719.14393509385,
+        "delta": 1060.8980112333402
+      },
+      {
+        "day": "2022-08-20",
+        "acres_from": 5719.14393509385,
+        "acres_to": 6120.53133424312,
+        "delta": 401.3873991492701
+      },
+      {
+        "day": "2022-08-21",
+        "acres_from": 6120.53133424312,
+        "acres_to": 7654.02733102415,
+        "delta": 1533.49599678103
+      },
+      {
+        "day": "2022-08-28",
+        "acres_from": 7654.02733102415,
+        "acres_to": 7698.27508833573,
+        "delta": 44.247757311580244
+      },
+      {
+        "day": "2022-08-29",
+        "acres_from": 7698.27508833573,
+        "acres_to": 7820.79499054616,
+        "delta": 122.51990221042979
+      },
+      {
+        "day": "2022-08-30",
+        "acres_from": 7820.79499054616,
+        "acres_to": 8420.77195732553,
+        "delta": 599.9769667793707
+      },
+      {
+        "day": "2022-08-31",
+        "acres_from": 8420.77195732553,
+        "acres_to": 8817.45423198856,
+        "delta": 396.6822746630296
+      },
+      {
+        "day": "2022-09-01",
+        "acres_from": 8817.45423198856,
+        "acres_to": 9295.18657057736,
+        "delta": 477.7323385887994
+      },
+      {
+        "day": "2022-09-05",
+        "acres_from": 9295.18657057736,
+        "acres_to": 27511.5378939768,
+        "delta": 18216.35132339944
+      },
+      {
+        "day": "2022-09-11",
+        "acres_from": 27511.5378939768,
+        "acres_to": 86733.9721695599,
+        "delta": 59222.4342755831
+      },
+      {
+        "day": "2022-09-13",
+        "acres_from": 86733.9721695599,
+        "acres_to": 92548.3744195077,
+        "delta": 5814.4022499478015
+      },
+      {
+        "day": "2022-09-14",
+        "acres_from": 92548.3744195077,
+        "acres_to": 93108.5577639969,
+        "delta": 560.1833444891963
+      },
+      {
+        "day": "2022-09-16",
+        "acres_from": 93108.5577639969,
+        "acres_to": 120995.617747486,
+        "delta": 27887.059983489104
+      },
+      {
+        "day": "2022-10-07",
+        "acres_from": 120995.617747486,
+        "acres_to": 121321.684917385,
+        "delta": 326.0671698990045
+      },
+      {
+        "day": "2022-10-08",
+        "acres_from": 121321.684917385,
+        "acres_to": 122794,
+        "delta": 1472.315082614994
+      },
+      {
+        "day": "2022-10-12",
+        "acres_from": 122794,
+        "acres_to": 124447,
+        "delta": 1653
+      },
+      {
+        "day": "2022-10-15",
+        "acres_from": 124447,
+        "acres_to": 126222,
+        "delta": 1775
+      },
+      {
+        "day": "2022-10-19",
+        "acres_from": 126222,
+        "acres_to": 127310.968592853,
+        "delta": 1088.9685928529943
+      }
+    ],
+    "n_days_with_multi_rows": 24,
+    "n_create_lag_gt_24h": 54,
+    "create_lag_gt_24h_sample": [
+      {
+        "OBJECTID": 48107,
+        "poly": "2022-08-13T16:54:00Z",
+        "create": "2022-08-15T13:03:34Z",
+        "lag_hours": 44.2
+      },
+      {
+        "OBJECTID": 54592,
+        "poly": "2022-08-21T16:17:51Z",
+        "create": "2022-08-28T11:21:19Z",
+        "lag_hours": 163.1
+      },
+      {
+        "OBJECTID": 54899,
+        "poly": "2022-08-21T16:17:51Z",
+        "create": "2022-08-28T11:21:19Z",
+        "lag_hours": 163.1
+      },
+      {
+        "OBJECTID": 54902,
+        "poly": "2022-08-21T16:17:51Z",
+        "create": "2022-08-28T11:21:19Z",
+        "lag_hours": 163.1
+      },
+      {
+        "OBJECTID": 52102,
+        "poly": "2022-08-22T03:04:00Z",
+        "create": "2022-08-23T10:46:17Z",
+        "lag_hours": 31.7
+      },
+      {
+        "OBJECTID": 52546,
+        "poly": "2022-08-23T04:19:00Z",
+        "create": "2022-08-24T11:01:51Z",
+        "lag_hours": 30.7
+      },
+      {
+        "OBJECTID": 52561,
+        "poly": "2022-08-23T04:19:00Z",
+        "create": "2022-08-24T12:38:54Z",
+        "lag_hours": 32.3
+      },
+      {
+        "OBJECTID": 52994,
+        "poly": "2022-08-23T04:19:00Z",
+        "create": "2022-08-25T10:35:01Z",
+        "lag_hours": 54.3
+      },
+      {
+        "OBJECTID": 53678,
+        "poly": "2022-08-23T04:19:00Z",
+        "create": "2022-08-26T10:55:32Z",
+        "lag_hours": 78.6
+      },
+      {
+        "OBJECTID": 53957,
+        "poly": "2022-08-23T04:19:00Z",
+        "create": "2022-08-26T10:55:32Z",
+        "lag_hours": 78.6
+      }
+    ],
+    "n_open_ended_gdb_to": 0,
+    "polygon_day_first": "2022-08-01",
+    "polygon_day_last": "2022-10-19",
+    "max_gap_days": 15,
+    "median_gap_days": 1,
+    "n_gap_gt1": 16,
+    "ts6_windows_upper_bound_from_distinct_days": 29,
+    "day_summary": [
+      {
+        "polygon_day": "2022-08-01",
+        "n_rows": 1,
+        "min_acres": 2,
+        "max_acres": 2,
+        "min_shape_area": 9.038003554451279e-07,
+        "max_shape_area": 9.038003554451279e-07,
+        "min_create": "2022-08-02T02:48:02Z",
+        "max_create": "2022-08-02T02:48:02Z",
+        "min_gdb_from": "2022-08-02T02:48:02Z",
+        "max_gdb_from": "2022-08-02T02:48:02Z"
+      },
+      {
+        "polygon_day": "2022-08-04",
+        "n_rows": 3,
+        "min_acres": 826.85832261475,
+        "max_acres": 1054.03930195411,
+        "min_shape_area": 0.00037381969104899326,
+        "max_shape_area": 0.0004765233929902024,
+        "min_create": "2022-08-04T18:02:37Z",
+        "max_create": "2022-08-04T18:02:37Z",
+        "min_gdb_from": "2022-08-04T18:05:34Z",
+        "max_gdb_from": "2022-08-05T14:27:26Z"
+      },
+      {
+        "polygon_day": "2022-08-05",
+        "n_rows": 1,
+        "min_acres": 1438.23539174695,
+        "max_acres": 1438.23539174695,
+        "min_shape_area": 0.00065019984049286,
+        "max_shape_area": 0.00065019984049286,
+        "min_create": "2022-08-06T13:51:57Z",
+        "max_create": "2022-08-06T13:51:57Z",
+        "min_gdb_from": "2022-08-06T13:58:57Z",
+        "max_gdb_from": "2022-08-06T13:58:57Z"
+      },
+      {
+        "polygon_day": "2022-08-07",
+        "n_rows": 1,
+        "min_acres": 1822.2914018317,
+        "max_acres": 1822.2914018317,
+        "min_shape_area": 0.0008238005639213952,
+        "max_shape_area": 0.0008238005639213952,
+        "min_create": "2022-08-07T12:58:02Z",
+        "max_create": "2022-08-07T12:58:02Z",
+        "min_gdb_from": "2022-08-07T13:04:45Z",
+        "max_gdb_from": "2022-08-07T13:04:45Z"
+      },
+      {
+        "polygon_day": "2022-08-08",
+        "n_rows": 2,
+        "min_acres": 3234.36141406235,
+        "max_acres": 3536.22518061653,
+        "min_shape_area": 0.0014621878722209658,
+        "max_shape_area": 0.0015986481002983055,
+        "min_create": "2022-08-08T12:51:50Z",
+        "max_create": "2022-08-08T12:51:50Z",
+        "min_gdb_from": "2022-08-08T12:54:29Z",
+        "max_gdb_from": "2022-08-09T15:06:18Z"
+      },
+      {
+        "polygon_day": "2022-08-10",
+        "n_rows": 3,
+        "min_acres": 0.308362681971049,
+        "max_acres": 3861.22187936164,
+        "min_shape_area": 0.0017052578928087314,
+        "max_shape_area": 0.0017455786719438038,
+        "min_create": "2022-08-08T12:51:50Z",
+        "max_create": "2022-08-11T13:44:54Z",
+        "min_gdb_from": "2022-08-10T13:20:37Z",
+        "max_gdb_from": "2022-08-11T13:52:41Z"
+      },
+      {
+        "polygon_day": "2022-08-12",
+        "n_rows": 4,
+        "min_acres": 0.0831124449563592,
+        "max_acres": 4046.9279176192,
+        "min_shape_area": 0.0017849286596174352,
+        "max_shape_area": 0.0018295418226443871,
+        "min_create": "2022-08-12T12:53:27Z",
+        "max_create": "2022-08-12T12:53:27Z",
+        "min_gdb_from": "2022-08-12T12:53:27Z",
+        "max_gdb_from": "2022-08-13T01:23:53Z"
+      },
+      {
+        "polygon_day": "2022-08-13",
+        "n_rows": 3,
+        "min_acres": 4136.26629100436,
+        "max_acres": 4421.99525033927,
+        "min_shape_area": 0.0018699285014918132,
+        "max_shape_area": 0.0019990925170532137,
+        "min_create": "2022-08-13T12:53:53Z",
+        "max_create": "2022-08-15T13:03:34Z",
+        "min_gdb_from": "2022-08-13T13:10:57Z",
+        "max_gdb_from": "2022-08-15T13:15:51Z"
+      },
+      {
+        "polygon_day": "2022-08-16",
+        "n_rows": 2,
+        "min_acres": 4657,
+        "max_acres": 4658.24592386051,
+        "min_shape_area": 0.0021058953261672286,
+        "max_shape_area": 0.0021058953261672286,
+        "min_create": "2022-08-16T12:44:12Z",
+        "max_create": "2022-08-16T12:44:12Z",
+        "min_gdb_from": "2022-08-16T12:44:12Z",
+        "max_gdb_from": "2022-08-16T13:17:40Z"
+      },
+      {
+        "polygon_day": "2022-08-17",
+        "n_rows": 5,
+        "min_acres": 4835.48858275006,
+        "max_acres": 5719.14393509385,
+        "min_shape_area": 0.0021860130186723836,
+        "max_shape_area": 0.00258548491547117,
+        "min_create": "2022-08-17T12:36:01Z",
+        "max_create": "2022-08-17T12:36:01Z",
+        "min_gdb_from": "2022-08-17T12:56:35Z",
+        "max_gdb_from": "2022-08-19T17:50:32Z"
+      },
+      {
+        "polygon_day": "2022-08-20",
+        "n_rows": 1,
+        "min_acres": 6120.53133424312,
+        "max_acres": 6120.53133424312,
+        "min_shape_area": 0.0027668967259160127,
+        "max_shape_area": 0.0027668967259160127,
+        "min_create": "2022-08-20T11:21:07Z",
+        "max_create": "2022-08-20T11:21:07Z",
+        "min_gdb_from": "2022-08-20T11:23:59Z",
+        "max_gdb_from": "2022-08-20T11:23:59Z"
+      },
+      {
+        "polygon_day": "2022-08-21",
+        "n_rows": 4,
+        "min_acres": 6472.95790611261,
+        "max_acres": 7654.02733102415,
+        "min_shape_area": 0.0029261958625284024,
+        "max_shape_area": 0.003460089003056055,
+        "min_create": "2022-08-21T11:24:38Z",
+        "max_create": "2022-08-28T11:21:19Z",
+        "min_gdb_from": "2022-08-21T11:24:38Z",
+        "max_gdb_from": "2022-08-29T04:22:21Z"
+      },
+      {
+        "polygon_day": "2022-08-22",
+        "n_rows": 2,
+        "min_acres": 7011.55766591429,
+        "max_acres": 7172.1297961838,
+        "min_shape_area": 0.0031696491619186418,
+        "max_shape_area": 0.003242240134113672,
+        "min_create": "2022-08-22T11:14:35Z",
+        "max_create": "2022-08-23T10:46:17Z",
+        "min_gdb_from": "2022-08-22T11:14:35Z",
+        "max_gdb_from": "2022-08-23T10:46:17Z"
+      },
+      {
+        "polygon_day": "2022-08-23",
+        "n_rows": 6,
+        "min_acres": 7264.37841435439,
+        "max_acres": 7601.57591004347,
+        "min_shape_area": 0.003283943536644074,
+        "max_shape_area": 0.0034363759173174913,
+        "min_create": "2022-08-24T11:01:51Z",
+        "max_create": "2022-08-26T10:55:32Z",
+        "min_gdb_from": "2022-08-24T11:01:51Z",
+        "max_gdb_from": "2022-08-26T20:46:15Z"
+      },
+      {
+        "polygon_day": "2022-08-27",
+        "n_rows": 2,
+        "min_acres": 7632.04950581212,
+        "max_acres": 7632.04950581212,
+        "min_shape_area": 0.0034480510439607315,
+        "max_shape_area": 0.003450152596087719,
+        "min_create": "2022-08-27T11:23:00Z",
+        "max_create": "2022-08-27T11:23:00Z",
+        "min_gdb_from": "2022-08-27T11:23:00Z",
+        "max_gdb_from": "2022-08-27T22:16:29Z"
+      },
+      {
+        "polygon_day": "2022-08-28",
+        "n_rows": 6,
+        "min_acres": 7695.52666631953,
+        "max_acres": 7698.27508833573,
+        "min_shape_area": 0.0034788500279319123,
+        "max_shape_area": 0.0034800979487954464,
+        "min_create": "2022-08-29T11:24:29Z",
+        "max_create": "2022-08-29T11:24:29Z",
+        "min_gdb_from": "2022-08-29T11:24:29Z",
+        "max_gdb_from": "2022-08-30T00:51:24Z"
+      },
+      {
+        "polygon_day": "2022-08-29",
+        "n_rows": 2,
+        "min_acres": 7818.96185326537,
+        "max_acres": 7820.79499054616,
+        "min_shape_area": 0.0035346650643077737,
+        "max_shape_area": 0.003535493589424732,
+        "min_create": "2022-08-30T11:16:42Z",
+        "max_create": "2022-08-30T11:16:42Z",
+        "min_gdb_from": "2022-08-30T11:16:42Z",
+        "max_gdb_from": "2022-08-31T04:19:00Z"
+      },
+      {
+        "polygon_day": "2022-08-30",
+        "n_rows": 2,
+        "min_acres": 8420.77195732553,
+        "max_acres": 8420.77195732553,
+        "min_shape_area": 0.003806766129855532,
+        "max_shape_area": 0.00380677313569322,
+        "min_create": "2022-08-31T11:10:13Z",
+        "max_create": "2022-08-31T11:10:13Z",
+        "min_gdb_from": "2022-08-31T11:10:13Z",
+        "max_gdb_from": "2022-08-31T11:29:57Z"
+      },
+      {
+        "polygon_day": "2022-08-31",
+        "n_rows": 1,
+        "min_acres": 8817.45423198856,
+        "max_acres": 8817.45423198856,
+        "min_shape_area": 0.003986138320215105,
+        "max_shape_area": 0.003986138320215105,
+        "min_create": "2022-09-01T17:56:55Z",
+        "max_create": "2022-09-01T17:56:55Z",
+        "min_gdb_from": "2022-09-01T17:56:55Z",
+        "max_gdb_from": "2022-09-01T17:56:55Z"
+      },
+      {
+        "polygon_day": "2022-09-01",
+        "n_rows": 2,
+        "min_acres": 9198.80007646775,
+        "max_acres": 9295.18657057736,
+        "min_shape_area": 0.004158583977186936,
+        "max_shape_area": 0.004202159272153949,
+        "min_create": "2022-09-02T12:56:59Z",
+        "max_create": "2022-09-02T12:56:59Z",
+        "min_gdb_from": "2022-09-02T12:56:59Z",
+        "max_gdb_from": "2022-09-02T18:37:11Z"
+      },
+      {
+        "polygon_day": "2022-09-05",
+        "n_rows": 6,
+        "min_acres": 17625.0677891685,
+        "max_acres": 27511.5378939768,
+        "min_shape_area": 0.007970913912686228,
+        "max_shape_area": 0.012444292168311222,
+        "min_create": "2022-09-05T13:57:30Z",
+        "max_create": "2022-09-06T13:22:18Z",
+        "min_gdb_from": "2022-09-06T03:44:38Z",
+        "max_gdb_from": "2022-09-08T00:19:51Z"
+      },
+      {
+        "polygon_day": "2022-09-11",
+        "n_rows": 1,
+        "min_acres": 86733.9721695599,
+        "max_acres": 86733.9721695599,
+        "min_shape_area": 0.03923749639216112,
+        "max_shape_area": 0.03923749639216112,
+        "min_create": "2022-09-11T12:30:48Z",
+        "max_create": "2022-09-11T12:30:48Z",
+        "min_gdb_from": "2022-09-12T02:26:06Z",
+        "max_gdb_from": "2022-09-12T02:26:06Z"
+      },
+      {
+        "polygon_day": "2022-09-13",
+        "n_rows": 1,
+        "min_acres": 92548.3744195077,
+        "max_acres": 92548.3744195077,
+        "min_shape_area": 0.041868285594773624,
+        "max_shape_area": 0.041868285594773624,
+        "min_create": "2022-09-13T11:53:57Z",
+        "max_create": "2022-09-13T11:53:57Z",
+        "min_gdb_from": "2022-09-13T11:53:57Z",
+        "max_gdb_from": "2022-09-13T11:53:57Z"
+      },
+      {
+        "polygon_day": "2022-09-14",
+        "n_rows": 2,
+        "min_acres": 92596.1900696645,
+        "max_acres": 93108.5577639969,
+        "min_shape_area": 0.041889920907578926,
+        "max_shape_area": 0.04212163727834195,
+        "min_create": "2022-09-14T10:38:15Z",
+        "max_create": "2022-09-14T10:38:15Z",
+        "min_gdb_from": "2022-09-14T10:38:15Z",
+        "max_gdb_from": "2022-09-15T23:43:55Z"
+      },
+      {
+        "polygon_day": "2022-09-16",
+        "n_rows": 28,
+        "min_acres": 93427.1638925309,
+        "max_acres": 120995.617747486,
+        "min_shape_area": 0.04226573796449884,
+        "max_shape_area": 0.054744495621889655,
+        "min_create": "2022-09-16T11:00:50Z",
+        "max_create": "2022-09-28T14:56:15Z",
+        "min_gdb_from": "2022-09-16T11:00:50Z",
+        "max_gdb_from": "2022-10-01T14:07:40Z"
+      },
+      {
+        "polygon_day": "2022-10-01",
+        "n_rows": 3,
+        "min_acres": 120694.00896696,
+        "max_acres": 120694.00896696,
+        "min_shape_area": 0.054606355345185875,
+        "max_shape_area": 0.054606355345185875,
+        "min_create": "2022-10-02T13:20:37Z",
+        "max_create": "2022-10-02T13:20:37Z",
+        "min_gdb_from": "2022-10-02T13:20:37Z",
+        "max_gdb_from": "2022-10-02T21:00:46Z"
+      },
+      {
+        "polygon_day": "2022-10-02",
+        "n_rows": 1,
+        "min_acres": 120757.823457403,
+        "max_acres": 120757.823457403,
+        "min_shape_area": 0.05463501051917774,
+        "max_shape_area": 0.05463501051917774,
+        "min_create": "2022-10-03T13:18:00Z",
+        "max_create": "2022-10-03T13:18:00Z",
+        "min_gdb_from": "2022-10-03T13:26:15Z",
+        "max_gdb_from": "2022-10-03T13:26:15Z"
+      },
+      {
+        "polygon_day": "2022-10-03",
+        "n_rows": 1,
+        "min_acres": 120854.825146781,
+        "max_acres": 120854.825146781,
+        "min_shape_area": 0.054679138727806276,
+        "max_shape_area": 0.054679138727806276,
+        "min_create": "2022-10-04T13:19:36Z",
+        "max_create": "2022-10-04T13:19:36Z",
+        "min_gdb_from": "2022-10-04T13:52:55Z",
+        "max_gdb_from": "2022-10-04T13:52:55Z"
+      },
+      {
+        "polygon_day": "2022-10-04",
+        "n_rows": 1,
+        "min_acres": 120926.423570942,
+        "max_acres": 120926.423570942,
+        "min_shape_area": 0.054711507026240724,
+        "max_shape_area": 0.054711507026240724,
+        "min_create": "2022-10-05T13:19:03Z",
+        "max_create": "2022-10-05T13:19:03Z",
+        "min_gdb_from": "2022-10-05T13:29:37Z",
+        "max_gdb_from": "2022-10-05T13:29:37Z"
+      },
+      {
+        "polygon_day": "2022-10-06",
+        "n_rows": 1,
+        "min_acres": 120983.339426755,
+        "max_acres": 120983.339426755,
+        "min_shape_area": 0.05473731005031368,
+        "max_shape_area": 0.05473731005031368,
+        "min_create": "2022-10-06T13:27:44Z",
+        "max_create": "2022-10-06T13:27:44Z",
+        "min_gdb_from": "2022-10-06T13:27:44Z",
+        "max_gdb_from": "2022-10-06T13:27:44Z"
+      },
+      {
+        "polygon_day": "2022-10-07",
+        "n_rows": 2,
+        "min_acres": 121248.520085699,
+        "max_acres": 121321.684917385,
+        "min_shape_area": 0.05485717909550658,
+        "max_shape_area": 0.05489027073008401,
+        "min_create": "2022-10-07T12:23:46Z",
+        "max_create": "2022-10-07T12:23:46Z",
+        "min_gdb_from": "2022-10-07T12:23:46Z",
+        "max_gdb_from": "2022-10-07T12:51:43Z"
+      },
+      {
+        "polygon_day": "2022-10-08",
+        "n_rows": 8,
+        "min_acres": 121528.641912787,
+        "max_acres": 122794,
+        "min_shape_area": 0.05498383832946274,
+        "max_shape_area": 0.05558867090712738,
+        "min_create": "2022-10-08T11:56:25Z",
+        "max_create": "2022-10-08T11:56:25Z",
+        "min_gdb_from": "2022-10-08T12:53:03Z",
+        "max_gdb_from": "2022-10-14T03:03:51Z"
+      },
+      {
+        "polygon_day": "2022-10-12",
+        "n_rows": 5,
+        "min_acres": 122884,
+        "max_acres": 124447,
+        "min_shape_area": 0.05563543352263878,
+        "max_shape_area": 0.05637626789575734,
+        "min_create": "2022-10-08T11:56:25Z",
+        "max_create": "2022-10-08T11:56:25Z",
+        "min_gdb_from": "2022-10-14T06:38:08Z",
+        "max_gdb_from": "2022-10-16T17:04:24Z"
+      },
+      {
+        "polygon_day": "2022-10-15",
+        "n_rows": 9,
+        "min_acres": 124596.330722307,
+        "max_acres": 126222,
+        "min_shape_area": 0.05641055340629464,
+        "max_shape_area": 0.05731927295664718,
+        "min_create": "2022-10-08T11:56:25Z",
+        "max_create": "2022-10-08T11:56:25Z",
+        "min_gdb_from": "2022-10-17T02:31:44Z",
+        "max_gdb_from": "2022-10-20T14:41:33Z"
+      },
+      {
+        "polygon_day": "2022-10-19",
+        "n_rows": 7,
+        "min_acres": 126222,
+        "max_acres": 127310.968592853,
+        "min_shape_area": 0.057332804957241024,
+        "max_shape_area": 0.05760012628934419,
+        "min_create": "2022-10-08T11:56:25Z",
+        "max_create": "2022-10-08T11:56:25Z",
+        "min_gdb_from": "2022-10-21T04:03:42Z",
+        "max_gdb_from": "2022-10-28T20:19:36Z"
+      }
+    ],
+    "acres_first_last": [
+      2,
+      127310.968592853
+    ],
+    "sample_rows_first3": [
+      {
+        "OBJECTID": 58835,
+        "IncidentName": null,
+        "GISAcres": null,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-09-06T13:05:41Z",
+        "DateCurrent": "2022-09-06T13:05:41Z",
+        "GDB_FROM_DATE": 1662469541727,
+        "GDB_TO_DATE": 1662569352030,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 41377,
+        "IncidentName": "Cedar Creek",
+        "GISAcres": 2,
+        "PolygonDateTime": "2022-08-01T21:39:38Z",
+        "CreateDate": "2022-08-02T02:48:02Z",
+        "DateCurrent": "2022-08-02T02:48:02Z",
+        "GDB_FROM_DATE": 1659408482426,
+        "GDB_TO_DATE": 1659636550013,
+        "MapMethod": "Auto-generated",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 42400,
+        "IncidentName": "Cedar Creek ",
+        "GISAcres": 826.85832261475,
+        "PolygonDateTime": "2022-08-04T10:00:00Z",
+        "CreateDate": "2022-08-04T18:02:37Z",
+        "DateCurrent": "2022-08-04T18:05:34Z",
+        "GDB_FROM_DATE": 1659636334914,
+        "GDB_TO_DATE": 1659707989000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ],
+    "sample_rows_last3": [
+      {
+        "OBJECTID": 74614,
+        "IncidentName": "Cedar Creek",
+        "GISAcres": 127283,
+        "PolygonDateTime": "2022-10-19T19:48:00Z",
+        "CreateDate": "2022-10-08T11:56:25Z",
+        "DateCurrent": "2022-10-22T13:57:50Z",
+        "GDB_FROM_DATE": 1666447070000,
+        "GDB_TO_DATE": 1666935518000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 75946,
+        "IncidentName": "Cedar Creek",
+        "GISAcres": 127310.838263255,
+        "PolygonDateTime": "2022-10-19T19:48:00Z",
+        "CreateDate": "2022-10-08T11:56:25Z",
+        "DateCurrent": "2022-10-28T05:38:38Z",
+        "GDB_FROM_DATE": 1666935518000,
+        "GDB_TO_DATE": 1666988376000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 76087,
+        "IncidentName": "Cedar Creek",
+        "GISAcres": 127310.968592853,
+        "PolygonDateTime": "2022-10-19T19:48:00Z",
+        "CreateDate": "2022-10-08T11:56:25Z",
+        "DateCurrent": "2022-10-28T20:19:36Z",
+        "GDB_FROM_DATE": 1666988376000,
+        "GDB_TO_DATE": null,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ]
+  },
+  "Moose": {
+    "meta": {
+      "irwin": "{7420DAD6-11D5-42CD-9779-41489600A63D}",
+      "name": "Moose ",
+      "ufid": "2022-IDSCF-022105",
+      "state": "US-ID",
+      "discovery": 1658095440000,
+      "out": 1670438100000,
+      "acres": 130197.7
+    },
+    "count_daily_perimeter": 150,
+    "count_all_featurecats": 150,
+    "perimeter_line_count": 824,
+    "n_rows_fetched": 150,
+    "n_distinct_polygon_days": 34,
+    "n_missing_polygon_datetime": 34,
+    "n_growth_days_acre_increase": 33,
+    "growth_events": [
+      {
+        "day": "2022-07-19",
+        "acres_from": 300,
+        "acres_to": 16580.8180162616,
+        "delta": 16280.8180162616
+      },
+      {
+        "day": "2022-07-20",
+        "acres_from": 16580.8180162616,
+        "acres_to": 21185.1191984303,
+        "delta": 4604.3011821687
+      },
+      {
+        "day": "2022-07-21",
+        "acres_from": 21185.1191984303,
+        "acres_to": 23619.5545949856,
+        "delta": 2434.435396555298
+      },
+      {
+        "day": "2022-07-22",
+        "acres_from": 23619.5545949856,
+        "acres_to": 29597.8323208296,
+        "delta": 5978.277725844
+      },
+      {
+        "day": "2022-07-24",
+        "acres_from": 29597.8323208296,
+        "acres_to": 32560.9069894524,
+        "delta": 2963.0746686228013
+      },
+      {
+        "day": "2022-07-25",
+        "acres_from": 32560.9069894524,
+        "acres_to": 35739,
+        "delta": 3178.0930105476
+      },
+      {
+        "day": "2022-07-26",
+        "acres_from": 35739,
+        "acres_to": 37264.2320568409,
+        "delta": 1525.2320568408977
+      },
+      {
+        "day": "2022-07-27",
+        "acres_from": 37264.2320568409,
+        "acres_to": 38321,
+        "delta": 1056.7679431591023
+      },
+      {
+        "day": "2022-07-28",
+        "acres_from": 38321,
+        "acres_to": 40388,
+        "delta": 2067
+      },
+      {
+        "day": "2022-07-29",
+        "acres_from": 40388,
+        "acres_to": 43226.0607703905,
+        "delta": 2838.060770390497
+      },
+      {
+        "day": "2022-07-30",
+        "acres_from": 43226.0607703905,
+        "acres_to": 45113,
+        "delta": 1886.939229609503
+      },
+      {
+        "day": "2022-07-31",
+        "acres_from": 45113,
+        "acres_to": 48534,
+        "delta": 3421
+      },
+      {
+        "day": "2022-08-01",
+        "acres_from": 48534,
+        "acres_to": 58168,
+        "delta": 9634
+      },
+      {
+        "day": "2022-08-06",
+        "acres_from": 58168,
+        "acres_to": 67466,
+        "delta": 9298
+      },
+      {
+        "day": "2022-08-08",
+        "acres_from": 67466,
+        "acres_to": 72710,
+        "delta": 5244
+      },
+      {
+        "day": "2022-08-16",
+        "acres_from": 72710,
+        "acres_to": 80096.3052101666,
+        "delta": 7386.305210166596
+      },
+      {
+        "day": "2022-08-17",
+        "acres_from": 80096.3052101666,
+        "acres_to": 82974.6241247984,
+        "delta": 2878.3189146318036
+      },
+      {
+        "day": "2022-08-18",
+        "acres_from": 82974.6241247984,
+        "acres_to": 86101.723122974,
+        "delta": 3127.0989981755993
+      },
+      {
+        "day": "2022-08-19",
+        "acres_from": 86101.723122974,
+        "acres_to": 92219.2154971423,
+        "delta": 6117.4923741683015
+      },
+      {
+        "day": "2022-08-21",
+        "acres_from": 92219.2154971423,
+        "acres_to": 92859.01453657,
+        "delta": 639.7990394277003
+      },
+      {
+        "day": "2022-08-22",
+        "acres_from": 92859.01453657,
+        "acres_to": 94740.2742439078,
+        "delta": 1881.2597073377983
+      },
+      {
+        "day": "2022-08-23",
+        "acres_from": 94740.2742439078,
+        "acres_to": 95519.6516577633,
+        "delta": 779.3774138555018
+      },
+      {
+        "day": "2022-08-24",
+        "acres_from": 95519.6516577633,
+        "acres_to": 96575.7574697882,
+        "delta": 1056.1058120248927
+      },
+      {
+        "day": "2022-08-26",
+        "acres_from": 96575.7574697882,
+        "acres_to": 98403.1981025923,
+        "delta": 1827.4406328041077
+      },
+      {
+        "day": "2022-08-30",
+        "acres_from": 98403.1981025923,
+        "acres_to": 98676.6390621673,
+        "delta": 273.44095957500394
+      },
+      {
+        "day": "2022-08-31",
+        "acres_from": 98676.6390621673,
+        "acres_to": 100029.044724057,
+        "delta": 1352.4056618897012
+      },
+      {
+        "day": "2022-09-02",
+        "acres_from": 100029.044724057,
+        "acres_to": 101312.860795454,
+        "delta": 1283.8160713969992
+      },
+      {
+        "day": "2022-09-03",
+        "acres_from": 101312.860795454,
+        "acres_to": 103922.248195331,
+        "delta": 2609.3873998769996
+      },
+      {
+        "day": "2022-09-06",
+        "acres_from": 103922.248195331,
+        "acres_to": 107523.034081719,
+        "delta": 3600.7858863879956
+      },
+      {
+        "day": "2022-09-08",
+        "acres_from": 107523.034081719,
+        "acres_to": 122666.311714014,
+        "delta": 15143.277632294994
+      }
+    ],
+    "n_days_with_multi_rows": 26,
+    "n_create_lag_gt_24h": 16,
+    "create_lag_gt_24h_sample": [
+      {
+        "OBJECTID": 36285,
+        "poly": "2022-07-19T00:00:00Z",
+        "create": "2022-07-20T09:26:23Z",
+        "lag_hours": 33.4
+      },
+      {
+        "OBJECTID": 37442,
+        "poly": "2022-07-22T04:33:00Z",
+        "create": "2022-07-23T09:16:07Z",
+        "lag_hours": 28.7
+      },
+      {
+        "OBJECTID": 37644,
+        "poly": "2022-07-22T04:33:00Z",
+        "create": "2022-07-23T09:16:07Z",
+        "lag_hours": 28.7
+      },
+      {
+        "OBJECTID": 37705,
+        "poly": "2022-07-22T04:33:00Z",
+        "create": "2022-07-23T09:16:07Z",
+        "lag_hours": 28.7
+      },
+      {
+        "OBJECTID": 37729,
+        "poly": "2022-07-22T04:33:00Z",
+        "create": "2022-07-23T09:16:07Z",
+        "lag_hours": 28.7
+      },
+      {
+        "OBJECTID": 41418,
+        "poly": "2022-08-01T05:08:00Z",
+        "create": "2022-08-02T09:42:24Z",
+        "lag_hours": 28.6
+      },
+      {
+        "OBJECTID": 51009,
+        "poly": "2022-08-19T05:55:00Z",
+        "create": "2022-08-20T23:13:17Z",
+        "lag_hours": 41.3
+      },
+      {
+        "OBJECTID": 51033,
+        "poly": "2022-08-19T05:55:00Z",
+        "create": "2022-08-20T23:13:17Z",
+        "lag_hours": 41.3
+      },
+      {
+        "OBJECTID": 51064,
+        "poly": "2022-08-19T05:55:00Z",
+        "create": "2022-08-20T23:13:17Z",
+        "lag_hours": 41.3
+      },
+      {
+        "OBJECTID": 53198,
+        "poly": "2022-08-24T04:16:00Z",
+        "create": "2022-08-25T18:10:09Z",
+        "lag_hours": 37.9
+      }
+    ],
+    "n_open_ended_gdb_to": 0,
+    "polygon_day_first": "2022-07-18",
+    "polygon_day_last": "2022-10-03",
+    "max_gap_days": 17,
+    "median_gap_days": 1,
+    "n_gap_gt1": 12,
+    "ts6_windows_upper_bound_from_distinct_days": 28,
+    "day_summary": [
+      {
+        "polygon_day": "2022-07-18",
+        "n_rows": 1,
+        "min_acres": 300,
+        "max_acres": 300,
+        "min_shape_area": 0.0001394730861647986,
+        "max_shape_area": 0.0001394730861647986,
+        "min_create": "2022-07-17T22:37:47Z",
+        "max_create": "2022-07-17T22:37:47Z",
+        "min_gdb_from": "2022-07-17T22:37:47Z",
+        "max_gdb_from": "2022-07-17T22:37:47Z"
+      },
+      {
+        "polygon_day": "2022-07-19",
+        "n_rows": 1,
+        "min_acres": 16580.8180162616,
+        "max_acres": 16580.8180162616,
+        "min_shape_area": 0.007707259847848036,
+        "max_shape_area": 0.007707259847848036,
+        "min_create": "2022-07-20T09:26:23Z",
+        "max_create": "2022-07-20T09:26:23Z",
+        "min_gdb_from": "2022-07-20T09:26:23Z",
+        "max_gdb_from": "2022-07-20T09:26:23Z"
+      },
+      {
+        "polygon_day": "2022-07-20",
+        "n_rows": 4,
+        "min_acres": 20648.1363519245,
+        "max_acres": 21185.1191984303,
+        "min_shape_area": 0.009598063615158026,
+        "max_shape_area": 0.009847703918239858,
+        "min_create": "2022-07-21T09:15:44Z",
+        "max_create": "2022-07-21T09:15:44Z",
+        "min_gdb_from": "2022-07-21T09:15:44Z",
+        "max_gdb_from": "2022-07-22T03:28:03Z"
+      },
+      {
+        "polygon_day": "2022-07-21",
+        "n_rows": 1,
+        "min_acres": 23619.5545949856,
+        "max_acres": 23619.5545949856,
+        "min_shape_area": 0.010979290152135945,
+        "max_shape_area": 0.010979290152135945,
+        "min_create": "2022-07-22T09:14:54Z",
+        "max_create": "2022-07-22T09:14:54Z",
+        "min_gdb_from": "2022-07-22T09:20:46Z",
+        "max_gdb_from": "2022-07-22T09:20:46Z"
+      },
+      {
+        "polygon_day": "2022-07-22",
+        "n_rows": 4,
+        "min_acres": 28839,
+        "max_acres": 29597.8323208296,
+        "min_shape_area": 0.01340528752280079,
+        "max_shape_area": 0.013758264935859188,
+        "min_create": "2022-07-23T09:16:07Z",
+        "max_create": "2022-07-23T09:16:07Z",
+        "min_gdb_from": "2022-07-23T09:16:07Z",
+        "max_gdb_from": "2022-07-24T03:32:35Z"
+      },
+      {
+        "polygon_day": "2022-07-24",
+        "n_rows": 4,
+        "min_acres": 32330,
+        "max_acres": 32560.9069894524,
+        "min_shape_area": 0.015028393243483151,
+        "max_shape_area": 0.015136013554183592,
+        "min_create": "2022-07-24T09:15:46Z",
+        "max_create": "2022-07-24T09:15:46Z",
+        "min_gdb_from": "2022-07-24T09:25:40Z",
+        "max_gdb_from": "2022-07-25T03:39:34Z"
+      },
+      {
+        "polygon_day": "2022-07-25",
+        "n_rows": 3,
+        "min_acres": 35738.5152959432,
+        "max_acres": 35739,
+        "min_shape_area": 0.016612328040082502,
+        "max_shape_area": 0.016660718678394915,
+        "min_create": "2022-07-25T09:16:25Z",
+        "max_create": "2022-07-25T09:16:25Z",
+        "min_gdb_from": "2022-07-25T09:21:56Z",
+        "max_gdb_from": "2022-07-26T03:42:32Z"
+      },
+      {
+        "polygon_day": "2022-07-26",
+        "n_rows": 2,
+        "min_acres": 37264,
+        "max_acres": 37264.2320568409,
+        "min_shape_area": 0.0173213976572697,
+        "max_shape_area": 0.0173213976572697,
+        "min_create": "2022-07-26T09:20:04Z",
+        "max_create": "2022-07-26T09:20:04Z",
+        "min_gdb_from": "2022-07-26T09:20:04Z",
+        "max_gdb_from": "2022-07-27T03:27:21Z"
+      },
+      {
+        "polygon_day": "2022-07-27",
+        "n_rows": 2,
+        "min_acres": 38320.9444758265,
+        "max_acres": 38321,
+        "min_shape_area": 0.017812489063999237,
+        "max_shape_area": 0.017812489063999237,
+        "min_create": "2022-07-27T09:07:40Z",
+        "max_create": "2022-07-27T09:07:40Z",
+        "min_gdb_from": "2022-07-27T09:07:40Z",
+        "max_gdb_from": "2022-07-28T02:42:57Z"
+      },
+      {
+        "polygon_day": "2022-07-28",
+        "n_rows": 2,
+        "min_acres": 40387.9136208631,
+        "max_acres": 40388,
+        "min_shape_area": 0.018773145037357608,
+        "max_shape_area": 0.018773145037357608,
+        "min_create": "2022-07-28T09:40:19Z",
+        "max_create": "2022-07-28T09:40:19Z",
+        "min_gdb_from": "2022-07-28T09:40:19Z",
+        "max_gdb_from": "2022-07-29T03:08:34Z"
+      },
+      {
+        "polygon_day": "2022-07-29",
+        "n_rows": 2,
+        "min_acres": 43226,
+        "max_acres": 43226.0607703905,
+        "min_shape_area": 0.020092026503334637,
+        "max_shape_area": 0.020092026503334637,
+        "min_create": "2022-07-29T09:18:52Z",
+        "max_create": "2022-07-29T09:18:52Z",
+        "min_gdb_from": "2022-07-29T09:18:52Z",
+        "max_gdb_from": "2022-07-30T03:44:45Z"
+      },
+      {
+        "polygon_day": "2022-07-30",
+        "n_rows": 2,
+        "min_acres": 45112.675772939,
+        "max_acres": 45113,
+        "min_shape_area": 0.020968667446595646,
+        "max_shape_area": 0.020968667446595646,
+        "min_create": "2022-07-30T09:17:16Z",
+        "max_create": "2022-07-30T09:17:16Z",
+        "min_gdb_from": "2022-07-30T09:17:16Z",
+        "max_gdb_from": "2022-07-30T23:50:44Z"
+      },
+      {
+        "polygon_day": "2022-07-31",
+        "n_rows": 2,
+        "min_acres": 48533.6875751125,
+        "max_acres": 48534,
+        "min_shape_area": 0.022557702921858436,
+        "max_shape_area": 0.022557702921858436,
+        "min_create": "2022-07-31T09:17:52Z",
+        "max_create": "2022-07-31T09:17:52Z",
+        "min_gdb_from": "2022-07-31T09:17:52Z",
+        "max_gdb_from": "2022-08-01T02:27:52Z"
+      },
+      {
+        "polygon_day": "2022-08-01",
+        "n_rows": 2,
+        "min_acres": 56048.9113553184,
+        "max_acres": 58168,
+        "min_shape_area": 0.02604743398615028,
+        "max_shape_area": 0.027031260196963558,
+        "min_create": "2022-08-01T09:39:09Z",
+        "max_create": "2022-08-02T09:42:24Z",
+        "min_gdb_from": "2022-08-01T09:39:09Z",
+        "max_gdb_from": "2022-08-02T09:42:24Z"
+      },
+      {
+        "polygon_day": "2022-08-06",
+        "n_rows": 1,
+        "min_acres": 67466,
+        "max_acres": 67466,
+        "min_shape_area": 0.031672926715600624,
+        "max_shape_area": 0.031672926715600624,
+        "min_create": "2022-08-04T10:32:28Z",
+        "max_create": "2022-08-04T10:32:28Z",
+        "min_gdb_from": "2022-08-06T09:08:21Z",
+        "max_gdb_from": "2022-08-06T09:08:21Z"
+      },
+      {
+        "polygon_day": "2022-08-08",
+        "n_rows": 3,
+        "min_acres": 68771,
+        "max_acres": 72710,
+        "min_shape_area": 0.031953898647770984,
+        "max_shape_area": 0.03378294796948467,
+        "min_create": "2022-08-08T09:28:08Z",
+        "max_create": "2022-08-08T09:28:08Z",
+        "min_gdb_from": "2022-08-08T09:28:08Z",
+        "max_gdb_from": "2022-08-09T09:15:37Z"
+      },
+      {
+        "polygon_day": "2022-08-16",
+        "n_rows": 1,
+        "min_acres": 80096.3052101666,
+        "max_acres": 80096.3052101666,
+        "min_shape_area": 0.03721301832638346,
+        "max_shape_area": 0.03721301832638346,
+        "min_create": "2022-08-16T11:35:05Z",
+        "max_create": "2022-08-16T11:35:05Z",
+        "min_gdb_from": "2022-08-16T11:35:05Z",
+        "max_gdb_from": "2022-08-16T11:35:05Z"
+      },
+      {
+        "polygon_day": "2022-08-17",
+        "n_rows": 3,
+        "min_acres": 82974.6241247984,
+        "max_acres": 82974.6241247984,
+        "min_shape_area": 0.038549261520984146,
+        "max_shape_area": 0.038549264678295,
+        "min_create": "2022-08-17T10:44:38Z",
+        "max_create": "2022-08-17T10:44:38Z",
+        "min_gdb_from": "2022-08-17T10:44:38Z",
+        "max_gdb_from": "2022-08-17T18:57:16Z"
+      },
+      {
+        "polygon_day": "2022-08-18",
+        "n_rows": 11,
+        "min_acres": 0.0999988381230111,
+        "max_acres": 86101.723122974,
+        "min_shape_area": 4.6281456889119e-08,
+        "max_shape_area": 0.040001128798849095,
+        "min_create": "2022-08-18T10:59:11Z",
+        "max_create": "2022-08-18T12:18:58Z",
+        "min_gdb_from": "2022-08-18T10:59:11Z",
+        "max_gdb_from": "2022-08-21T11:18:25Z"
+      },
+      {
+        "polygon_day": "2022-08-19",
+        "n_rows": 11,
+        "min_acres": 89973.3336184968,
+        "max_acres": 92219.2154971423,
+        "min_shape_area": 0.041492651890621346,
+        "max_shape_area": 0.04284100038012184,
+        "min_create": "2022-08-19T10:25:46Z",
+        "max_create": "2022-08-20T23:13:17Z",
+        "min_gdb_from": "2022-08-19T10:33:43Z",
+        "max_gdb_from": "2022-08-21T01:31:05Z"
+      },
+      {
+        "polygon_day": "2022-08-21",
+        "n_rows": 3,
+        "min_acres": 92859.01453657,
+        "max_acres": 92859.01453657,
+        "min_shape_area": 0.043136812800185,
+        "max_shape_area": 0.043137942420798936,
+        "min_create": "2022-08-21T10:39:28Z",
+        "max_create": "2022-08-21T10:39:28Z",
+        "min_gdb_from": "2022-08-21T11:18:25Z",
+        "max_gdb_from": "2022-08-21T20:49:10Z"
+      },
+      {
+        "polygon_day": "2022-08-22",
+        "n_rows": 4,
+        "min_acres": 94740.2742439078,
+        "max_acres": 94740.2742439078,
+        "min_shape_area": 0.04401139248329855,
+        "max_shape_area": 0.0440441170962913,
+        "min_create": "2022-08-22T10:10:41Z",
+        "max_create": "2022-08-22T10:10:41Z",
+        "min_gdb_from": "2022-08-22T10:10:41Z",
+        "max_gdb_from": "2022-08-22T23:33:44Z"
+      },
+      {
+        "polygon_day": "2022-08-23",
+        "n_rows": 5,
+        "min_acres": 95519.6516577633,
+        "max_acres": 95519.6516577633,
+        "min_shape_area": 0.044371904143645224,
+        "max_shape_area": 0.04437328420090125,
+        "min_create": "2022-08-23T10:27:58Z",
+        "max_create": "2022-08-23T10:27:58Z",
+        "min_gdb_from": "2022-08-23T10:27:58Z",
+        "max_gdb_from": "2022-08-23T21:33:47Z"
+      },
+      {
+        "polygon_day": "2022-08-24",
+        "n_rows": 3,
+        "min_acres": 96445.2839998772,
+        "max_acres": 96575.7574697882,
+        "min_shape_area": 0.04480308268011868,
+        "max_shape_area": 0.044863698230528826,
+        "min_create": "2022-08-24T10:07:59Z",
+        "max_create": "2022-08-25T18:10:09Z",
+        "min_gdb_from": "2022-08-24T10:07:59Z",
+        "max_gdb_from": "2022-08-25T18:30:50Z"
+      },
+      {
+        "polygon_day": "2022-08-26",
+        "n_rows": 13,
+        "min_acres": 96680.8625506601,
+        "max_acres": 98403.1981025923,
+        "min_shape_area": 0.04491248004933368,
+        "max_shape_area": 0.04571189276975929,
+        "min_create": "2022-08-26T09:57:22Z",
+        "max_create": "2022-08-26T09:57:22Z",
+        "min_gdb_from": "2022-08-26T10:17:00Z",
+        "max_gdb_from": "2022-08-29T12:13:37Z"
+      },
+      {
+        "polygon_day": "2022-08-30",
+        "n_rows": 1,
+        "min_acres": 98676.6390621673,
+        "max_acres": 98676.6390621673,
+        "min_shape_area": 0.0458388287283924,
+        "max_shape_area": 0.0458388287283924,
+        "min_create": "2022-08-30T10:50:55Z",
+        "max_create": "2022-08-30T10:50:55Z",
+        "min_gdb_from": "2022-08-30T10:50:55Z",
+        "max_gdb_from": "2022-08-30T10:50:55Z"
+      },
+      {
+        "polygon_day": "2022-08-31",
+        "n_rows": 2,
+        "min_acres": 99231.8554744152,
+        "max_acres": 100029.044724057,
+        "min_shape_area": 0.046096504190700216,
+        "max_shape_area": 0.04646644262902555,
+        "min_create": "2022-08-31T10:27:33Z",
+        "max_create": "2022-09-01T10:22:36Z",
+        "min_gdb_from": "2022-08-31T10:27:33Z",
+        "max_gdb_from": "2022-09-01T10:22:36Z"
+      },
+      {
+        "polygon_day": "2022-09-02",
+        "n_rows": 3,
+        "min_acres": 101268.851518029,
+        "max_acres": 101312.860795454,
+        "min_shape_area": 0.04704172006358931,
+        "max_shape_area": 0.04704182218756614,
+        "min_create": "2022-09-02T10:20:14Z",
+        "max_create": "2022-09-02T10:20:14Z",
+        "min_gdb_from": "2022-09-02T10:20:14Z",
+        "max_gdb_from": "2022-09-03T01:57:25Z"
+      },
+      {
+        "polygon_day": "2022-09-03",
+        "n_rows": 3,
+        "min_acres": 102103.130276324,
+        "max_acres": 103922.248195331,
+        "min_shape_area": 0.04742871707276208,
+        "max_shape_area": 0.04825180326270129,
+        "min_create": "2022-09-03T10:28:51Z",
+        "max_create": "2022-09-04T10:39:07Z",
+        "min_gdb_from": "2022-09-03T10:28:51Z",
+        "max_gdb_from": "2022-09-04T10:39:07Z"
+      },
+      {
+        "polygon_day": "2022-09-06",
+        "n_rows": 1,
+        "min_acres": 107523.034081719,
+        "max_acres": 107523.034081719,
+        "min_shape_area": 0.04992122969679258,
+        "max_shape_area": 0.04992122969679258,
+        "min_create": "2022-09-06T10:17:33Z",
+        "max_create": "2022-09-06T10:17:33Z",
+        "min_gdb_from": "2022-09-06T10:17:33Z",
+        "max_gdb_from": "2022-09-06T10:17:33Z"
+      },
+      {
+        "polygon_day": "2022-09-08",
+        "n_rows": 2,
+        "min_acres": 122666.166625547,
+        "max_acres": 122666.311714014,
+        "min_shape_area": 0.056942118095776095,
+        "max_shape_area": 0.0569421853942913,
+        "min_create": "2022-09-08T10:13:55Z",
+        "max_create": "2022-09-08T10:13:55Z",
+        "min_gdb_from": "2022-09-08T10:13:55Z",
+        "max_gdb_from": "2022-09-08T12:26:38Z"
+      },
+      {
+        "polygon_day": "2022-09-09",
+        "n_rows": 6,
+        "min_acres": 125059.310683859,
+        "max_acres": 126925.176591578,
+        "min_shape_area": 0.05805145793920019,
+        "max_shape_area": 0.0589424813633741,
+        "min_create": "2022-09-09T10:21:06Z",
+        "max_create": "2022-09-11T11:47:24Z",
+        "min_gdb_from": "2022-09-09T10:21:06Z",
+        "max_gdb_from": "2022-09-12T10:00:01Z"
+      },
+      {
+        "polygon_day": "2022-09-26",
+        "n_rows": 1,
+        "min_acres": 130113.343490986,
+        "max_acres": 130113.343490986,
+        "min_shape_area": 0.06042206832626107,
+        "max_shape_area": 0.06042206832626107,
+        "min_create": "2022-09-27T11:28:33Z",
+        "max_create": "2022-09-27T11:28:33Z",
+        "min_gdb_from": "2022-09-27T11:28:33Z",
+        "max_gdb_from": "2022-09-27T11:28:33Z"
+      },
+      {
+        "polygon_day": "2022-10-03",
+        "n_rows": 7,
+        "min_acres": 130114.213451809,
+        "max_acres": 130197.658349764,
+        "min_shape_area": 0.06042246961760611,
+        "max_shape_area": 0.06046115035906041,
+        "min_create": "2022-10-03T13:17:38Z",
+        "max_create": "2022-10-03T13:17:38Z",
+        "min_gdb_from": "2022-10-03T13:17:38Z",
+        "max_gdb_from": "2022-10-19T12:29:37Z"
+      }
+    ],
+    "acres_first_last": [
+      300,
+      130197.658349764
+    ],
+    "sample_rows_first3": [
+      {
+        "OBJECTID": 41812,
+        "IncidentName": "Moose",
+        "GISAcres": null,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-08-03T10:30:59Z",
+        "DateCurrent": "2022-08-03T10:30:59Z",
+        "GDB_FROM_DATE": 1659522659000,
+        "GDB_TO_DATE": 1659625462844,
+        "MapMethod": "Infrared Image",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 42263,
+        "IncidentName": null,
+        "GISAcres": 0,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-08-04T10:32:28Z",
+        "DateCurrent": "2022-08-04T10:32:28Z",
+        "GDB_FROM_DATE": 1659609148000,
+        "GDB_TO_DATE": 1659625191000,
+        "MapMethod": "Infrared Image",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 42294,
+        "IncidentName": "Moose",
+        "GISAcres": 0,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-08-04T10:32:28Z",
+        "DateCurrent": "2022-08-04T14:59:51Z",
+        "GDB_FROM_DATE": 1659625191000,
+        "GDB_TO_DATE": 1659691123000,
+        "MapMethod": "GPS-Flight",
+        "FeatureStatus": "Approved"
+      }
+    ],
+    "sample_rows_last3": [
+      {
+        "OBJECTID": 70945,
+        "IncidentName": "Moose",
+        "GISAcres": 130130.147844183,
+        "PolygonDateTime": "2022-10-03T00:02:00Z",
+        "CreateDate": "2022-10-03T13:17:38Z",
+        "DateCurrent": "2022-10-10T12:56:03Z",
+        "GDB_FROM_DATE": 1665406563000,
+        "GDB_TO_DATE": 1665665756000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 71861,
+        "IncidentName": "Moose",
+        "GISAcres": 130144.445272531,
+        "PolygonDateTime": "2022-10-03T00:02:00Z",
+        "CreateDate": "2022-10-03T13:17:38Z",
+        "DateCurrent": "2022-10-13T12:55:56Z",
+        "GDB_FROM_DATE": 1665665756000,
+        "GDB_TO_DATE": 1666182577000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 73518,
+        "IncidentName": "Moose",
+        "GISAcres": 130197.658349764,
+        "PolygonDateTime": "2022-10-03T00:02:00Z",
+        "CreateDate": "2022-10-03T13:17:38Z",
+        "DateCurrent": "2022-10-19T12:29:37Z",
+        "GDB_FROM_DATE": 1666182577000,
+        "GDB_TO_DATE": null,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ]
+  },
+  "Pipeline": {
+    "meta": {
+      "irwin": "{F93BE77A-5DA1-43D1-B39C-86D6DDCC0440}",
+      "name": "Pipeline",
+      "ufid": "2022-AZCOF-000529",
+      "state": "US-AZ",
+      "discovery": 1655050500000,
+      "out": 1664222400000,
+      "acres": 26532.47
+    },
+    "count_daily_perimeter": 19,
+    "count_all_featurecats": 19,
+    "perimeter_line_count": 91,
+    "n_rows_fetched": 19,
+    "n_distinct_polygon_days": 2,
+    "n_missing_polygon_datetime": 6,
+    "n_growth_days_acre_increase": 1,
+    "growth_events": [
+      {
+        "day": "2022-06-13",
+        "acres_from": 0.1,
+        "acres_to": 26532.4665392159,
+        "delta": 26532.366539215902
+      }
+    ],
+    "n_days_with_multi_rows": 1,
+    "n_create_lag_gt_24h": 6,
+    "create_lag_gt_24h_sample": [
+      {
+        "OBJECTID": 23524,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-15T15:52:21Z",
+        "lag_hours": 51.0
+      },
+      {
+        "OBJECTID": 23690,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-16T10:07:59Z",
+        "lag_hours": 69.2
+      },
+      {
+        "OBJECTID": 23877,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-16T10:07:59Z",
+        "lag_hours": 69.2
+      },
+      {
+        "OBJECTID": 24161,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-16T10:07:59Z",
+        "lag_hours": 69.2
+      },
+      {
+        "OBJECTID": 24564,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-16T10:07:59Z",
+        "lag_hours": 69.2
+      },
+      {
+        "OBJECTID": 24851,
+        "poly": "2022-06-13T12:54:00Z",
+        "create": "2022-06-16T10:07:59Z",
+        "lag_hours": 69.2
+      }
+    ],
+    "n_open_ended_gdb_to": 0,
+    "polygon_day_first": "2022-06-12",
+    "polygon_day_last": "2022-06-13",
+    "max_gap_days": 1,
+    "median_gap_days": 1,
+    "n_gap_gt1": 0,
+    "ts6_windows_upper_bound_from_distinct_days": 0,
+    "day_summary": [
+      {
+        "polygon_day": "2022-06-12",
+        "n_rows": 1,
+        "min_acres": 0.1,
+        "max_acres": 0.1,
+        "min_shape_area": 4.000162334705237e-08,
+        "max_shape_area": 4.000162334705237e-08,
+        "min_create": "2022-06-12T17:40:02Z",
+        "max_create": "2022-06-12T17:40:02Z",
+        "min_gdb_from": "2022-06-12T17:40:02Z",
+        "max_gdb_from": "2022-06-12T17:40:02Z"
+      },
+      {
+        "polygon_day": "2022-06-13",
+        "n_rows": 12,
+        "min_acres": 13561.9401458798,
+        "max_acres": 26532.4665392159,
+        "min_shape_area": 0.0054405291123202915,
+        "max_shape_area": 0.010648608181554664,
+        "min_create": "2022-06-13T21:35:45Z",
+        "max_create": "2022-06-16T10:07:59Z",
+        "min_gdb_from": "2022-06-13T21:39:04Z",
+        "max_gdb_from": "2022-06-21T08:19:25Z"
+      }
+    ],
+    "acres_first_last": [
+      0.1,
+      26532.4665392159
+    ],
+    "sample_rows_first3": [
+      {
+        "OBJECTID": 22942,
+        "IncidentName": "Pipeline",
+        "GISAcres": null,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-06-12T23:26:06Z",
+        "DateCurrent": "2022-06-12T23:28:18Z",
+        "GDB_FROM_DATE": 1655076498048,
+        "GDB_TO_DATE": 1655079613000,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 22956,
+        "IncidentName": "Pipeline",
+        "GISAcres": 4006.61873518954,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-06-12T23:26:06Z",
+        "DateCurrent": "2022-06-13T00:20:13Z",
+        "GDB_FROM_DATE": 1655079613000,
+        "GDB_TO_DATE": 1655087421000,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 22975,
+        "IncidentName": "Pipeline",
+        "GISAcres": 4712.66003134008,
+        "PolygonDateTime": null,
+        "CreateDate": "2022-06-12T23:26:06Z",
+        "DateCurrent": "2022-06-13T02:30:21Z",
+        "GDB_FROM_DATE": 1655087421000,
+        "GDB_TO_DATE": 1655155955108,
+        "MapMethod": "Mixed Methods",
+        "FeatureStatus": "Approved"
+      }
+    ],
+    "sample_rows_last3": [
+      {
+        "OBJECTID": 24161,
+        "IncidentName": "Pipeline",
+        "GISAcres": 26486.3844050789,
+        "PolygonDateTime": "2022-06-13T12:54:00Z",
+        "CreateDate": "2022-06-16T10:07:59Z",
+        "DateCurrent": "2022-06-18T10:12:21Z",
+        "GDB_FROM_DATE": 1655547141000,
+        "GDB_TO_DATE": 1655709842000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 24564,
+        "IncidentName": "Pipeline",
+        "GISAcres": 26527.9411272795,
+        "PolygonDateTime": "2022-06-13T12:54:00Z",
+        "CreateDate": "2022-06-16T10:07:59Z",
+        "DateCurrent": "2022-06-20T07:24:02Z",
+        "GDB_FROM_DATE": 1655709842000,
+        "GDB_TO_DATE": 1655799565000,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      },
+      {
+        "OBJECTID": 24851,
+        "IncidentName": "Pipeline",
+        "GISAcres": 26532.4665392159,
+        "PolygonDateTime": "2022-06-13T12:54:00Z",
+        "CreateDate": "2022-06-16T10:07:59Z",
+        "DateCurrent": "2022-06-21T08:19:25Z",
+        "GDB_FROM_DATE": 1655799565000,
+        "GDB_TO_DATE": 1664236748307,
+        "MapMethod": "IR Image Interpretation",
+        "FeatureStatus": "Approved"
+      }
+    ]
+  }
+}

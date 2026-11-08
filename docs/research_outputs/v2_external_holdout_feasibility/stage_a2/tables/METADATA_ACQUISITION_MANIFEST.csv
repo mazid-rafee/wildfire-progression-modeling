@@ -1,0 +1,7 @@
+item,url,size,status,notes
+WFIGS_Daily_Perimeters_Public FeatureServer queries,https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Daily_Perimeters_Public/FeatureServer/0,KB–MB metadata only (done),COMPLETE_BOUNDED,2528 features discovery-dated 2022; large fires mostly BurnPeriod=1
+WFIGS_Interagency_Perimeters_Certified metadata,https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Certified/FeatureServer/0,KB,COMPLETE_BOUNDED,273 certified features with acres>=1000 discovery 2022
+InterAgencyFirePerimeterHistory_All_Years_View,FeatureServer under same org,KB sample,PROBED,Final perimeters by FIRE_YEAR — not daily progression
+Full FEDS CONUS 2022 .fgb (~486MB),https://zenodo.org/records/22921773,~486 MB,NOT_DOWNLOADED,Still not required for L1 labels; optional ROI catalog later
+VIIRS AF VNP14IMGML monthly CSV (pilot months only),sftp://fuoco.geog.umd.edu data/VIIRS/C2/VNP14IMGML ; FIRMS archive,~tens–low hundreds MB per month global; ROI subset smaller after filter,NOT_DOWNLOADED,Needed for AF arm of L1; acquisition timestamps available for cutoff gating
+VIIRS reflectance + FirePred for pilot ROIs,LAADS/Earthdata + GRIDMET/DEM,Est. 5–25 GB for 3–5 multi-week fires,BLOCKED_PENDING_LABEL_FEASIBILITY,A3 only

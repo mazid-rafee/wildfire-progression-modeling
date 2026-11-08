@@ -1,0 +1,7 @@
+input_component,label_source,dependence,risk
+VIIRS reflectance ch0-7,FEDS AF-derived perimeter,SAME_SENSOR_FAMILY_different_product,"MEDIUM — thermal AF ≠ reflectance, but correlated"
+Historical BA ch26 from FEDS cumulative,FEDS increment,SAME_PRODUCT_LINEAGE,HIGH — labels are differences of input BA history
+Historical BA ch26 from AF∪NIFC/WFIGS,FEDS increment,RELATED_AF_LINEAGES,HIGH/MEDIUM — both AF-influenced
+ENV-0 reflectance(+BA) only,FEDS,reflectance_vs_AF_hull,MEDIUM — evaluates agreement with AF-tracking product
+Full 27-ch GRIDMET+DEM,FEDS,env mostly independent; ch26 critical,MEDIUM overall
+VIIRS reflectance + AF∪WFIGS BA,AF∪WFIGS next-day increment,MATCHES_TRAINING_LABEL_FAMILY,LOW vs FEDS circularity; residual AF∪ops dependence as in TS-SatFire

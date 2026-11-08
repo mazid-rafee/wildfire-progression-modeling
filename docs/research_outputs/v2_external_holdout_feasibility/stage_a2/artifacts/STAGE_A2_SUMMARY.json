@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-11-07T18:24:25.886820+00:00",
+  "approved_strategy": "L1",
+  "l1_definition": "Primary labels = reconstructed AF \u222a WFIGS/NIFC-like cumulative BA; FEDS catalog only",
+  "bulk_feds_downloaded": false,
+  "inference_performed": false,
+  "wfigs_2022_discovery_feature_count": 2528,
+  "wfigs_2022_burnperiod_ge2_count": 8,
+  "wfigs_2022_burnperiod_ge5_count": 0,
+  "l1_time_valid_wfigs_feasible_public_api": false,
+  "semantics_vs_ts_satfire": "approximate_at_best_AF_only_fallback_without_midfire_WFIGS",
+  "go_no_go_stage_a3_pilot_cubes": "NO_GO",
+  "go_no_go_reason": "Public WFIGS Daily Perimeters do not retain usable mid-fire historical revisions for 2022 large CONUS events; cannot construct time-valid NIFC/WFIGS union without lookahead using final/late polygons.",
+  "remaining_evidence_for_approval": [
+    "Locate Operational Data Archive / incident GDB progression with GDB_FROM_DATE/GDB_TO_DATE for candidate fires, OR",
+    "Accept AF-only label recipe with explicit TS-SatFire-subset disclosure and new approval, OR",
+    "Switch to L2 FEDS labels with cross-dataset disclosure"
+  ]
+}

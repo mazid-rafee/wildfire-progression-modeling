@@ -1,0 +1,26 @@
+{
+  "2022": {
+    "service": "Operational_Data_Archive_2022",
+    "layer": 7,
+    "name": "EventPolygon2022",
+    "daily_perimeter_count": 84411
+  },
+  "2023": {
+    "service": "Operational_Data_Archive_2023",
+    "layer": 7,
+    "name": "Event Polygon",
+    "daily_perimeter_count": 99674
+  },
+  "2024": {
+    "service": "Operational_Data_Archive_2024",
+    "layer": 6,
+    "name": "Event Polygon",
+    "daily_perimeter_count": 121527
+  },
+  "2025": {
+    "service": "Operational_Data_Archive_2025",
+    "layer": 6,
+    "name": "Event_Polygon",
+    "daily_perimeter_count": 110959
+  }
+}

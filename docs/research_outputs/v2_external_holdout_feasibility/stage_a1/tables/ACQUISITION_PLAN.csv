@@ -1,0 +1,8 @@
+item,url,est_size,license_note,stage,purpose,download_now
+FEDS CONUS 2022 perimeter+fireline+newfirepix (.fgb),https://zenodo.org/records/22921773,~486 MB (369.6+109.1+6.8),Confirm Zenodo record license before redistrib,A2_metadata_pilot,Event catalog + 12-h vectors for candidate filtering,false
+FEDS CONUS 2023 perimeter set (optional),https://zenodo.org/records/22921773,~540 MB,Same Zenodo record,A2_optional,Broader candidate pool,false
+FEDS-MTBS US package / index,https://doi.org/10.5281/zenodo.20187962,Confirm on record; may be multi-GB — prefer summary/index first,Confirm Zenodo license,A2_metadata_pilot,Large-fire catalog + MTBS linkage,false
+MTBS 2022-2024 burned area boundaries,https://www.mtbs.gov/ and USDA FS EDW MapServer,Tens–low hundreds MB,US government public data,A2_metadata_pilot,Final footprint + independence checks,false
+WFIGS Daily Perimeters (pilot fires only),https://wfigs-nifc.hub.arcgis.com/pages/wfigs-daily-perimeters,MB-scale for 3-5 incidents,NIFC open data; not official progression,A2_label_semantics_pilot,Assess NIFC-like perimeters for same-semantics BA,false
+VIIRS Day/Night reflectance for pilot ROIs,NASA LAADS / Earthdata,~1-5 GB per multi-week fire (order-of-magnitude),NASA Earthdata (registration),A3_cube_build_after_label_decision,Channels 0-7,false
+GRIDMET+DEM+landcover+VNP13A1 FirePred rebuild,Climatology Lab / USGS / LAADS,Several GB for pilot set,Product-specific open licenses,A3_cube_build_after_label_decision,Channels 8-21; GFS 22-25 optional then mask_zero,false

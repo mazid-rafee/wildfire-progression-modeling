@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-11-07T17:47:56.967280+00:00",
+  "stage": "A1",
+  "downloads_performed": false,
+  "inference_performed": false,
+  "evaluation_class_if_FEDS_labels": "cross_dataset_changed_label_semantics_with_AF_circularity_risk",
+  "evaluation_class_if_AF_union_WFIGS_labels": "later_year_same_semantics_reconstruction_attempt",
+  "go_no_go_pilot_cubes": "NO_GO_until_label_strategy_locked",
+  "go_no_go_metadata_acquisition_A2": "CONDITIONAL_GO",
+  "n_exclusion_ids": 144,
+  "feds_conus_zenodo": "https://zenodo.org/records/22921773",
+  "feds_mtbs_zenodo": "https://doi.org/10.5281/zenodo.20187962"
+}

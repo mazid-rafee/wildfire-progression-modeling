@@ -1,0 +1,5 @@
+source,midfire_for_5_candidates,usable_ts6_fires,notes
+WFIGS_Daily_Perimeters_Public,No (BurnPeriod=1 late),0,Stage A2 blocker
+ODA_EventPolygon_WildfireDailyFirePerimeter,"Yes for 3/5 (Cedar,Moose,Bolt)",2,Strong Cedar+Moose; Bolt marginal; McKinney/Pipeline fail
+InterAgencyFirePerimeterHistory,No (final by FIRE_YEAR),0,Final only
+PerimeterLine2022,N/A (lines Contained/Uncontained),0,Not BA fill

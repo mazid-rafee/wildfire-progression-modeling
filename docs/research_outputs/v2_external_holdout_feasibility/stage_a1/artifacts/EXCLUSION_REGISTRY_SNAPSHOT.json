@@ -1,0 +1,12 @@
+{
+  "snapshot_of": "outputs/v2_external_holdout_feasibility/artifacts/EXCLUSION_REGISTRY.json",
+  "n_unique_excluded_ids": 144,
+  "pools": [
+    "train_seed42",
+    "val",
+    "test24_ba",
+    "missing13_train_roster_zero_windows",
+    "official_test_zero_window",
+    "af_named_showcase_all"
+  ]
+}

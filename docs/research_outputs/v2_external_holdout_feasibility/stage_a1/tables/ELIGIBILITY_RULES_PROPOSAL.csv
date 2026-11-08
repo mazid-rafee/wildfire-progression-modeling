@@ -1,0 +1,13 @@
+rule_id,topic,rule
+E1,history_length,>=7 VIIRS_Day files; L>=6 for TS=6
+E2,day_L_exclusion,label day not in inputs; target=clip(BA_L-BA_{L-1})
+E3,BA_both,cumulative BA nonzero on L-1 and L in 256 crop
+E4,size,"H,W >= 256"
+E5,calendar_gaps,record gaps; do not filter unless pre-registered cap approved
+E6,empty_progression,keep windows with new_ba=0; F1 via 1e-8; report empty-target FA separately
+E7,small_fires,pilot excludes <1000 acres final; later may include with disclosure
+E8,missing_FirePred,primary full-channel requires FP all 6 inputs; else ENV-0 secondary only
+E9,missing_night,allow zeros (V2)
+E10,label_uncertainty,flag WFIGS-only days without AF support; flag FEDS steps with sparse newfirepix
+E11,data_quality,"exclude unreadable granules, CRS failure, non-monotonic cumulative BA >tolerance"
+E12,no_posthoc_drop,never drop for low F1 after inference

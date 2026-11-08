@@ -1,0 +1,31 @@
+{
+  "stage": "A3",
+  "status": "STOPPED_NOT_COMPLETED",
+  "scope_decision": "reduce_external_holdout_do_not_expand_2023_2025",
+  "priority": "finalize_v2_paper_from_existing_experiments",
+  "pilot_fires_intended": ["CedarCreek", "Moose"],
+  "cubes_built": false,
+  "holdout_data_root_created": false,
+  "running_jobs_found": false,
+  "inference_run": false,
+  "training_run": false,
+  "git_commit": false,
+  "blockers_at_stop": [
+    "gee_refresh_token_invalid_grant",
+    "no_earthdata_netrc",
+    "no_firms_map_key",
+    "scope_reduced_by_authors"
+  ],
+  "estimated_raster_transfer_gb_two_fires": "2.6-3.6",
+  "preserved_prior_stages": ["A1", "A2", "A2b"],
+  "unfinished": [
+    "independence_audit_document",
+    "oda_geometry_harvest",
+    "af_viirs_firepred_acquisition",
+    "label_rasters",
+    "ts6_windows",
+    "visual_qa",
+    "a3_go_nogo_cube_lock"
+  ],
+  "paper_limitation": "no_independent_external_holdout"
+}

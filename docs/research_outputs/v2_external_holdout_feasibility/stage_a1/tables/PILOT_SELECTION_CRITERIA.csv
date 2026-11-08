@@ -1,0 +1,12 @@
+rule_id,rule,type
+P1,"Ignition year in {2022,2023,2024}; prefer 2022 for first pilot",include
+P2,CONUS only (exclude AK/HI for first pilot),include
+P3,Final burned area >= 1000 acres (FEDS-MTBS/MTBS large-fire tier),include
+P4,Duration supporting >=10 calendar days potential VIIRS coverage,include
+P5,Not in EXCLUSION_REGISTRY protocol IDs,exclude
+P6,Not among 17 TS-SatFire AF named folders; avoid ROI overlap with those clips,exclude
+P7,No spatial near-duplicate to US_2021 test (centroid <25 km with date overlap +/-30d or polygon IoU>0.1),exclude
+P8,Geographic diversity: <=2 fires from same state in 5-fire pilot,prefer
+P9,Prefer fires with WFIGS daily perimeter archive present,prefer
+P10,Selection uses ONLY catalog metadata — never model scores,process
+P11,Pilot size 3-5 events; lock PILOT_MANIFEST before reflectance download,process

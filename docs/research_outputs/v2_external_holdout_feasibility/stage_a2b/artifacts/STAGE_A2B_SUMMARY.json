@@ -1,0 +1,41 @@
+{
+  "generated_utc": "2026-11-07T19:03:30.815432+00:00",
+  "stage": "A2b",
+  "endpoint": "Operational_Data_Archive_2022/FeatureServer/7 EventPolygon2022",
+  "public_access": true,
+  "n_wildfire_daily_fire_perimeter_features_2022": 84411,
+  "strategy": "L1",
+  "vs_wfigs_daily_public": "ODA restores mid-fire polygon histories that WFIGS_Daily_Perimeters_Public lacked for these IRWINIDs",
+  "fires_strong_retro_ts6": [
+    "CedarCreek",
+    "Moose"
+  ],
+  "fires_marginal_retro_ts6": [
+    "BoltCreek"
+  ],
+  "fires_insufficient": [
+    "McKinney",
+    "Pipeline"
+  ],
+  "est_ts6_windows_retro_sum_strong_marginal": 60,
+  "est_ts6_windows_operational_sum_strong_marginal": 41,
+  "archives_also_exist": [
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "strict_l1_go_no_go": "CONDITIONAL_GO",
+  "a3_pilot_justified": true,
+  "a3_conditions": [
+    "Use ODA EventPolygon Wildfire Daily Fire Perimeter matched by IRWINID",
+    "Retrospective GT: one perimeter per PolygonDateTime day (resolve same-day edits via GDB validity / max CreateDate within day)",
+    "Never backfill final perimeter onto earlier days",
+    "Union with cutoff-gated VIIRS AF for L1",
+    "Pilot fires: Cedar Creek + Moose + optional Bolt Creek; replace McKinney/Pipeline or add 2023 ODA fires",
+    "Disclose irregular timing and CreateDate lag; report operational-availability sensitivity separately",
+    "Still no bulk FEDS required for labels"
+  ],
+  "report": "STAGE_A2B_REPORT.md",
+  "recommendation": "Do not end strict-L1 search; proceed to approval-gated A3 pilot on Cedar Creek + Moose using ODA IRWINID recipe; replace McKinney/Pipeline.",
+  "updated_utc": "2026-11-07T19:06:32.420085+00:00"
+}

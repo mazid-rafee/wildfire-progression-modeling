@@ -1,0 +1,9 @@
+unique_fire_id,incident_name,state,discovery,final_acres_proxy,wfigs_daily_burnperiods,poly_polygon_datetime,overlap_af_named,independence_note,pilot_eligible_metadata,wfigs_time_resolved
+2022-CAKNF-006177,McKinney,US-CA,2022-07-29,60108.84,1,2023-03-23,No exact AF-folder name match,Not mosquito/calfcanyon/double_creek; check spatial vs US_2021 later,YES_if_labels_solved,NO
+2022-WANWS-000150,BOLT CREEK,US-WA,2022-09-10,14820.54,1,2026-09-28,No,PNW; verify vs WA US_2021 footprints,YES_if_labels_solved,NO
+2022-ORWIF-220180,Cedar Creek,US-OR,2022-08-01,127311,1,2026-11-05,No,Large OR fire; verify footprint,YES_if_labels_solved,NO
+2022-IDSCF-022105,Moose,US-ID,2022-07-17,130197.7,1,2023-01-12,No,Northern Rockies stratum,YES_if_labels_solved,NO
+2022-AZCOF-000529,Pipeline,US-AZ,2022-06-12,26532.47,1,2023-09-20,No,SW stratum; verify vs AZ US_2021,YES_if_labels_solved,NO
+2022-ORMED-000243,Rum Creek,US-OR,2022-08-17,21347.42,1,2024-10-29,No,Optional 4th/5th,OPTIONAL,NO
+2022-CATNF-001371,MOSQUITO,US-CA,2022-09-07,76771.14,1,2024-07-24,YES — TS-SatFire AF named mosquito_fire,EXCLUDED — AF-test contamination,NO,NO
+2022-NMSNF-000028,Calf Canyon,US-NM,2022-04-09,299793.8,1,2025-12-11,YES — AF named calfcanyon_fire / Hermits Peak complex,EXCLUDED — AF-test contamination,NO,NO

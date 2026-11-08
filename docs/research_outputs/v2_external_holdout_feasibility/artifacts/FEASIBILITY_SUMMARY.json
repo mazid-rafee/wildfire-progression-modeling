@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-11-07T17:21:42.396815+00:00",
+  "on_disk_2022_named_fires": 3,
+  "on_disk_2022_ba_labelled_windows_upper_bound": 12,
+  "on_disk_2022_positive_prog_ge3_windows": 12,
+  "blind_external_ready": false,
+  "same_source_later_year_ready_to_lock": false,
+  "reason": "Only 3 same-source 2022 AF-showcase fires (~12 BA windows); prior AF audit exposure; TS-SatFire BA/progression corpus ends 2021; no reconstructed 2022+ cube corpus present."
+}
